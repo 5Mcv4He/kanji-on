@@ -18,3 +18,8 @@ build/
 .vscode/
 *.swp
 *.swo
+word.xlsx
+漢字検索V2.xlsm
+*.xlsx
+*.xlsm
+KanjiKensaku.xls
