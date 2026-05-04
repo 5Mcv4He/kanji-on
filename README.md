@@ -1,6 +1,7 @@
-<p align="center">
+<div align="center">
+  <h1>Kanji-On</h1>
   <samp>学 → ガク · カク · まなぶ</samp>
-</p>
+</div>
 
 <p align="center">
   <img src="https://img.shields.io/badge/python-3.10+-blue?style=flat-square&logo=python&logoColor=white">
@@ -9,8 +10,6 @@
   <img src="https://img.shields.io/badge/rules-79,832-purple?style=flat-square">
   <img src="https://img.shields.io/badge/license-MIT-green?style=flat-square">
 </p>
-
-# Kanji-On
 
 <p align="center">
   <b>以中国人的母语直觉推导日语音读，而非死记硬背。</b>
