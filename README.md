@@ -170,7 +170,7 @@ python deep_lookup.py 学 --json    # JSON 输出
 
 | 文件 | 说明 |
 |:--|:--|
-| [`docs/article.md`](docs/article.md) | 公众号文章原文：「日语音读规律，两条真的够吗？」 |
+| [`docs/article.md`](docs/article.md) | 公众号文章原文：「日语音读规律，两条真的够吗？」（[已发表](https://mp.weixin.qq.com/s/7aOmrAOLhf4fSOVdqU9f1w)） |
 | [`docs/rules-reference.md`](docs/rules-reference.md) | 746 条精选规则速查手册 |
 | [`docs/images/`](docs/images/) | 9 张 HTML 设计源文件（Playwright 截图 → PNG） |
 | [`docs/scripts/screenshot.py`](docs/scripts/screenshot.py) | HTML → PNG 批量截图工具 |
