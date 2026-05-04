@@ -1,0 +1,530 @@
+{
+  "description": "沪江2规则 vs 5条铁律 vs 系统精选规则的实测对比",
+  "data_source": "红宝书 N5-N1 词汇表",
+  "method": "沪江规则配最优映射表（从N5数据学习），铁律含声符映射（从N5+N4学习）",
+  "init_to_row_mapping": {
+    "y": {
+      "best_row": "ア",
+      "accuracy": 0.4626865671641791,
+      "all_rows": {
+        "ア": 0.4626865671641791,
+        "ヤ": 0.34328358208955223,
+        "ガ": 0.19402985074626866
+      }
+    },
+    "d": {
+      "best_row": "タ",
+      "accuracy": 0.9705882352941176,
+      "all_rows": {
+        "タ": 0.9705882352941176,
+        "ダ": 0.029411764705882353
+      }
+    },
+    "q": {
+      "best_row": "カ",
+      "accuracy": 0.5333333333333333,
+      "all_rows": {
+        "カ": 0.5333333333333333,
+        "サ": 0.43333333333333335,
+        "ア": 0.03333333333333333
+      }
+    },
+    "w": {
+      "best_row": "バ",
+      "accuracy": 0.44,
+      "all_rows": {
+        "バ": 0.44,
+        "ア": 0.32,
+        "ガ": 0.16,
+        "カ": 0.04,
+        "ワ": 0.04
+      }
+    },
+    "z": {
+      "best_row": "サ",
+      "accuracy": 0.6612903225806451,
+      "all_rows": {
+        "サ": 0.6612903225806451,
+        "タ": 0.3225806451612903,
+        "カ": 0.016129032258064516
+      }
+    },
+    "s": {
+      "best_row": "サ",
+      "accuracy": 0.9818181818181818,
+      "all_rows": {
+        "サ": 0.9818181818181818,
+        "カ": 0.01818181818181818
+      }
+    },
+    "x": {
+      "best_row": "サ",
+      "accuracy": 0.5609756097560976,
+      "all_rows": {
+        "サ": 0.5609756097560976,
+        "カ": 0.36585365853658536,
+        "ヤ": 0.024390243902439025,
+        "ガ": 0.024390243902439025,
+        "タ": 0.024390243902439025
+      }
+    },
+    "b": {
+      "best_row": "ハ",
+      "accuracy": 1.0,
+      "all_rows": {
+        "ハ": 1.0
+      }
+    },
+    "l": {
+      "best_row": "ラ",
+      "accuracy": 0.9714285714285714,
+      "all_rows": {
+        "ラ": 0.9714285714285714,
+        "ザ": 0.02857142857142857
+      }
+    },
+    "j": {
+      "best_row": "カ",
+      "accuracy": 0.8163265306122449,
+      "all_rows": {
+        "カ": 0.8163265306122449,
+        "サ": 0.1836734693877551
+      }
+    },
+    "c": {
+      "best_row": "サ",
+      "accuracy": 0.7948717948717948,
+      "all_rows": {
+        "サ": 0.7948717948717948,
+        "タ": 0.1794871794871795,
+        "カ": 0.02564102564102564
+      }
+    },
+    "r": {
+      "best_row": "ザ",
+      "accuracy": 0.9090909090909091,
+      "all_rows": {
+        "ザ": 0.9090909090909091,
+        "ヤ": 0.09090909090909091
+      }
+    },
+    "t": {
+      "best_row": "タ",
+      "accuracy": 0.9629629629629629,
+      "all_rows": {
+        "タ": 0.9629629629629629,
+        "ダ": 0.037037037037037035
+      }
+    },
+    "f": {
+      "best_row": "ハ",
+      "accuracy": 0.8947368421052632,
+      "all_rows": {
+        "ハ": 0.8947368421052632,
+        "カ": 0.05263157894736842,
+        "バ": 0.05263157894736842
+      }
+    },
+    "h": {
+      "best_row": "カ",
+      "accuracy": 1.0,
+      "all_rows": {
+        "カ": 1.0
+      }
+    },
+    "g": {
+      "best_row": "カ",
+      "accuracy": 1.0,
+      "all_rows": {
+        "カ": 1.0
+      }
+    },
+    "p": {
+      "best_row": "ハ",
+      "accuracy": 0.9230769230769231,
+      "all_rows": {
+        "ハ": 0.9230769230769231,
+        "バ": 0.07692307692307693
+      }
+    },
+    "n": {
+      "best_row": "ダ",
+      "accuracy": 0.6153846153846154,
+      "all_rows": {
+        "ダ": 0.6153846153846154,
+        "ザ": 0.15384615384615385,
+        "ナ": 0.07692307692307693,
+        "ガ": 0.07692307692307693,
+        "タ": 0.07692307692307693
+      }
+    },
+    "m": {
+      "best_row": "バ",
+      "accuracy": 0.8518518518518519,
+      "all_rows": {
+        "バ": 0.8518518518518519,
+        "マ": 0.1111111111111111,
+        "ハ": 0.037037037037037035
+      }
+    },
+    "k": {
+      "best_row": "カ",
+      "accuracy": 1.0,
+      "all_rows": {
+        "カ": 1.0
+      }
+    }
+  },
+  "per_level": {
+    "N5": {
+      "n_kanji": 653,
+      "hujiang_2_rules": {
+        "coverage": 560,
+        "coverage_pct": 0.8576,
+        "rule1_init_to_row": {
+          "correct": 507,
+          "applicable": 644,
+          "accuracy": 0.7873,
+          "kanji_covered": 507
+        },
+        "rule2_nasal_to_length": {
+          "correct": 236,
+          "applicable": 239,
+          "accuracy": 0.9874,
+          "kanji_covered": 236
+        }
+      },
+      "five_iron_laws": {
+        "coverage": 627,
+        "coverage_pct": 0.9602,
+        "il1_init_to_row": {
+          "correct": 507,
+          "applicable": 644,
+          "accuracy": 0.7873,
+          "kanji_covered": 507
+        },
+        "il2_nasal_to_length": {
+          "correct": 236,
+          "applicable": 239,
+          "accuracy": 0.9874,
+          "kanji_covered": 236
+        },
+        "il3_component_to_onyomi": {
+          "correct": 375,
+          "applicable": 481,
+          "accuracy": 0.7796,
+          "kanji_covered": 375
+        },
+        "il4_entering_to_ending": {
+          "correct": 87,
+          "applicable": 196,
+          "accuracy": 0.4439,
+          "kanji_covered": 87
+        },
+        "il5_go_kan_stratification": {
+          "note": "定性规律，未做数值评测。解释同一个汉字为何有两种音读（呉音 vs 漢音）"
+        },
+        "delta_vs_hujiang": {
+          "additional_kanji": 67,
+          "additional_pct": 10.26
+        }
+      },
+      "selected_rules_from_system": {
+        "total_rules": 334,
+        "total_coverage": 652,
+        "tier12_high_acc": {
+          "count": 59,
+          "coverage": 400,
+          "coverage_pct": 0.613,
+          "avg_accuracy": 1.0
+        },
+        "tier123_high_acc": {
+          "count": 94,
+          "coverage": 405,
+          "coverage_pct": 0.62,
+          "avg_accuracy": 0.993
+        }
+      }
+    },
+    "N4": {
+      "n_kanji": 1074,
+      "hujiang_2_rules": {
+        "coverage": 921,
+        "coverage_pct": 0.8575,
+        "rule1_init_to_row": {
+          "correct": 828,
+          "applicable": 1059,
+          "accuracy": 0.7819,
+          "kanji_covered": 828
+        },
+        "rule2_nasal_to_length": {
+          "correct": 383,
+          "applicable": 389,
+          "accuracy": 0.9846,
+          "kanji_covered": 383
+        }
+      },
+      "five_iron_laws": {
+        "coverage": 1008,
+        "coverage_pct": 0.9385,
+        "il1_init_to_row": {
+          "correct": 828,
+          "applicable": 1059,
+          "accuracy": 0.7819,
+          "kanji_covered": 828
+        },
+        "il2_nasal_to_length": {
+          "correct": 383,
+          "applicable": 389,
+          "accuracy": 0.9846,
+          "kanji_covered": 383
+        },
+        "il3_component_to_onyomi": {
+          "correct": 455,
+          "applicable": 660,
+          "accuracy": 0.6894,
+          "kanji_covered": 455
+        },
+        "il4_entering_to_ending": {
+          "correct": 148,
+          "applicable": 328,
+          "accuracy": 0.4512,
+          "kanji_covered": 148
+        },
+        "il5_go_kan_stratification": {
+          "note": "定性规律，未做数值评测。解释同一个汉字为何有两种音读（呉音 vs 漢音）"
+        },
+        "delta_vs_hujiang": {
+          "additional_kanji": 87,
+          "additional_pct": 8.1
+        }
+      },
+      "selected_rules_from_system": {
+        "total_rules": 470,
+        "total_coverage": 1072,
+        "tier12_high_acc": {
+          "count": 82,
+          "coverage": 818,
+          "coverage_pct": 0.762,
+          "avg_accuracy": 0.991
+        },
+        "tier123_high_acc": {
+          "count": 145,
+          "coverage": 821,
+          "coverage_pct": 0.764,
+          "avg_accuracy": 0.981
+        }
+      }
+    },
+    "N3": {
+      "n_kanji": 1512,
+      "hujiang_2_rules": {
+        "coverage": 1298,
+        "coverage_pct": 0.8585,
+        "rule1_init_to_row": {
+          "correct": 1174,
+          "applicable": 1488,
+          "accuracy": 0.789,
+          "kanji_covered": 1174
+        },
+        "rule2_nasal_to_length": {
+          "correct": 546,
+          "applicable": 555,
+          "accuracy": 0.9838,
+          "kanji_covered": 546
+        }
+      },
+      "five_iron_laws": {
+        "coverage": 1402,
+        "coverage_pct": 0.9272,
+        "il1_init_to_row": {
+          "correct": 1174,
+          "applicable": 1488,
+          "accuracy": 0.789,
+          "kanji_covered": 1174
+        },
+        "il2_nasal_to_length": {
+          "correct": 546,
+          "applicable": 555,
+          "accuracy": 0.9838,
+          "kanji_covered": 546
+        },
+        "il3_component_to_onyomi": {
+          "correct": 519,
+          "applicable": 811,
+          "accuracy": 0.64,
+          "kanji_covered": 519
+        },
+        "il4_entering_to_ending": {
+          "correct": 217,
+          "applicable": 462,
+          "accuracy": 0.4697,
+          "kanji_covered": 217
+        },
+        "il5_go_kan_stratification": {
+          "note": "定性规律，未做数值评测。解释同一个汉字为何有两种音读（呉音 vs 漢音）"
+        },
+        "delta_vs_hujiang": {
+          "additional_kanji": 104,
+          "additional_pct": 6.88
+        }
+      },
+      "selected_rules_from_system": {
+        "total_rules": 568,
+        "total_coverage": 1509,
+        "tier12_high_acc": {
+          "count": 118,
+          "coverage": 1250,
+          "coverage_pct": 0.827,
+          "avg_accuracy": 0.987
+        },
+        "tier123_high_acc": {
+          "count": 211,
+          "coverage": 1256,
+          "coverage_pct": 0.831,
+          "avg_accuracy": 0.979
+        }
+      }
+    },
+    "N2": {
+      "n_kanji": 1875,
+      "hujiang_2_rules": {
+        "coverage": 1598,
+        "coverage_pct": 0.8523,
+        "rule1_init_to_row": {
+          "correct": 1441,
+          "applicable": 1842,
+          "accuracy": 0.7823,
+          "kanji_covered": 1441
+        },
+        "rule2_nasal_to_length": {
+          "correct": 681,
+          "applicable": 691,
+          "accuracy": 0.9855,
+          "kanji_covered": 681
+        }
+      },
+      "five_iron_laws": {
+        "coverage": 1721,
+        "coverage_pct": 0.9179,
+        "il1_init_to_row": {
+          "correct": 1441,
+          "applicable": 1842,
+          "accuracy": 0.7823,
+          "kanji_covered": 1441
+        },
+        "il2_nasal_to_length": {
+          "correct": 681,
+          "applicable": 691,
+          "accuracy": 0.9855,
+          "kanji_covered": 681
+        },
+        "il3_component_to_onyomi": {
+          "correct": 555,
+          "applicable": 931,
+          "accuracy": 0.5961,
+          "kanji_covered": 555
+        },
+        "il4_entering_to_ending": {
+          "correct": 278,
+          "applicable": 576,
+          "accuracy": 0.4826,
+          "kanji_covered": 278
+        },
+        "il5_go_kan_stratification": {
+          "note": "定性规律，未做数值评测。解释同一个汉字为何有两种音读（呉音 vs 漢音）"
+        },
+        "delta_vs_hujiang": {
+          "additional_kanji": 123,
+          "additional_pct": 6.56
+        }
+      },
+      "selected_rules_from_system": {
+        "total_rules": 665,
+        "total_coverage": 1868,
+        "tier12_high_acc": {
+          "count": 144,
+          "coverage": 1582,
+          "coverage_pct": 0.844,
+          "avg_accuracy": 0.986
+        },
+        "tier123_high_acc": {
+          "count": 264,
+          "coverage": 1584,
+          "coverage_pct": 0.845,
+          "avg_accuracy": 0.981
+        }
+      }
+    },
+    "N1": {
+      "n_kanji": 2179,
+      "hujiang_2_rules": {
+        "coverage": 1859,
+        "coverage_pct": 0.8531,
+        "rule1_init_to_row": {
+          "correct": 1669,
+          "applicable": 2139,
+          "accuracy": 0.7803,
+          "kanji_covered": 1669
+        },
+        "rule2_nasal_to_length": {
+          "correct": 798,
+          "applicable": 810,
+          "accuracy": 0.9852,
+          "kanji_covered": 798
+        }
+      },
+      "five_iron_laws": {
+        "coverage": 1991,
+        "coverage_pct": 0.9137,
+        "il1_init_to_row": {
+          "correct": 1669,
+          "applicable": 2139,
+          "accuracy": 0.7803,
+          "kanji_covered": 1669
+        },
+        "il2_nasal_to_length": {
+          "correct": 798,
+          "applicable": 810,
+          "accuracy": 0.9852,
+          "kanji_covered": 798
+        },
+        "il3_component_to_onyomi": {
+          "correct": 591,
+          "applicable": 1041,
+          "accuracy": 0.5677,
+          "kanji_covered": 591
+        },
+        "il4_entering_to_ending": {
+          "correct": 320,
+          "applicable": 669,
+          "accuracy": 0.4783,
+          "kanji_covered": 320
+        },
+        "il5_go_kan_stratification": {
+          "note": "定性规律，未做数值评测。解释同一个汉字为何有两种音读（呉音 vs 漢音）"
+        },
+        "delta_vs_hujiang": {
+          "additional_kanji": 132,
+          "additional_pct": 6.06
+        }
+      },
+      "selected_rules_from_system": {
+        "total_rules": 746,
+        "total_coverage": 2169,
+        "tier12_high_acc": {
+          "count": 164,
+          "coverage": 1833,
+          "coverage_pct": 0.841,
+          "avg_accuracy": 0.986
+        },
+        "tier123_high_acc": {
+          "count": 298,
+          "coverage": 1834,
+          "coverage_pct": 0.842,
+          "avg_accuracy": 0.982
+        }
+      }
+    }
+  }
+}
