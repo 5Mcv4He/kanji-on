@@ -1,0 +1,4342 @@
+{
+  "二": {
+    "dominant": "ヒョウ",
+    "consistency": 0.0645,
+    "total": 186
+  },
+  "口": {
+    "dominant": "コウ",
+    "consistency": 0.0408,
+    "total": 1325
+  },
+  "亜": {
+    "dominant": "ア",
+    "consistency": 0.3333,
+    "total": 3
+  },
+  "女": {
+    "dominant": "ド",
+    "consistency": 0.0471,
+    "total": 170
+  },
+  "土": {
+    "dominant": "コウ",
+    "consistency": 0.0521,
+    "total": 537
+  },
+  "圭": {
+    "dominant": "ケイ",
+    "consistency": 0.25,
+    "total": 28
+  },
+  "丁": {
+    "dominant": "カ",
+    "consistency": 0.2133,
+    "total": 75
+  },
+  "可": {
+    "dominant": "カ",
+    "consistency": 0.4286,
+    "total": 35
+  },
+  "亠": {
+    "dominant": "コウ",
+    "consistency": 0.0928,
+    "total": 388
+  },
+  "衣": {
+    "dominant": "ジョウ",
+    "consistency": 0.09,
+    "total": 100
+  },
+  "心": {
+    "dominant": "ソウ",
+    "consistency": 0.0581,
+    "total": 155
+  },
+  "夂": {
+    "dominant": "カク",
+    "consistency": 0.1092,
+    "total": 119
+  },
+  "厶": {
+    "dominant": "コウ",
+    "consistency": 0.0787,
+    "total": 216
+  },
+  "大": {
+    "dominant": "キョウ",
+    "consistency": 0.0691,
+    "total": 333
+  },
+  "矢": {
+    "dominant": "チ",
+    "consistency": 0.186,
+    "total": 43
+  },
+  "矣": {
+    "dominant": "アイ",
+    "consistency": 0.75,
+    "total": 4
+  },
+  "合": {
+    "dominant": "コウ",
+    "consistency": 0.375,
+    "total": 24
+  },
+  "三": {
+    "dominant": "ホウ",
+    "consistency": 0.2439,
+    "total": 41
+  },
+  "癶": {
+    "dominant": "トウ",
+    "consistency": 0.2632,
+    "total": 19
+  },
+  "天": {
+    "dominant": "ソウ",
+    "consistency": 0.2667,
+    "total": 15
+  },
+  "癸": {
+    "dominant": "キ",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "西": {
+    "dominant": "ヒョウ",
+    "consistency": 0.1071,
+    "total": 28
+  },
+  "千": {
+    "dominant": "シュウ",
+    "consistency": 0.067,
+    "total": 224
+  },
+  "木": {
+    "dominant": NaN,
+    "consistency": 0.0508,
+    "total": 728
+  },
+  "禾": {
+    "dominant": "シュウ",
+    "consistency": 0.122,
+    "total": 123
+  },
+  "日": {
+    "dominant": "ショウ",
+    "consistency": 0.0495,
+    "total": 646
+  },
+  "曰": {
+    "dominant": "シン",
+    "consistency": 0.2353,
+    "total": 17
+  },
+  "尸": {
+    "dominant": "ヘキ",
+    "consistency": 0.084,
+    "total": 119
+  },
+  "至": {
+    "dominant": "アク",
+    "consistency": 0.1538,
+    "total": 26
+  },
+  "屋": {
+    "dominant": "アク",
+    "consistency": 1.0,
+    "total": 3
+  },
+  "九": {
+    "dominant": "スイ",
+    "consistency": 0.1212,
+    "total": 33
+  },
+  "韋": {
+    "dominant": "イ",
+    "consistency": 0.5455,
+    "total": 11
+  },
+  "戸": {
+    "dominant": "ヘン",
+    "consistency": 0.2941,
+    "total": 34
+  },
+  "田": {
+    "dominant": NaN,
+    "consistency": 0.0541,
+    "total": 296
+  },
+  "魚": {
+    "dominant": NaN,
+    "consistency": 0.1375,
+    "total": 80
+  },
+  "彡": {
+    "dominant": "サン",
+    "consistency": 0.0946,
+    "total": 74
+  },
+  "参": {
+    "dominant": "ソウ",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "立": {
+    "dominant": "ショウ",
+    "consistency": 0.0795,
+    "total": 151
+  },
+  "十": {
+    "dominant": "コ",
+    "consistency": 0.075,
+    "total": 320
+  },
+  "辛": {
+    "dominant": "ヘキ",
+    "consistency": 0.3235,
+    "total": 34
+  },
+  "厂": {
+    "dominant": "シン",
+    "consistency": 0.0863,
+    "total": 139
+  },
+  "斗": {
+    "dominant": "カ",
+    "consistency": 0.25,
+    "total": 12
+  },
+  "及": {
+    "dominant": "キュウ",
+    "consistency": 0.8333,
+    "total": 6
+  },
+  "宀": {
+    "dominant": "カン",
+    "consistency": 0.0642,
+    "total": 218
+  },
+  "夕": {
+    "dominant": "エン",
+    "consistency": 0.0842,
+    "total": 95
+  },
+  "且": {
+    "dominant": "ソ",
+    "consistency": 0.4571,
+    "total": 35
+  },
+  "虫": {
+    "dominant": "ショク",
+    "consistency": 0.047,
+    "total": 149
+  },
+  "亡": {
+    "dominant": "ボウ",
+    "consistency": 0.4286,
+    "total": 21
+  },
+  "艮": {
+    "dominant": "コン",
+    "consistency": 0.1778,
+    "total": 45
+  },
+  "良": {
+    "dominant": "ロウ",
+    "consistency": 0.1875,
+    "total": 32
+  },
+  "食": {
+    "dominant": "イン",
+    "consistency": 0.1053,
+    "total": 19
+  },
+  "台": {
+    "dominant": "タイ",
+    "consistency": 0.5,
+    "total": 16
+  },
+  "幺": {
+    "dominant": "ケン",
+    "consistency": 0.0415,
+    "total": 265
+  },
+  "小": {
+    "dominant": "リョウ",
+    "consistency": 0.0469,
+    "total": 384
+  },
+  "糸": {
+    "dominant": "コウ",
+    "consistency": 0.0437,
+    "total": 206
+  },
+  "勹": {
+    "dominant": "ホウ",
+    "consistency": 0.1156,
+    "total": 173
+  },
+  "旬": {
+    "dominant": "ジュン",
+    "consistency": 0.875,
+    "total": 8
+  },
+  "占": {
+    "dominant": "テン",
+    "consistency": 0.2941,
+    "total": 17
+  },
+  "戈": {
+    "dominant": "セン",
+    "consistency": 0.2063,
+    "total": 126
+  },
+  "米": {
+    "dominant": NaN,
+    "consistency": 0.1053,
+    "total": 114
+  },
+  "广": {
+    "dominant": "コウ",
+    "consistency": 0.0798,
+    "total": 188
+  },
+  "奄": {
+    "dominant": "エン",
+    "consistency": 0.5714,
+    "total": 7
+  },
+  "安": {
+    "dominant": "アン",
+    "consistency": 1.0,
+    "total": 5
+  },
+  "音": {
+    "dominant": "アン",
+    "consistency": 0.3077,
+    "total": 13
+  },
+  "門": {
+    "dominant": "カン",
+    "consistency": 0.1818,
+    "total": 66
+  },
+  "廿": {
+    "dominant": "コウ",
+    "consistency": 0.0814,
+    "total": 86
+  },
+  "革": {
+    "dominant": "キ",
+    "consistency": 0.0882,
+    "total": 34
+  },
+  "丶": {
+    "dominant": "エイ",
+    "consistency": 0.3,
+    "total": 10
+  },
+  "人": {
+    "dominant": "ケン",
+    "consistency": 0.0543,
+    "total": 368
+  },
+  "尹": {
+    "dominant": "クン",
+    "consistency": 0.3333,
+    "total": 9
+  },
+  "囗": {
+    "dominant": "イン",
+    "consistency": 0.0602,
+    "total": 83
+  },
+  "井": {
+    "dominant": "コウ",
+    "consistency": 0.4,
+    "total": 5
+  },
+  "弓": {
+    "dominant": "テイ",
+    "consistency": 0.0845,
+    "total": 71
+  },
+  "示": {
+    "dominant": "ヒョウ",
+    "consistency": 0.1935,
+    "total": 62
+  },
+  "寸": {
+    "dominant": "フ",
+    "consistency": 0.1278,
+    "total": 133
+  },
+  "隹": {
+    "dominant": "カン",
+    "consistency": 0.1221,
+    "total": 131
+  },
+  "尉": {
+    "dominant": "イ",
+    "consistency": 0.6667,
+    "total": 3
+  },
+  "勿": {
+    "dominant": "ヨウ",
+    "consistency": 0.175,
+    "total": 40
+  },
+  "奇": {
+    "dominant": "キ",
+    "consistency": 0.6923,
+    "total": 13
+  },
+  "共": {
+    "dominant": "コウ",
+    "consistency": 0.25,
+    "total": 24
+  },
+  "多": {
+    "dominant": "イ",
+    "consistency": 0.25,
+    "total": 4
+  },
+  "月": {
+    "dominant": "ユ",
+    "consistency": 0.0563,
+    "total": 302
+  },
+  "委": {
+    "dominant": "イ",
+    "consistency": 0.5,
+    "total": 6
+  },
+  "言": {
+    "dominant": "ショウ",
+    "consistency": 0.0412,
+    "total": 194
+  },
+  "胃": {
+    "dominant": "イ",
+    "consistency": 0.6,
+    "total": 5
+  },
+  "目": {
+    "dominant": "シン",
+    "consistency": 0.0399,
+    "total": 376
+  },
+  "貝": {
+    "dominant": "ヒン",
+    "consistency": 0.0599,
+    "total": 217
+  },
+  "貴": {
+    "dominant": "キ",
+    "consistency": 0.625,
+    "total": 8
+  },
+  "匚": {
+    "dominant": "オウ",
+    "consistency": 0.186,
+    "total": 43
+  },
+  "或": {
+    "dominant": "カク",
+    "consistency": 0.4286,
+    "total": 7
+  },
+  "有": {
+    "dominant": "コウ",
+    "consistency": 0.1667,
+    "total": 12
+  },
+  "石": {
+    "dominant": "コウ",
+    "consistency": 0.0641,
+    "total": 78
+  },
+  "幾": {
+    "dominant": "キ",
+    "consistency": 1.0,
+    "total": 4
+  },
+  "冖": {
+    "dominant": "テイ",
+    "consistency": 0.0558,
+    "total": 197
+  },
+  "匕": {
+    "dominant": "シ",
+    "consistency": 0.1221,
+    "total": 172
+  },
+  "士": {
+    "dominant": "テイ",
+    "consistency": 0.07,
+    "total": 100
+  },
+  "一": {
+    "dominant": "タン",
+    "consistency": 0.084,
+    "total": 131
+  },
+  "八": {
+    "dominant": "ショウ",
+    "consistency": 0.0488,
+    "total": 123
+  },
+  "皿": {
+    "dominant": "ロ",
+    "consistency": 0.1375,
+    "total": 80
+  },
+  "儿": {
+    "dominant": "キョウ",
+    "consistency": 0.0625,
+    "total": 192
+  },
+  "免": {
+    "dominant": "バン",
+    "consistency": 0.25,
+    "total": 16
+  },
+  "旧": {
+    "dominant": "トウ",
+    "consistency": 0.25,
+    "total": 4
+  },
+  "冫": {
+    "dominant": "シ",
+    "consistency": 0.1795,
+    "total": 39
+  },
+  "欠": {
+    "dominant": "カン",
+    "consistency": 0.1346,
+    "total": 52
+  },
+  "次": {
+    "dominant": "シ",
+    "consistency": 0.7,
+    "total": 10
+  },
+  "亅": {
+    "dominant": "ウ",
+    "consistency": 0.4,
+    "total": 15
+  },
+  "于": {
+    "dominant": "ウ",
+    "consistency": 1.0,
+    "total": 6
+  },
+  "弱": {
+    "dominant": NaN,
+    "consistency": 0.2857,
+    "total": 7
+  },
+  "卩": {
+    "dominant": "レイ",
+    "consistency": 0.2826,
+    "total": 46
+  },
+  "因": {
+    "dominant": "イン",
+    "consistency": 0.8,
+    "total": 5
+  },
+  "壬": {
+    "dominant": "テイ",
+    "consistency": 0.3333,
+    "total": 21
+  },
+  "丿": {
+    "dominant": "キュウ",
+    "consistency": 0.1667,
+    "total": 48
+  },
+  "今": {
+    "dominant": "ネン",
+    "consistency": 0.2222,
+    "total": 18
+  },
+  "云": {
+    "dominant": "ウン",
+    "consistency": 0.15,
+    "total": 20
+  },
+  "元": {
+    "dominant": "カン",
+    "consistency": 0.4286,
+    "total": 14
+  },
+  "完": {
+    "dominant": "カン",
+    "consistency": 0.75,
+    "total": 4
+  },
+  "弟": {
+    "dominant": "テイ",
+    "consistency": 0.7143,
+    "total": 7
+  },
+  "鳥": {
+    "dominant": "オウ",
+    "consistency": 0.0897,
+    "total": 78
+  },
+  "穴": {
+    "dominant": "コウ",
+    "consistency": 0.1463,
+    "total": 41
+  },
+  "夫": {
+    "dominant": "フ",
+    "consistency": 0.15,
+    "total": 40
+  },
+  "見": {
+    "dominant": "ラン",
+    "consistency": 0.1714,
+    "total": 35
+  },
+  "冂": {
+    "dominant": "コウ",
+    "consistency": 0.1406,
+    "total": 192
+  },
+  "咼": {
+    "dominant": "カ",
+    "consistency": 0.875,
+    "total": 8
+  },
+  "七": {
+    "dominant": "ロ",
+    "consistency": 0.2667,
+    "total": 45
+  },
+  "虍": {
+    "dominant": "ロ",
+    "consistency": 0.2667,
+    "total": 45
+  },
+  "虚": {
+    "dominant": "キョ",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "林": {
+    "dominant": "リン",
+    "consistency": 0.1628,
+    "total": 43
+  },
+  "又": {
+    "dominant": "ソウ",
+    "consistency": 0.0591,
+    "total": 237
+  },
+  "曼": {
+    "dominant": "マン",
+    "consistency": 0.6364,
+    "total": 11
+  },
+  "老": {
+    "dominant": "シ",
+    "consistency": 0.3333,
+    "total": 9
+  },
+  "旡": {
+    "dominant": "キュウ",
+    "consistency": 0.4,
+    "total": 5
+  },
+  "既": {
+    "dominant": "ガイ",
+    "consistency": 0.6667,
+    "total": 3
+  },
+  "甫": {
+    "dominant": "ホ",
+    "consistency": 0.44,
+    "total": 25
+  },
+  "爪": {
+    "dominant": "コ",
+    "consistency": 0.1765,
+    "total": 17
+  },
+  "王": {
+    "dominant": "オウ",
+    "consistency": 0.0687,
+    "total": 131
+  },
+  "兀": {
+    "dominant": "ジョウ",
+    "consistency": 0.0886,
+    "total": 79
+  },
+  "酉": {
+    "dominant": "ソン",
+    "consistency": 0.1053,
+    "total": 57
+  },
+  "酋": {
+    "dominant": "ソン",
+    "consistency": 0.375,
+    "total": 16
+  },
+  "尊": {
+    "dominant": "ソン",
+    "consistency": 0.8333,
+    "total": 6
+  },
+  "車": {
+    "dominant": "レン",
+    "consistency": 0.0805,
+    "total": 87
+  },
+  "軍": {
+    "dominant": "コン",
+    "consistency": 0.3077,
+    "total": 13
+  },
+  "雨": {
+    "dominant": "ジュ",
+    "consistency": 0.1094,
+    "total": 64
+  },
+  "任": {
+    "dominant": "ジン",
+    "consistency": 0.5,
+    "total": 6
+  },
+  "耳": {
+    "dominant": "チョウ",
+    "consistency": 0.0986,
+    "total": 71
+  },
+  "呂": {
+    "dominant": "リョ",
+    "consistency": 0.5556,
+    "total": 9
+  },
+  "京": {
+    "dominant": "リョウ",
+    "consistency": 0.3333,
+    "total": 15
+  },
+  "央": {
+    "dominant": "オウ",
+    "consistency": 0.5455,
+    "total": 11
+  },
+  "水": {
+    "dominant": "キュウ",
+    "consistency": 0.1333,
+    "total": 45
+  },
+  "永": {
+    "dominant": "エイ",
+    "consistency": 0.375,
+    "total": 8
+  },
+  "曳": {
+    "dominant": "エツ",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "乃": {
+    "dominant": "キュウ",
+    "consistency": 0.2778,
+    "total": 18
+  },
+  "自": {
+    "dominant": "ケイ",
+    "consistency": 0.0694,
+    "total": 72
+  },
+  "頁": {
+    "dominant": "ヒン",
+    "consistency": 0.082,
+    "total": 61
+  },
+  "彳": {
+    "dominant": "コウ",
+    "consistency": 0.0615,
+    "total": 65
+  },
+  "行": {
+    "dominant": NaN,
+    "consistency": 0.2222,
+    "total": 18
+  },
+  "金": {
+    "dominant": "コウ",
+    "consistency": 0.0503,
+    "total": 159
+  },
+  "兌": {
+    "dominant": "ゼイ",
+    "consistency": 0.4286,
+    "total": 7
+  },
+  "夜": {
+    "dominant": "エキ",
+    "consistency": 0.75,
+    "total": 4
+  },
+  "几": {
+    "dominant": "コウ",
+    "consistency": 0.0899,
+    "total": 89
+  },
+  "馬": {
+    "dominant": "キ",
+    "consistency": 0.0781,
+    "total": 64
+  },
+  "尺": {
+    "dominant": "タク",
+    "consistency": 0.3,
+    "total": 10
+  },
+  "匂": {
+    "dominant": "カツ",
+    "consistency": 0.6667,
+    "total": 6
+  },
+  "走": {
+    "dominant": "シュ",
+    "consistency": 0.1818,
+    "total": 11
+  },
+  "戉": {
+    "dominant": "エツ",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "夏": {
+    "dominant": "カ",
+    "consistency": 0.75,
+    "total": 4
+  },
+  "冐": {
+    "dominant": "エン",
+    "consistency": 0.6,
+    "total": 5
+  },
+  "袁": {
+    "dominant": "エン",
+    "consistency": 1.0,
+    "total": 5
+  },
+  "廴": {
+    "dominant": "テイ",
+    "consistency": 0.3158,
+    "total": 19
+  },
+  "止": {
+    "dominant": "シ",
+    "consistency": 0.1218,
+    "total": 156
+  },
+  "友": {
+    "dominant": "エン",
+    "consistency": 0.4444,
+    "total": 9
+  },
+  "爰": {
+    "dominant": "エン",
+    "consistency": 0.6,
+    "total": 5
+  },
+  "火": {
+    "dominant": "シュウ",
+    "consistency": 0.0971,
+    "total": 103
+  },
+  "北": {
+    "dominant": "エン",
+    "consistency": 0.3636,
+    "total": 11
+  },
+  "豕": {
+    "dominant": "モウ",
+    "consistency": 0.1346,
+    "total": 52
+  },
+  "曲": {
+    "dominant": "ノウ",
+    "consistency": 0.3636,
+    "total": 11
+  },
+  "豆": {
+    "dominant": "トウ",
+    "consistency": 0.1765,
+    "total": 51
+  },
+  "巴": {
+    "dominant": "ハ",
+    "consistency": 0.3333,
+    "total": 21
+  },
+  "色": {
+    "dominant": "エン",
+    "consistency": 0.6667,
+    "total": 3
+  },
+  "万": {
+    "dominant": "ホウ",
+    "consistency": 0.1948,
+    "total": 77
+  },
+  "方": {
+    "dominant": "ホウ",
+    "consistency": 0.1972,
+    "total": 71
+  },
+  "生": {
+    "dominant": "ショウ",
+    "consistency": 0.3158,
+    "total": 19
+  },
+  "力": {
+    "dominant": "カ",
+    "consistency": 0.1573,
+    "total": 89
+  },
+  "男": {
+    "dominant": "ユウ",
+    "consistency": 0.2222,
+    "total": 9
+  },
+  "凵": {
+    "dominant": "キョウ",
+    "consistency": 0.1224,
+    "total": 49
+  },
+  "主": {
+    "dominant": "チュウ",
+    "consistency": 0.5714,
+    "total": 7
+  },
+  "甲": {
+    "dominant": "タン",
+    "consistency": 0.2857,
+    "total": 14
+  },
+  "区": {
+    "dominant": "オウ",
+    "consistency": 0.5,
+    "total": 6
+  },
+  "殳": {
+    "dominant": "ハン",
+    "consistency": 0.102,
+    "total": 49
+  },
+  "公": {
+    "dominant": "ショウ",
+    "consistency": 0.4,
+    "total": 15
+  },
+  "羽": {
+    "dominant": "ヨウ",
+    "consistency": 0.0755,
+    "total": 53
+  },
+  "奥": {
+    "dominant": "オウ",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "山": {
+    "dominant": NaN,
+    "consistency": 0.071,
+    "total": 155
+  },
+  "中": {
+    "dominant": "チュウ",
+    "consistency": 0.8333,
+    "total": 6
+  },
+  "意": {
+    "dominant": "オク",
+    "consistency": 0.6,
+    "total": 5
+  },
+  "用": {
+    "dominant": "カイ",
+    "consistency": 0.2,
+    "total": 35
+  },
+  "卜": {
+    "dominant": "カ",
+    "consistency": 0.2308,
+    "total": 13
+  },
+  "反": {
+    "dominant": "ハン",
+    "consistency": 0.6667,
+    "total": 12
+  },
+  "加": {
+    "dominant": "カ",
+    "consistency": 1.0,
+    "total": 13
+  },
+  "家": {
+    "dominant": "カ",
+    "consistency": 0.6667,
+    "total": 3
+  },
+  "分": {
+    "dominant": "フン",
+    "consistency": 0.5263,
+    "total": 19
+  },
+  "刀": {
+    "dominant": "ショウ",
+    "consistency": 0.0924,
+    "total": 119
+  },
+  "哥": {
+    "dominant": "カ",
+    "consistency": 1.0,
+    "total": 3
+  },
+  "竹": {
+    "dominant": "セン",
+    "consistency": 0.0813,
+    "total": 123
+  },
+  "古": {
+    "dominant": "コ",
+    "consistency": 0.5455,
+    "total": 44
+  },
+  "固": {
+    "dominant": "コ",
+    "consistency": 0.6,
+    "total": 5
+  },
+  "化": {
+    "dominant": "カ",
+    "consistency": 0.5,
+    "total": 10
+  },
+  "華": {
+    "dominant": "カ",
+    "consistency": 0.75,
+    "total": 4
+  },
+  "文": {
+    "dominant": "ビン",
+    "consistency": 0.1818,
+    "total": 22
+  },
+  "我": {
+    "dominant": "ガ",
+    "consistency": 0.5556,
+    "total": 18
+  },
+  "由": {
+    "dominant": "チュウ",
+    "consistency": 0.1562,
+    "total": 32
+  },
+  "臣": {
+    "dominant": "ラン",
+    "consistency": 0.2895,
+    "total": 38
+  },
+  "牙": {
+    "dominant": "ガ",
+    "consistency": 0.4444,
+    "total": 9
+  },
+  "角": {
+    "dominant": "カイ",
+    "consistency": 0.3684,
+    "total": 19
+  },
+  "牛": {
+    "dominant": "カイ",
+    "consistency": 0.2069,
+    "total": 29
+  },
+  "鬼": {
+    "dominant": "カイ",
+    "consistency": 0.3182,
+    "total": 22
+  },
+  "回": {
+    "dominant": "リン",
+    "consistency": 0.2,
+    "total": 25
+  },
+  "夬": {
+    "dominant": "ケツ",
+    "consistency": 0.6667,
+    "total": 9
+  },
+  "母": {
+    "dominant": "カイ",
+    "consistency": 0.1667,
+    "total": 18
+  },
+  "毋": {
+    "dominant": "カイ",
+    "consistency": 0.1667,
+    "total": 18
+  },
+  "毎": {
+    "dominant": "カイ",
+    "consistency": 0.3,
+    "total": 10
+  },
+  "廾": {
+    "dominant": "ヘイ",
+    "consistency": 0.1667,
+    "total": 36
+  },
+  "己": {
+    "dominant": "ホウ",
+    "consistency": 0.2692,
+    "total": 26
+  },
+  "攵": {
+    "dominant": "ゴウ",
+    "consistency": 0.0708,
+    "total": 113
+  },
+  "戒": {
+    "dominant": "カイ",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "介": {
+    "dominant": "カイ",
+    "consistency": 1.0,
+    "total": 6
+  },
+  "比": {
+    "dominant": "ヒ",
+    "consistency": 0.2407,
+    "total": 54
+  },
+  "白": {
+    "dominant": "ハク",
+    "consistency": 0.1429,
+    "total": 112
+  },
+  "解": {
+    "dominant": "カイ",
+    "consistency": 1.0,
+    "total": 5
+  },
+  "皆": {
+    "dominant": "カイ",
+    "consistency": 1.0,
+    "total": 5
+  },
+  "豈": {
+    "dominant": "ガイ",
+    "consistency": 0.5714,
+    "total": 7
+  },
+  "亥": {
+    "dominant": "ガイ",
+    "consistency": 0.7778,
+    "total": 9
+  },
+  "去": {
+    "dominant": "キョウ",
+    "consistency": 0.2727,
+    "total": 11
+  },
+  "骨": {
+    "dominant": "ズイ",
+    "consistency": 0.1429,
+    "total": 14
+  },
+  "里": {
+    "dominant": "リ",
+    "consistency": 0.2564,
+    "total": 39
+  },
+  "香": {
+    "dominant": "ケイ",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "旦": {
+    "dominant": "タン",
+    "consistency": 0.375,
+    "total": 24
+  },
+  "亘": {
+    "dominant": "ケン",
+    "consistency": 0.4444,
+    "total": 9
+  },
+  "巾": {
+    "dominant": "シ",
+    "consistency": 0.1099,
+    "total": 91
+  },
+  "市": {
+    "dominant": "ハイ",
+    "consistency": 0.4286,
+    "total": 7
+  },
+  "赤": {
+    "dominant": "カク",
+    "consistency": 0.3333,
+    "total": 6
+  },
+  "子": {
+    "dominant": "フ",
+    "consistency": 0.1045,
+    "total": 67
+  },
+  "孑": {
+    "dominant": "カク",
+    "consistency": 0.3333,
+    "total": 12
+  },
+  "享": {
+    "dominant": "カク",
+    "consistency": 0.25,
+    "total": 16
+  },
+  "各": {
+    "dominant": "カク",
+    "consistency": 0.4286,
+    "total": 28
+  },
+  "売": {
+    "dominant": "カク",
+    "consistency": 0.25,
+    "total": 4
+  },
+  "乂": {
+    "dominant": "コウ",
+    "consistency": 0.4643,
+    "total": 28
+  },
+  "父": {
+    "dominant": "コウ",
+    "consistency": 0.619,
+    "total": 21
+  },
+  "交": {
+    "dominant": "コウ",
+    "consistency": 0.6875,
+    "total": 16
+  },
+  "丘": {
+    "dominant": "キュウ",
+    "consistency": 0.25,
+    "total": 8
+  },
+  "卦": {
+    "dominant": "カ",
+    "consistency": 0.3333,
+    "total": 3
+  },
+  "堅": {
+    "dominant": NaN,
+    "consistency": 0.25,
+    "total": 4
+  },
+  "毛": {
+    "dominant": NaN,
+    "consistency": 0.25,
+    "total": 16
+  },
+  "秋": {
+    "dominant": "シュウ",
+    "consistency": 0.9,
+    "total": 10
+  },
+  "臼": {
+    "dominant": "ゲイ",
+    "consistency": 0.15,
+    "total": 40
+  },
+  "害": {
+    "dominant": "カツ",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "舌": {
+    "dominant": "カツ",
+    "consistency": 0.4706,
+    "total": 17
+  },
+  "花": {
+    "dominant": NaN,
+    "consistency": 1.0,
+    "total": 4
+  },
+  "朱": {
+    "dominant": "シュ",
+    "consistency": 0.7778,
+    "total": 9
+  },
+  "兼": {
+    "dominant": "レン",
+    "consistency": 0.4,
+    "total": 10
+  },
+  "歯": {
+    "dominant": "ゴ",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "百": {
+    "dominant": "ハク",
+    "consistency": 0.2,
+    "total": 15
+  },
+  "予": {
+    "dominant": "ジュウ",
+    "consistency": 0.1923,
+    "total": 26
+  },
+  "矛": {
+    "dominant": "ジュウ",
+    "consistency": 0.2941,
+    "total": 17
+  },
+  "宣": {
+    "dominant": "ケン",
+    "consistency": 0.8,
+    "total": 5
+  },
+  "乙": {
+    "dominant": "キツ",
+    "consistency": 0.7143,
+    "total": 7
+  },
+  "乞": {
+    "dominant": "キツ",
+    "consistency": 0.8,
+    "total": 5
+  },
+  "干": {
+    "dominant": "カン",
+    "consistency": 0.4651,
+    "total": 43
+  },
+  "匹": {
+    "dominant": "カン",
+    "consistency": 0.2727,
+    "total": 11
+  },
+  "甚": {
+    "dominant": "カン",
+    "consistency": 0.3,
+    "total": 10
+  },
+  "奐": {
+    "dominant": "カン",
+    "consistency": 1.0,
+    "total": 4
+  },
+  "戊": {
+    "dominant": "カン",
+    "consistency": 0.3182,
+    "total": 22
+  },
+  "咸": {
+    "dominant": "カン",
+    "consistency": 0.7273,
+    "total": 11
+  },
+  "貫": {
+    "dominant": "カン",
+    "consistency": 0.6667,
+    "total": 3
+  },
+  "感": {
+    "dominant": "カン",
+    "consistency": 1.0,
+    "total": 3
+  },
+  "工": {
+    "dominant": "コウ",
+    "consistency": 0.2222,
+    "total": 90
+  },
+  "甘": {
+    "dominant": "カン",
+    "consistency": 0.5556,
+    "total": 18
+  },
+  "官": {
+    "dominant": "カン",
+    "consistency": 0.8333,
+    "total": 6
+  },
+  "間": {
+    "dominant": "カン",
+    "consistency": 1.0,
+    "total": 3
+  },
+  "舟": {
+    "dominant": "ハン",
+    "consistency": 0.1724,
+    "total": 29
+  },
+  "監": {
+    "dominant": "ラン",
+    "consistency": 0.6667,
+    "total": 9
+  },
+  "東": {
+    "dominant": "レン",
+    "consistency": 0.3,
+    "total": 10
+  },
+  "舍": {
+    "dominant": "カン",
+    "consistency": 0.3333,
+    "total": 3
+  },
+  "敢": {
+    "dominant": "ゲン",
+    "consistency": 0.4286,
+    "total": 7
+  },
+  "品": {
+    "dominant": "ソウ",
+    "consistency": 0.3846,
+    "total": 26
+  },
+  "彦": {
+    "dominant": "ガン",
+    "consistency": 0.75,
+    "total": 4
+  },
+  "原": {
+    "dominant": "ゲン",
+    "consistency": 0.6667,
+    "total": 3
+  },
+  "支": {
+    "dominant": "ギ",
+    "consistency": 0.25,
+    "total": 12
+  },
+  "其": {
+    "dominant": "キ",
+    "consistency": 0.619,
+    "total": 21
+  },
+  "喜": {
+    "dominant": "キ",
+    "consistency": 0.6667,
+    "total": 6
+  },
+  "布": {
+    "dominant": "キ",
+    "consistency": 0.8,
+    "total": 5
+  },
+  "丗": {
+    "dominant": "タイ",
+    "consistency": 0.6667,
+    "total": 3
+  },
+  "帚": {
+    "dominant": "キ",
+    "consistency": 0.3333,
+    "total": 6
+  },
+  "气": {
+    "dominant": "キ",
+    "consistency": 0.5,
+    "total": 6
+  },
+  "気": {
+    "dominant": "キ",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "斤": {
+    "dominant": "キン",
+    "consistency": 0.1346,
+    "total": 52
+  },
+  "光": {
+    "dominant": "コウ",
+    "consistency": 0.8889,
+    "total": 9
+  },
+  "義": {
+    "dominant": "ギ",
+    "consistency": 1.0,
+    "total": 5
+  },
+  "疋": {
+    "dominant": "ギ",
+    "consistency": 0.2143,
+    "total": 14
+  },
+  "疑": {
+    "dominant": "ギ",
+    "consistency": 0.4,
+    "total": 5
+  },
+  "氏": {
+    "dominant": "テイ",
+    "consistency": 0.4091,
+    "total": 22
+  },
+  "羊": {
+    "dominant": "セン",
+    "consistency": 0.1724,
+    "total": 29
+  },
+  "吉": {
+    "dominant": "ケツ",
+    "consistency": 0.3636,
+    "total": 11
+  },
+  "冏": {
+    "dominant": "ケイ",
+    "consistency": 0.2857,
+    "total": 7
+  },
+  "午": {
+    "dominant": "ショ",
+    "consistency": 0.25,
+    "total": 4
+  },
+  "屮": {
+    "dominant": "ケツ",
+    "consistency": 0.2381,
+    "total": 21
+  },
+  "求": {
+    "dominant": "キュウ",
+    "consistency": 1.0,
+    "total": 5
+  },
+  "久": {
+    "dominant": "キュウ",
+    "consistency": 0.6667,
+    "total": 6
+  },
+  "身": {
+    "dominant": NaN,
+    "consistency": 0.25,
+    "total": 12
+  },
+  "巨": {
+    "dominant": "キョ",
+    "consistency": 0.7778,
+    "total": 9
+  },
+  "処": {
+    "dominant": "キョ",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "手": {
+    "dominant": "キョ",
+    "consistency": 0.1429,
+    "total": 21
+  },
+  "足": {
+    "dominant": "ロ",
+    "consistency": 0.0571,
+    "total": 70
+  },
+  "居": {
+    "dominant": "キョ",
+    "consistency": 1.0,
+    "total": 5
+  },
+  "卸": {
+    "dominant": "ギョ",
+    "consistency": 0.3333,
+    "total": 3
+  },
+  "了": {
+    "dominant": "ジョウ",
+    "consistency": 0.2222,
+    "total": 18
+  },
+  "夭": {
+    "dominant": "キョウ",
+    "consistency": 0.5,
+    "total": 16
+  },
+  "呑": {
+    "dominant": "キョウ",
+    "consistency": 1.0,
+    "total": 8
+  },
+  "凶": {
+    "dominant": "キョウ",
+    "consistency": 0.3125,
+    "total": 16
+  },
+  "兄": {
+    "dominant": "キョウ",
+    "consistency": 0.4286,
+    "total": 7
+  },
+  "卯": {
+    "dominant": "リュウ",
+    "consistency": 0.25,
+    "total": 8
+  },
+  "竟": {
+    "dominant": "キョウ",
+    "consistency": 1.0,
+    "total": 3
+  },
+  "凡": {
+    "dominant": "キョウ",
+    "consistency": 0.3333,
+    "total": 12
+  },
+  "孝": {
+    "dominant": "キョウ",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "喬": {
+    "dominant": "キョウ",
+    "consistency": 1.0,
+    "total": 6
+  },
+  "匈": {
+    "dominant": "キョウ",
+    "consistency": 1.0,
+    "total": 3
+  },
+  "同": {
+    "dominant": "トウ",
+    "consistency": 0.5,
+    "total": 8
+  },
+  "郷": {
+    "dominant": "キョウ",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "句": {
+    "dominant": "ク",
+    "consistency": 0.4118,
+    "total": 17
+  },
+  "敬": {
+    "dominant": "ケイ",
+    "consistency": 0.6667,
+    "total": 3
+  },
+  "尭": {
+    "dominant": "ギョウ",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "帛": {
+    "dominant": "メン",
+    "consistency": 0.5,
+    "total": 4
+  },
+  "禁": {
+    "dominant": "キン",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "具": {
+    "dominant": "ク",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "禺": {
+    "dominant": "レイ",
+    "consistency": 0.3571,
+    "total": 14
+  },
+  "呉": {
+    "dominant": "グ",
+    "consistency": 0.5,
+    "total": 4
+  },
+  "即": {
+    "dominant": "シツ",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "川": {
+    "dominant": "シュウ",
+    "consistency": 0.3333,
+    "total": 9
+  },
+  "肖": {
+    "dominant": "ショウ",
+    "consistency": 0.8333,
+    "total": 18
+  },
+  "出": {
+    "dominant": "クツ",
+    "consistency": 0.4615,
+    "total": 13
+  },
+  "屈": {
+    "dominant": "クツ",
+    "consistency": 1.0,
+    "total": 5
+  },
+  "能": {
+    "dominant": "ヒ",
+    "consistency": 0.4,
+    "total": 5
+  },
+  "畏": {
+    "dominant": "ワイ",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "重": {
+    "dominant": "シュ",
+    "consistency": 0.2727,
+    "total": 11
+  },
+  "動": {
+    "dominant": "クン",
+    "consistency": 0.3333,
+    "total": 3
+  },
+  "君": {
+    "dominant": "グン",
+    "consistency": 0.5,
+    "total": 6
+  },
+  "系": {
+    "dominant": "ソン",
+    "consistency": 0.2857,
+    "total": 7
+  },
+  "刑": {
+    "dominant": "ケイ",
+    "consistency": 0.75,
+    "total": 4
+  },
+  "尤": {
+    "dominant": "シュウ",
+    "consistency": 0.3333,
+    "total": 9
+  },
+  "上": {
+    "dominant": "シュク",
+    "consistency": 0.3333,
+    "total": 15
+  },
+  "旨": {
+    "dominant": "シ",
+    "consistency": 0.5,
+    "total": 6
+  },
+  "斬": {
+    "dominant": "ザン",
+    "consistency": 0.4444,
+    "total": 9
+  },
+  "舛": {
+    "dominant": "リン",
+    "consistency": 0.3571,
+    "total": 14
+  },
+  "桀": {
+    "dominant": "ケツ",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "巻": {
+    "dominant": "ケン",
+    "consistency": 1.0,
+    "total": 3
+  },
+  "聿": {
+    "dominant": "ケン",
+    "consistency": 0.2857,
+    "total": 14
+  },
+  "建": {
+    "dominant": "ケン",
+    "consistency": 1.0,
+    "total": 3
+  },
+  "県": {
+    "dominant": "ケン",
+    "consistency": 0.6667,
+    "total": 3
+  },
+  "牟": {
+    "dominant": "ボウ",
+    "consistency": 0.6,
+    "total": 5
+  },
+  "南": {
+    "dominant": "ナン",
+    "consistency": 0.5,
+    "total": 4
+  },
+  "犬": {
+    "dominant": "ケン",
+    "consistency": 0.08,
+    "total": 25
+  },
+  "鹵": {
+    "dominant": "ケン",
+    "consistency": 0.25,
+    "total": 4
+  },
+  "玄": {
+    "dominant": "ゲン",
+    "consistency": 0.4545,
+    "total": 11
+  },
+  "乎": {
+    "dominant": "コ",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "瓜": {
+    "dominant": "コ",
+    "consistency": 0.6,
+    "total": 10
+  },
+  "胡": {
+    "dominant": "コ",
+    "consistency": 0.875,
+    "total": 8
+  },
+  "夸": {
+    "dominant": "コ",
+    "consistency": 0.875,
+    "total": 8
+  },
+  "彑": {
+    "dominant": "イ",
+    "consistency": 0.2143,
+    "total": 14
+  },
+  "五": {
+    "dominant": "ゴ",
+    "consistency": 0.8462,
+    "total": 13
+  },
+  "吾": {
+    "dominant": "ゴ",
+    "consistency": 0.8182,
+    "total": 11
+  },
+  "禽": {
+    "dominant": "キン",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "隻": {
+    "dominant": "カク",
+    "consistency": 0.8,
+    "total": 5
+  },
+  "幸": {
+    "dominant": "タツ",
+    "consistency": 0.2609,
+    "total": 23
+  },
+  "侯": {
+    "dominant": "コウ",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "亢": {
+    "dominant": "コウ",
+    "consistency": 1.0,
+    "total": 7
+  },
+  "后": {
+    "dominant": "コウ",
+    "consistency": 0.6667,
+    "total": 3
+  },
+  "隶": {
+    "dominant": "コウ",
+    "consistency": 0.375,
+    "total": 8
+  },
+  "空": {
+    "dominant": "コウ",
+    "consistency": 0.8333,
+    "total": 6
+  },
+  "丈": {
+    "dominant": "コウ",
+    "consistency": 0.3846,
+    "total": 13
+  },
+  "更": {
+    "dominant": "コウ",
+    "consistency": 0.5,
+    "total": 8
+  },
+  "冉": {
+    "dominant": "コウ",
+    "consistency": 0.6429,
+    "total": 14
+  },
+  "再": {
+    "dominant": "コウ",
+    "consistency": 0.9,
+    "total": 10
+  },
+  "冓": {
+    "dominant": "コウ",
+    "consistency": 1.0,
+    "total": 9
+  },
+  "告": {
+    "dominant": "コウ",
+    "consistency": 0.5,
+    "total": 6
+  },
+  "高": {
+    "dominant": "コウ",
+    "consistency": 0.7692,
+    "total": 13
+  },
+  "康": {
+    "dominant": "コウ",
+    "consistency": 1.0,
+    "total": 3
+  },
+  "岡": {
+    "dominant": "コウ",
+    "consistency": 0.8,
+    "total": 5
+  },
+  "耒": {
+    "dominant": "コウ",
+    "consistency": 0.1818,
+    "total": 11
+  },
+  "広": {
+    "dominant": "コウ",
+    "consistency": 1.0,
+    "total": 4
+  },
+  "豪": {
+    "dominant": "ゴウ",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "考": {
+    "dominant": "コウ",
+    "consistency": 0.6667,
+    "total": 3
+  },
+  "麦": {
+    "dominant": "キク",
+    "consistency": 0.3333,
+    "total": 3
+  },
+  "玉": {
+    "dominant": "ジュン",
+    "consistency": 0.2,
+    "total": 10
+  },
+  "鹿": {
+    "dominant": "ロク",
+    "consistency": 0.1667,
+    "total": 18
+  },
+  "瓦": {
+    "dominant": NaN,
+    "consistency": 0.3889,
+    "total": 18
+  },
+  "曽": {
+    "dominant": "ゾウ",
+    "consistency": 0.4286,
+    "total": 7
+  },
+  "入": {
+    "dominant": NaN,
+    "consistency": 0.2381,
+    "total": 21
+  },
+  "申": {
+    "dominant": "シン",
+    "consistency": 0.4167,
+    "total": 12
+  },
+  "昏": {
+    "dominant": "コン",
+    "consistency": 0.6667,
+    "total": 3
+  },
+  "困": {
+    "dominant": "コン",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "昆": {
+    "dominant": "コン",
+    "consistency": 0.8571,
+    "total": 7
+  },
+  "此": {
+    "dominant": "シ",
+    "consistency": 0.75,
+    "total": 12
+  },
+  "左": {
+    "dominant": "ダ",
+    "consistency": 0.4444,
+    "total": 9
+  },
+  "差": {
+    "dominant": "サ",
+    "consistency": 0.8889,
+    "total": 9
+  },
+  "少": {
+    "dominant": "ヒン",
+    "consistency": 0.2703,
+    "total": 37
+  },
+  "乍": {
+    "dominant": "サク",
+    "consistency": 0.5,
+    "total": 14
+  },
+  "沙": {
+    "dominant": "サ",
+    "consistency": 1.0,
+    "total": 4
+  },
+  "从": {
+    "dominant": "ケン",
+    "consistency": 0.1183,
+    "total": 93
+  },
+  "坐": {
+    "dominant": "ザ",
+    "consistency": 0.6667,
+    "total": 3
+  },
+  "責": {
+    "dominant": "セキ",
+    "consistency": 0.3,
+    "total": 10
+  },
+  "崔": {
+    "dominant": "サイ",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "取": {
+    "dominant": "シュ",
+    "consistency": 0.2308,
+    "total": 13
+  },
+  "采": {
+    "dominant": "サイ",
+    "consistency": 1.0,
+    "total": 4
+  },
+  "斉": {
+    "dominant": "セイ",
+    "consistency": 0.5,
+    "total": 4
+  },
+  "巛": {
+    "dominant": "ケイ",
+    "consistency": 0.3,
+    "total": 30
+  },
+  "卆": {
+    "dominant": "スイ",
+    "consistency": 0.5714,
+    "total": 7
+  },
+  "祭": {
+    "dominant": "サイ",
+    "consistency": 0.5,
+    "total": 4
+  },
+  "才": {
+    "dominant": "ザイ",
+    "consistency": 0.4,
+    "total": 5
+  },
+  "非": {
+    "dominant": "ヒ",
+    "consistency": 0.375,
+    "total": 40
+  },
+  "路": {
+    "dominant": "ロ",
+    "consistency": 1.0,
+    "total": 3
+  },
+  "冊": {
+    "dominant": "ヘン",
+    "consistency": 0.6667,
+    "total": 15
+  },
+  "朿": {
+    "dominant": "キョク",
+    "consistency": 0.4,
+    "total": 5
+  },
+  "昔": {
+    "dominant": "サク",
+    "consistency": 0.25,
+    "total": 8
+  },
+  "世": {
+    "dominant": "チョウ",
+    "consistency": 0.3077,
+    "total": 13
+  },
+  "是": {
+    "dominant": "テイ",
+    "consistency": 0.4,
+    "total": 5
+  },
+  "最": {
+    "dominant": "サツ",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "青": {
+    "dominant": "セイ",
+    "consistency": 0.7,
+    "total": 10
+  },
+  "散": {
+    "dominant": "サン",
+    "consistency": 0.6667,
+    "total": 3
+  },
+  "賛": {
+    "dominant": "サン",
+    "consistency": 0.8,
+    "total": 5
+  },
+  "歹": {
+    "dominant": "レツ",
+    "consistency": 0.1212,
+    "total": 33
+  },
+  "司": {
+    "dominant": "シ",
+    "consistency": 1.0,
+    "total": 7
+  },
+  "死": {
+    "dominant": "シ",
+    "consistency": 0.25,
+    "total": 4
+  },
+  "也": {
+    "dominant": "シ",
+    "consistency": 0.4444,
+    "total": 9
+  },
+  "師": {
+    "dominant": "シ",
+    "consistency": 1.0,
+    "total": 3
+  },
+  "寺": {
+    "dominant": "ジ",
+    "consistency": 0.6154,
+    "total": 13
+  },
+  "弋": {
+    "dominant": "タイ",
+    "consistency": 0.2174,
+    "total": 23
+  },
+  "式": {
+    "dominant": "シ",
+    "consistency": 0.3333,
+    "total": 3
+  },
+  "志": {
+    "dominant": "シ",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "易": {
+    "dominant": "エキ",
+    "consistency": 0.3333,
+    "total": 6
+  },
+  "爾": {
+    "dominant": "ビ",
+    "consistency": 0.5,
+    "total": 6
+  },
+  "時": {
+    "dominant": "ジ",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "六": {
+    "dominant": "ベイ",
+    "consistency": 0.375,
+    "total": 8
+  },
+  "下": {
+    "dominant": NaN,
+    "consistency": 0.7,
+    "total": 10
+  },
+  "丸": {
+    "dominant": "ジュク",
+    "consistency": 0.2143,
+    "total": 14
+  },
+  "釆": {
+    "dominant": "シツ",
+    "consistency": 0.1818,
+    "total": 11
+  },
+  "条": {
+    "dominant": "ジョウ",
+    "consistency": 0.6667,
+    "total": 3
+  },
+  "條": {
+    "dominant": "ショウ",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "思": {
+    "dominant": "サイ",
+    "consistency": 0.5714,
+    "total": 7
+  },
+  "之": {
+    "dominant": "シ",
+    "consistency": 0.25,
+    "total": 4
+  },
+  "舎": {
+    "dominant": "シャ",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "余": {
+    "dominant": "ジョ",
+    "consistency": 0.3333,
+    "total": 12
+  },
+  "者": {
+    "dominant": "チョ",
+    "consistency": 0.3448,
+    "total": 29
+  },
+  "射": {
+    "dominant": "シャ",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "庶": {
+    "dominant": "シャ",
+    "consistency": 0.75,
+    "total": 4
+  },
+  "勺": {
+    "dominant": "シャク",
+    "consistency": 0.5,
+    "total": 10
+  },
+  "右": {
+    "dominant": "ジャク",
+    "consistency": 0.25,
+    "total": 8
+  },
+  "叔": {
+    "dominant": "シュク",
+    "consistency": 0.5,
+    "total": 6
+  },
+  "若": {
+    "dominant": "トク",
+    "consistency": 0.5,
+    "total": 4
+  },
+  "而": {
+    "dominant": "ジュ",
+    "consistency": 0.3333,
+    "total": 21
+  },
+  "需": {
+    "dominant": "ジュ",
+    "consistency": 0.5455,
+    "total": 11
+  },
+  "受": {
+    "dominant": "ジュ",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "尢": {
+    "dominant": "シュウ",
+    "consistency": 0.3,
+    "total": 10
+  },
+  "攸": {
+    "dominant": "シュウ",
+    "consistency": 0.4,
+    "total": 5
+  },
+  "州": {
+    "dominant": "シュウ",
+    "consistency": 0.6667,
+    "total": 3
+  },
+  "冬": {
+    "dominant": "シュウ",
+    "consistency": 0.4286,
+    "total": 7
+  },
+  "血": {
+    "dominant": "ジク",
+    "consistency": 0.4,
+    "total": 5
+  },
+  "龍": {
+    "dominant": "ロウ",
+    "consistency": 0.6364,
+    "total": 11
+  },
+  "就": {
+    "dominant": "シュウ",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "周": {
+    "dominant": "チョウ",
+    "consistency": 0.8,
+    "total": 5
+  },
+  "充": {
+    "dominant": "ジュウ",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "佰": {
+    "dominant": "シュク",
+    "consistency": 0.75,
+    "total": 4
+  },
+  "宿": {
+    "dominant": "シュク",
+    "consistency": 0.6667,
+    "total": 3
+  },
+  "孰": {
+    "dominant": "ジュク",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "舜": {
+    "dominant": "シュン",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "盾": {
+    "dominant": "ジュン",
+    "consistency": 0.6667,
+    "total": 3
+  },
+  "屯": {
+    "dominant": "トン",
+    "consistency": 0.375,
+    "total": 8
+  },
+  "署": {
+    "dominant": "ショ",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "諸": {
+    "dominant": "ショ",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "如": {
+    "dominant": "ジョ",
+    "consistency": 1.0,
+    "total": 4
+  },
+  "助": {
+    "dominant": "ジョ",
+    "consistency": 0.5,
+    "total": 4
+  },
+  "昜": {
+    "dominant": "ヨウ",
+    "consistency": 0.3,
+    "total": 20
+  },
+  "員": {
+    "dominant": "イン",
+    "consistency": 0.4,
+    "total": 5
+  },
+  "劵": {
+    "dominant": "ショウ",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "昌": {
+    "dominant": "ショウ",
+    "consistency": 0.625,
+    "total": 8
+  },
+  "将": {
+    "dominant": "ショウ",
+    "consistency": 1.0,
+    "total": 3
+  },
+  "尚": {
+    "dominant": "ショウ",
+    "consistency": 0.8,
+    "total": 5
+  },
+  "早": {
+    "dominant": "ショウ",
+    "consistency": 0.4211,
+    "total": 19
+  },
+  "章": {
+    "dominant": "ショウ",
+    "consistency": 1.0,
+    "total": 7
+  },
+  "召": {
+    "dominant": "ショウ",
+    "consistency": 0.7143,
+    "total": 14
+  },
+  "升": {
+    "dominant": "ショウ",
+    "consistency": 0.6667,
+    "total": 3
+  },
+  "焦": {
+    "dominant": "ショウ",
+    "consistency": 1.0,
+    "total": 5
+  },
+  "歩": {
+    "dominant": "ヒン",
+    "consistency": 0.6667,
+    "total": 6
+  },
+  "相": {
+    "dominant": "ショウ",
+    "consistency": 0.5,
+    "total": 6
+  },
+  "正": {
+    "dominant": "ショウ",
+    "consistency": 0.3333,
+    "total": 12
+  },
+  "尓": {
+    "dominant": "デイ",
+    "consistency": 0.2857,
+    "total": 7
+  },
+  "庄": {
+    "dominant": "ショウ",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "童": {
+    "dominant": "トウ",
+    "consistency": 0.4444,
+    "total": 9
+  },
+  "成": {
+    "dominant": "セイ",
+    "consistency": 0.6,
+    "total": 5
+  },
+  "吊": {
+    "dominant": "ジョウ",
+    "consistency": 0.3333,
+    "total": 3
+  },
+  "憂": {
+    "dominant": "ジョウ",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "争": {
+    "dominant": "セイ",
+    "consistency": 0.5,
+    "total": 4
+  },
+  "丞": {
+    "dominant": "ジョウ",
+    "consistency": 1.0,
+    "total": 3
+  },
+  "定": {
+    "dominant": "ジョウ",
+    "consistency": 0.2857,
+    "total": 7
+  },
+  "禹": {
+    "dominant": "ショク",
+    "consistency": 0.3333,
+    "total": 3
+  },
+  "直": {
+    "dominant": "ショク",
+    "consistency": 0.5,
+    "total": 8
+  },
+  "蜀": {
+    "dominant": "ショク",
+    "consistency": 0.4444,
+    "total": 9
+  },
+  "辰": {
+    "dominant": "シン",
+    "consistency": 0.4737,
+    "total": 19
+  },
+  "番": {
+    "dominant": "ハン",
+    "consistency": 0.5882,
+    "total": 17
+  },
+  "真": {
+    "dominant": "シン",
+    "consistency": 0.5,
+    "total": 6
+  },
+  "秦": {
+    "dominant": "シン",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "新": {
+    "dominant": "シン",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "刃": {
+    "dominant": "ニン",
+    "consistency": 0.5,
+    "total": 6
+  },
+  "垂": {
+    "dominant": "スイ",
+    "consistency": 0.6667,
+    "total": 6
+  },
+  "卒": {
+    "dominant": "スイ",
+    "consistency": 0.5833,
+    "total": 12
+  },
+  "宗": {
+    "dominant": "ソウ",
+    "consistency": 0.6667,
+    "total": 6
+  },
+  "芻": {
+    "dominant": "シュ",
+    "consistency": 0.6,
+    "total": 5
+  },
+  "皮": {
+    "dominant": "ハ",
+    "consistency": 0.4545,
+    "total": 22
+  },
+  "登": {
+    "dominant": "トウ",
+    "consistency": 0.7143,
+    "total": 7
+  },
+  "習": {
+    "dominant": "シュウ",
+    "consistency": 0.6667,
+    "total": 3
+  },
+  "束": {
+    "dominant": "ラン",
+    "consistency": 0.1818,
+    "total": 33
+  },
+  "妻": {
+    "dominant": "セイ",
+    "consistency": 0.6667,
+    "total": 6
+  },
+  "敕": {
+    "dominant": "セイ",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "制": {
+    "dominant": "セイ",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "折": {
+    "dominant": "セイ",
+    "consistency": 0.3333,
+    "total": 6
+  },
+  "星": {
+    "dominant": "ショウ",
+    "consistency": 0.6,
+    "total": 5
+  },
+  "厄": {
+    "dominant": "ヤク",
+    "consistency": 0.2857,
+    "total": 7
+  },
+  "危": {
+    "dominant": "キ",
+    "consistency": 0.6667,
+    "total": 3
+  },
+  "亦": {
+    "dominant": "セキ",
+    "consistency": 0.25,
+    "total": 8
+  },
+  "妾": {
+    "dominant": "セツ",
+    "consistency": 0.6667,
+    "total": 3
+  },
+  "切": {
+    "dominant": "セツ",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "単": {
+    "dominant": "セン",
+    "consistency": 0.25,
+    "total": 8
+  },
+  "巽": {
+    "dominant": "サン",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "全": {
+    "dominant": "セン",
+    "consistency": 1.0,
+    "total": 5
+  },
+  "先": {
+    "dominant": "セン",
+    "consistency": 0.625,
+    "total": 8
+  },
+  "替": {
+    "dominant": "セン",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "前": {
+    "dominant": "セン",
+    "consistency": 1.0,
+    "total": 6
+  },
+  "泉": {
+    "dominant": "セン",
+    "consistency": 0.75,
+    "total": 4
+  },
+  "善": {
+    "dominant": "ゼン",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "厘": {
+    "dominant": NaN,
+    "consistency": 0.75,
+    "total": 4
+  },
+  "朔": {
+    "dominant": "ス",
+    "consistency": 0.4,
+    "total": 5
+  },
+  "斥": {
+    "dominant": "ソ",
+    "consistency": 0.5,
+    "total": 4
+  },
+  "倉": {
+    "dominant": "ソウ",
+    "consistency": 1.0,
+    "total": 10
+  },
+  "果": {
+    "dominant": "ソウ",
+    "consistency": 0.4444,
+    "total": 9
+  },
+  "曹": {
+    "dominant": "ソウ",
+    "consistency": 1.0,
+    "total": 5
+  },
+  "壮": {
+    "dominant": "ソウ",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "象": {
+    "dominant": "ゾウ",
+    "consistency": 0.3333,
+    "total": 3
+  },
+  "蔵": {
+    "dominant": "ゾウ",
+    "consistency": 1.0,
+    "total": 4
+  },
+  "則": {
+    "dominant": "ソク",
+    "consistency": 0.6,
+    "total": 5
+  },
+  "谷": {
+    "dominant": "ヨウ",
+    "consistency": 0.2857,
+    "total": 21
+  },
+  "戎": {
+    "dominant": "ゾク",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "太": {
+    "dominant": "タ",
+    "consistency": 0.3333,
+    "total": 3
+  },
+  "它": {
+    "dominant": "ダ",
+    "consistency": 0.5556,
+    "total": 9
+  },
+  "本": {
+    "dominant": "タイ",
+    "consistency": 0.5,
+    "total": 4
+  },
+  "代": {
+    "dominant": "タイ",
+    "consistency": 0.8333,
+    "total": 6
+  },
+  "異": {
+    "dominant": "キ",
+    "consistency": 0.4,
+    "total": 5
+  },
+  "退": {
+    "dominant": "タイ",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "黒": {
+    "dominant": "モク",
+    "consistency": 0.4,
+    "total": 5
+  },
+  "竜": {
+    "dominant": "ロウ",
+    "consistency": 0.6667,
+    "total": 3
+  },
+  "朋": {
+    "dominant": "ホウ",
+    "consistency": 0.875,
+    "total": 8
+  },
+  "雪": {
+    "dominant": NaN,
+    "consistency": 0.75,
+    "total": 4
+  },
+  "炎": {
+    "dominant": "タン",
+    "consistency": 0.8333,
+    "total": 6
+  },
+  "延": {
+    "dominant": "エン",
+    "consistency": 0.5,
+    "total": 6
+  },
+  "段": {
+    "dominant": "タン",
+    "consistency": 0.5,
+    "total": 4
+  },
+  "亶": {
+    "dominant": "セン",
+    "consistency": 0.6,
+    "total": 5
+  },
+  "知": {
+    "dominant": "チ",
+    "consistency": 0.6667,
+    "total": 6
+  },
+  "失": {
+    "dominant": "テツ",
+    "consistency": 0.4286,
+    "total": 7
+  },
+  "寿": {
+    "dominant": "トウ",
+    "consistency": 0.6667,
+    "total": 6
+  },
+  "長": {
+    "dominant": "チョウ",
+    "consistency": 1.0,
+    "total": 6
+  },
+  "兆": {
+    "dominant": "チョウ",
+    "consistency": 0.6364,
+    "total": 11
+  },
+  "朝": {
+    "dominant": "チョウ",
+    "consistency": 0.6667,
+    "total": 3
+  },
+  "片": {
+    "dominant": "ショウ",
+    "consistency": 0.3636,
+    "total": 11
+  },
+  "追": {
+    "dominant": "ツイ",
+    "consistency": 1.0,
+    "total": 3
+  },
+  "甬": {
+    "dominant": "ヨウ",
+    "consistency": 0.3333,
+    "total": 9
+  },
+  "国": {
+    "dominant": "カク",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "双": {
+    "dominant": "テツ",
+    "consistency": 0.4,
+    "total": 5
+  },
+  "咢": {
+    "dominant": "ガク",
+    "consistency": 1.0,
+    "total": 9
+  },
+  "春": {
+    "dominant": "シュン",
+    "consistency": 0.75,
+    "total": 4
+  },
+  "平": {
+    "dominant": "ヘイ",
+    "consistency": 0.3333,
+    "total": 9
+  },
+  "亭": {
+    "dominant": "テイ",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "貞": {
+    "dominant": "テイ",
+    "consistency": 1.0,
+    "total": 5
+  },
+  "廷": {
+    "dominant": "テイ",
+    "consistency": 1.0,
+    "total": 5
+  },
+  "呈": {
+    "dominant": "テイ",
+    "consistency": 0.6667,
+    "total": 3
+  },
+  "帝": {
+    "dominant": "テイ",
+    "consistency": 0.5714,
+    "total": 7
+  },
+  "奠": {
+    "dominant": "テキ",
+    "consistency": 0.6667,
+    "total": 3
+  },
+  "尼": {
+    "dominant": "デイ",
+    "consistency": 0.25,
+    "total": 4
+  },
+  "育": {
+    "dominant": "テツ",
+    "consistency": 1.0,
+    "total": 3
+  },
+  "廛": {
+    "dominant": "テン",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "展": {
+    "dominant": "デン",
+    "consistency": 0.6,
+    "total": 5
+  },
+  "殿": {
+    "dominant": "デン",
+    "consistency": 1.0,
+    "total": 3
+  },
+  "度": {
+    "dominant": "ト",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "奴": {
+    "dominant": "ド",
+    "consistency": 0.875,
+    "total": 8
+  },
+  "到": {
+    "dominant": "トウ",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "唐": {
+    "dominant": "トウ",
+    "consistency": 1.0,
+    "total": 3
+  },
+  "卓": {
+    "dominant": "トウ",
+    "consistency": 0.4286,
+    "total": 7
+  },
+  "缶": {
+    "dominant": "ヨウ",
+    "consistency": 0.3333,
+    "total": 21
+  },
+  "湯": {
+    "dominant": "トウ",
+    "consistency": 1.0,
+    "total": 3
+  },
+  "沓": {
+    "dominant": "トウ",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "秀": {
+    "dominant": "ユウ",
+    "consistency": 0.4,
+    "total": 5
+  },
+  "首": {
+    "dominant": "ドウ",
+    "consistency": 0.5,
+    "total": 4
+  },
+  "雲": {
+    "dominant": "タン",
+    "consistency": 0.3333,
+    "total": 6
+  },
+  "孚": {
+    "dominant": "フ",
+    "consistency": 0.6667,
+    "total": 9
+  },
+  "韭": {
+    "dominant": "セン",
+    "consistency": 0.6,
+    "total": 15
+  },
+  "忍": {
+    "dominant": "ニン",
+    "consistency": 0.6667,
+    "total": 3
+  },
+  "匆": {
+    "dominant": "ソウ",
+    "consistency": 0.75,
+    "total": 4
+  },
+  "苗": {
+    "dominant": "ビョウ",
+    "consistency": 1.0,
+    "total": 3
+  },
+  "念": {
+    "dominant": "ネン",
+    "consistency": 0.6,
+    "total": 5
+  },
+  "然": {
+    "dominant": "デン",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "農": {
+    "dominant": "ノウ",
+    "consistency": 1.0,
+    "total": 3
+  },
+  "内": {
+    "dominant": NaN,
+    "consistency": 0.5,
+    "total": 4
+  },
+  "叉": {
+    "dominant": "サ",
+    "consistency": 0.6,
+    "total": 5
+  },
+  "波": {
+    "dominant": "ハ",
+    "consistency": 0.6667,
+    "total": 3
+  },
+  "発": {
+    "dominant": "ハツ",
+    "consistency": 0.6667,
+    "total": 3
+  },
+  "不": {
+    "dominant": "ハイ",
+    "consistency": 0.5,
+    "total": 10
+  },
+  "卑": {
+    "dominant": "ハイ",
+    "consistency": 0.5,
+    "total": 4
+  },
+  "某": {
+    "dominant": "バイ",
+    "consistency": 0.75,
+    "total": 4
+  },
+  "引": {
+    "dominant": "イン",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "専": {
+    "dominant": "ハク",
+    "consistency": 0.4,
+    "total": 5
+  },
+  "暴": {
+    "dominant": "バク",
+    "consistency": 1.0,
+    "total": 3
+  },
+  "莫": {
+    "dominant": "バク",
+    "consistency": 0.5,
+    "total": 12
+  },
+  "盧": {
+    "dominant": "ロ",
+    "consistency": 0.8333,
+    "total": 12
+  },
+  "髟": {
+    "dominant": "ハツ",
+    "consistency": 0.1111,
+    "total": 18
+  },
+  "伐": {
+    "dominant": "バツ",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "半": {
+    "dominant": "ハン",
+    "consistency": 1.0,
+    "total": 7
+  },
+  "般": {
+    "dominant": "ハン",
+    "consistency": 0.8,
+    "total": 5
+  },
+  "必": {
+    "dominant": "ミツ",
+    "consistency": 0.4444,
+    "total": 9
+  },
+  "弗": {
+    "dominant": "フツ",
+    "consistency": 0.625,
+    "total": 8
+  },
+  "辟": {
+    "dominant": "ヘキ",
+    "consistency": 0.5556,
+    "total": 18
+  },
+  "丑": {
+    "dominant": "チュウ",
+    "consistency": 0.3333,
+    "total": 6
+  },
+  "虎": {
+    "dominant": "ヒョウ",
+    "consistency": 0.1429,
+    "total": 7
+  },
+  "票": {
+    "dominant": "ヒョウ",
+    "consistency": 1.0,
+    "total": 11
+  },
+  "豸": {
+    "dominant": "バク",
+    "consistency": 0.1538,
+    "total": 13
+  },
+  "丙": {
+    "dominant": "ビョウ",
+    "consistency": 0.2,
+    "total": 5
+  },
+  "兵": {
+    "dominant": "ビョウ",
+    "consistency": 0.3333,
+    "total": 3
+  },
+  "耆": {
+    "dominant": "シ",
+    "consistency": 1.0,
+    "total": 3
+  },
+  "武": {
+    "dominant": "ヒン",
+    "consistency": 0.2,
+    "total": 5
+  },
+  "頻": {
+    "dominant": "ヒン",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "并": {
+    "dominant": "ヘイ",
+    "consistency": 0.3636,
+    "total": 11
+  },
+  "付": {
+    "dominant": "フ",
+    "consistency": 0.9231,
+    "total": 13
+  },
+  "並": {
+    "dominant": "フ",
+    "consistency": 0.6667,
+    "total": 3
+  },
+  "府": {
+    "dominant": "フ",
+    "consistency": 0.75,
+    "total": 4
+  },
+  "肉": {
+    "dominant": "フ",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "無": {
+    "dominant": "ブ",
+    "consistency": 1.0,
+    "total": 5
+  },
+  "風": {
+    "dominant": "フウ",
+    "consistency": 0.2727,
+    "total": 11
+  },
+  "復": {
+    "dominant": "フク",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "爿": {
+    "dominant": "ショウ",
+    "consistency": 0.5455,
+    "total": 22
+  },
+  "賁": {
+    "dominant": "フン",
+    "consistency": 1.0,
+    "total": 4
+  },
+  "敝": {
+    "dominant": "ヘイ",
+    "consistency": 0.6667,
+    "total": 6
+  },
+  "戍": {
+    "dominant": "ベツ",
+    "consistency": 1.0,
+    "total": 3
+  },
+  "扁": {
+    "dominant": "ヘン",
+    "consistency": 1.0,
+    "total": 9
+  },
+  "呆": {
+    "dominant": "ホ",
+    "consistency": 0.6667,
+    "total": 6
+  },
+  "奉": {
+    "dominant": "ボウ",
+    "consistency": 0.6667,
+    "total": 3
+  },
+  "包": {
+    "dominant": "ホウ",
+    "consistency": 1.0,
+    "total": 6
+  },
+  "明": {
+    "dominant": "ホウ",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "保": {
+    "dominant": "ホ",
+    "consistency": 0.75,
+    "total": 4
+  },
+  "匸": {
+    "dominant": "ボウ",
+    "consistency": 0.4545,
+    "total": 11
+  },
+  "旁": {
+    "dominant": "ホウ",
+    "consistency": 0.5714,
+    "total": 7
+  },
+  "冒": {
+    "dominant": "ボウ",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "彭": {
+    "dominant": "ボウ",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "皃": {
+    "dominant": "ボウ",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "孛": {
+    "dominant": "ボツ",
+    "consistency": 0.6667,
+    "total": 3
+  },
+  "晃": {
+    "dominant": "コウ",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "卉": {
+    "dominant": "ホン",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "麻": {
+    "dominant": "マ",
+    "consistency": 0.4167,
+    "total": 12
+  },
+  "未": {
+    "dominant": "マイ",
+    "consistency": 0.2857,
+    "total": 7
+  },
+  "末": {
+    "dominant": "マツ",
+    "consistency": 0.8,
+    "total": 5
+  },
+  "奏": {
+    "dominant": "ソウ",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "衰": {
+    "dominant": "サ",
+    "consistency": 0.75,
+    "total": 4
+  },
+  "民": {
+    "dominant": "ビン",
+    "consistency": 0.6667,
+    "total": 6
+  },
+  "胥": {
+    "dominant": "セイ",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "名": {
+    "dominant": "メイ",
+    "consistency": 0.6667,
+    "total": 3
+  },
+  "面": {
+    "dominant": "ベン",
+    "consistency": 0.5,
+    "total": 6
+  },
+  "罔": {
+    "dominant": "モウ",
+    "consistency": 0.6667,
+    "total": 3
+  },
+  "耶": {
+    "dominant": "ヤ",
+    "consistency": 1.0,
+    "total": 3
+  },
+  "楽": {
+    "dominant": "ヤク",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "勇": {
+    "dominant": "ユウ",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "鬲": {
+    "dominant": "ユウ",
+    "consistency": 0.3333,
+    "total": 3
+  },
+  "雍": {
+    "dominant": "ヨウ",
+    "consistency": 1.0,
+    "total": 3
+  },
+  "容": {
+    "dominant": "ヨウ",
+    "consistency": 0.8333,
+    "total": 6
+  },
+  "羔": {
+    "dominant": "カン",
+    "consistency": 0.6667,
+    "total": 3
+  },
+  "維": {
+    "dominant": "ラ",
+    "consistency": 1.0,
+    "total": 4
+  },
+  "累": {
+    "dominant": "ラ",
+    "consistency": 0.5,
+    "total": 4
+  },
+  "利": {
+    "dominant": "リ",
+    "consistency": 0.875,
+    "total": 8
+  },
+  "留": {
+    "dominant": "リュウ",
+    "consistency": 0.875,
+    "total": 8
+  },
+  "鼡": {
+    "dominant": "リョウ",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "令": {
+    "dominant": "レイ",
+    "consistency": 0.7059,
+    "total": 17
+  },
+  "侖": {
+    "dominant": "リン",
+    "consistency": 0.625,
+    "total": 8
+  },
+  "戻": {
+    "dominant": "レイ",
+    "consistency": 0.75,
+    "total": 4
+  },
+  "列": {
+    "dominant": "レツ",
+    "consistency": 0.75,
+    "total": 4
+  },
+  "連": {
+    "dominant": "レン",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "廉": {
+    "dominant": "レン",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "丱": {
+    "dominant": "レン",
+    "consistency": 0.3333,
+    "total": 3
+  },
+  "魯": {
+    "dominant": "ロ",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "郎": {
+    "dominant": "ロウ",
+    "consistency": 0.6667,
+    "total": 3
+  },
+  "宅": {
+    "dominant": "タ",
+    "consistency": 1.0,
+    "total": 3
+  },
+  "蒿": {
+    "dominant": "コウ",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "宛": {
+    "dominant": "エン",
+    "consistency": 0.5714,
+    "total": 7
+  },
+  "刄": {
+    "dominant": "ジン",
+    "consistency": 0.3333,
+    "total": 6
+  },
+  "盡": {
+    "dominant": "ジン",
+    "consistency": 0.75,
+    "total": 4
+  },
+  "兒": {
+    "dominant": "ゲイ",
+    "consistency": 0.75,
+    "total": 8
+  },
+  "円": {
+    "dominant": "セイ",
+    "consistency": 0.6667,
+    "total": 6
+  },
+  "兩": {
+    "dominant": "リョウ",
+    "consistency": 0.5,
+    "total": 8
+  },
+  "曷": {
+    "dominant": "カツ",
+    "consistency": 0.3333,
+    "total": 12
+  },
+  "怱": {
+    "dominant": "ス",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "兪": {
+    "dominant": "ユ",
+    "consistency": 0.8333,
+    "total": 12
+  },
+  "區": {
+    "dominant": "オウ",
+    "consistency": 0.4545,
+    "total": 11
+  },
+  "敖": {
+    "dominant": "ゴウ",
+    "consistency": 0.875,
+    "total": 8
+  },
+  "巳": {
+    "dominant": "ホウ",
+    "consistency": 0.5714,
+    "total": 21
+  },
+  "專": {
+    "dominant": "セン",
+    "consistency": 0.3333,
+    "total": 9
+  },
+  "婁": {
+    "dominant": "ル",
+    "consistency": 0.4615,
+    "total": 13
+  },
+  "堯": {
+    "dominant": "ギョウ",
+    "consistency": 0.3125,
+    "total": 16
+  },
+  "僉": {
+    "dominant": "ケン",
+    "consistency": 0.6429,
+    "total": 14
+  },
+  "雋": {
+    "dominant": "シュン",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "齊": {
+    "dominant": "セイ",
+    "consistency": 0.625,
+    "total": 8
+  },
+  "吋": {
+    "dominant": "チュウ",
+    "consistency": 0.5556,
+    "total": 9
+  },
+  "壽": {
+    "dominant": "チュウ",
+    "consistency": 0.625,
+    "total": 8
+  },
+  "麗": {
+    "dominant": "レイ",
+    "consistency": 0.3333,
+    "total": 3
+  },
+  "嚴": {
+    "dominant": "ゲン",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "克": {
+    "dominant": "コク",
+    "consistency": 0.6667,
+    "total": 3
+  },
+  "兔": {
+    "dominant": "エン",
+    "consistency": 0.4,
+    "total": 5
+  },
+  "攴": {
+    "dominant": "コウ",
+    "consistency": 0.3333,
+    "total": 3
+  },
+  "幕": {
+    "dominant": "ベキ",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "互": {
+    "dominant": "ゴ",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "皇": {
+    "dominant": "コウ",
+    "consistency": 0.6364,
+    "total": 11
+  },
+  "齋": {
+    "dominant": "ザイ",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "熏": {
+    "dominant": "クン",
+    "consistency": 1.0,
+    "total": 3
+  },
+  "萬": {
+    "dominant": "レイ",
+    "consistency": 0.8333,
+    "total": 6
+  },
+  "斯": {
+    "dominant": "シ",
+    "consistency": 0.75,
+    "total": 4
+  },
+  "敞": {
+    "dominant": "ショウ",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "只": {
+    "dominant": "シ",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "希": {
+    "dominant": "キ",
+    "consistency": 1.0,
+    "total": 3
+  },
+  "於": {
+    "dominant": "オ",
+    "consistency": 0.5,
+    "total": 4
+  },
+  "彖": {
+    "dominant": "エン",
+    "consistency": 0.3333,
+    "total": 6
+  },
+  "剌": {
+    "dominant": "ラツ",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "烏": {
+    "dominant": "オ",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "眞": {
+    "dominant": "シン",
+    "consistency": 0.625,
+    "total": 8
+  },
+  "壹": {
+    "dominant": "イ",
+    "consistency": 0.5,
+    "total": 4
+  },
+  "肅": {
+    "dominant": "ショウ",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "巫": {
+    "dominant": "セイ",
+    "consistency": 0.3333,
+    "total": 6
+  },
+  "寧": {
+    "dominant": "ネイ",
+    "consistency": 0.6,
+    "total": 5
+  },
+  "鼻": {
+    "dominant": "ビ",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "劉": {
+    "dominant": "リュウ",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "燕": {
+    "dominant": "エン",
+    "consistency": 1.0,
+    "total": 3
+  },
+  "向": {
+    "dominant": "キョウ",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "嬰": {
+    "dominant": "オウ",
+    "consistency": 0.6,
+    "total": 5
+  },
+  "聶": {
+    "dominant": "ショウ",
+    "consistency": 0.5,
+    "total": 6
+  },
+  "屬": {
+    "dominant": "ショク",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "齒": {
+    "dominant": "ケツ",
+    "consistency": 0.1538,
+    "total": 13
+  },
+  "四": {
+    "dominant": "トク",
+    "consistency": 0.25,
+    "total": 12
+  },
+  "卷": {
+    "dominant": "ケン",
+    "consistency": 1.0,
+    "total": 4
+  },
+  "亞": {
+    "dominant": "ア",
+    "consistency": 0.6667,
+    "total": 6
+  },
+  "嗇": {
+    "dominant": "ショウ",
+    "consistency": 0.8333,
+    "total": 6
+  },
+  "著": {
+    "dominant": "チョ",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "厭": {
+    "dominant": "アツ",
+    "consistency": 0.3333,
+    "total": 3
+  },
+  "廣": {
+    "dominant": "コウ",
+    "consistency": 0.8,
+    "total": 5
+  },
+  "曇": {
+    "dominant": "タン",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "襄": {
+    "dominant": "ジョウ",
+    "consistency": 0.8889,
+    "total": 9
+  },
+  "壯": {
+    "dominant": "ジョウ",
+    "consistency": 0.5,
+    "total": 4
+  },
+  "將": {
+    "dominant": "ショウ",
+    "consistency": 1.0,
+    "total": 4
+  },
+  "夷": {
+    "dominant": "イ",
+    "consistency": 0.75,
+    "total": 4
+  },
+  "那": {
+    "dominant": "ダ",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "阿": {
+    "dominant": "ア",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "眉": {
+    "dominant": "ビ",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "囚": {
+    "dominant": "ウン",
+    "consistency": 0.3636,
+    "total": 11
+  },
+  "叟": {
+    "dominant": "ソウ",
+    "consistency": 1.0,
+    "total": 3
+  },
+  "焉": {
+    "dominant": "エン",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "常": {
+    "dominant": "ショウ",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "單": {
+    "dominant": "タン",
+    "consistency": 0.4444,
+    "total": 9
+  },
+  "賓": {
+    "dominant": "ヒン",
+    "consistency": 0.8571,
+    "total": 7
+  },
+  "夾": {
+    "dominant": "キョウ",
+    "consistency": 0.875,
+    "total": 8
+  },
+  "爭": {
+    "dominant": "ソウ",
+    "consistency": 0.6667,
+    "total": 6
+  },
+  "隆": {
+    "dominant": "リュウ",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "與": {
+    "dominant": "キョ",
+    "consistency": 0.4286,
+    "total": 7
+  },
+  "絲": {
+    "dominant": "ラン",
+    "consistency": 0.5,
+    "total": 6
+  },
+  "冥": {
+    "dominant": "ミョウ",
+    "consistency": 0.3333,
+    "total": 6
+  },
+  "國": {
+    "dominant": "カク",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "發": {
+    "dominant": "ハイ",
+    "consistency": 0.6667,
+    "total": 3
+  },
+  "稟": {
+    "dominant": "リン",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "邑": {
+    "dominant": "ヨウ",
+    "consistency": 0.6667,
+    "total": 3
+  },
+  "來": {
+    "dominant": "ライ",
+    "consistency": 0.5,
+    "total": 4
+  },
+  "休": {
+    "dominant": NaN,
+    "consistency": 0.5,
+    "total": 4
+  },
+  "旱": {
+    "dominant": "カン",
+    "consistency": 1.0,
+    "total": 5
+  },
+  "栗": {
+    "dominant": "リツ",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "參": {
+    "dominant": "サン",
+    "consistency": 0.4,
+    "total": 5
+  },
+  "從": {
+    "dominant": "ショウ",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "奧": {
+    "dominant": "オウ",
+    "consistency": 0.5,
+    "total": 4
+  },
+  "雁": {
+    "dominant": NaN,
+    "consistency": 0.6667,
+    "total": 3
+  },
+  "菫": {
+    "dominant": "キン",
+    "consistency": 0.8,
+    "total": 5
+  },
+  "瞿": {
+    "dominant": "ク",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "幼": {
+    "dominant": "ヨウ",
+    "consistency": 0.6667,
+    "total": 3
+  },
+  "存": {
+    "dominant": "セン",
+    "consistency": 0.6667,
+    "total": 3
+  },
+  "柬": {
+    "dominant": "ラン",
+    "consistency": 0.4444,
+    "total": 9
+  },
+  "柔": {
+    "dominant": "ジュウ",
+    "consistency": 1.0,
+    "total": 4
+  },
+  "島": {
+    "dominant": "トウ",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "執": {
+    "dominant": "シ",
+    "consistency": 0.75,
+    "total": 4
+  },
+  "勞": {
+    "dominant": "ロウ",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "達": {
+    "dominant": "タツ",
+    "consistency": 1.0,
+    "total": 4
+  },
+  "雷": {
+    "dominant": "ライ",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "臺": {
+    "dominant": "ダイ",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "覽": {
+    "dominant": "ラン",
+    "consistency": 1.0,
+    "total": 3
+  },
+  "鄭": {
+    "dominant": "テキ",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "樂": {
+    "dominant": "レキ",
+    "consistency": 0.4286,
+    "total": 7
+  },
+  "矍": {
+    "dominant": "カク",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "英": {
+    "dominant": "エイ",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "敦": {
+    "dominant": "トン",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "愛": {
+    "dominant": "アイ",
+    "consistency": 1.0,
+    "total": 3
+  },
+  "蒙": {
+    "dominant": "モウ",
+    "consistency": 1.0,
+    "total": 6
+  },
+  "羲": {
+    "dominant": "ギ",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "會": {
+    "dominant": "カイ",
+    "consistency": 0.6667,
+    "total": 6
+  },
+  "匡": {
+    "dominant": "キョウ",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "戔": {
+    "dominant": "セン",
+    "consistency": 0.75,
+    "total": 12
+  },
+  "典": {
+    "dominant": NaN,
+    "consistency": 0.5,
+    "total": 2
+  },
+  "室": {
+    "dominant": NaN,
+    "consistency": 0.5,
+    "total": 2
+  },
+  "貢": {
+    "dominant": "コウ",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "戚": {
+    "dominant": "セキ",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "擧": {
+    "dominant": "キョ",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "乏": {
+    "dominant": "ハン",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "松": {
+    "dominant": "ショウ",
+    "consistency": 0.6667,
+    "total": 3
+  },
+  "析": {
+    "dominant": "セキ",
+    "consistency": 0.6667,
+    "total": 3
+  },
+  "眇": {
+    "dominant": "ビョウ",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "奚": {
+    "dominant": "ケイ",
+    "consistency": 0.75,
+    "total": 4
+  },
+  "法": {
+    "dominant": "コウ",
+    "consistency": 0.6667,
+    "total": 3
+  },
+  "盍": {
+    "dominant": "コウ",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "宰": {
+    "dominant": "シ",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "辱": {
+    "dominant": "ジョク",
+    "consistency": 0.6,
+    "total": 5
+  },
+  "帶": {
+    "dominant": "タイ",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "尋": {
+    "dominant": "ジン",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "覃": {
+    "dominant": "タン",
+    "consistency": 0.4,
+    "total": 5
+  },
+  "養": {
+    "dominant": "ヨウ",
+    "consistency": 0.6667,
+    "total": 3
+  },
+  "慮": {
+    "dominant": "ロ",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "闌": {
+    "dominant": "ラン",
+    "consistency": 1.0,
+    "total": 3
+  },
+  "遂": {
+    "dominant": "スイ",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "賣": {
+    "dominant": "トク",
+    "consistency": 0.375,
+    "total": 8
+  },
+  "厥": {
+    "dominant": "ケツ",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "虐": {
+    "dominant": "ギャク",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "脊": {
+    "dominant": "ジャク",
+    "consistency": 0.3333,
+    "total": 3
+  },
+  "鮮": {
+    "dominant": "セン",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "兮": {
+    "dominant": "ケイ",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "堂": {
+    "dominant": "トウ",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "鼓": {
+    "dominant": "コ",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "當": {
+    "dominant": "トウ",
+    "consistency": 1.0,
+    "total": 4
+  },
+  "豊": {
+    "dominant": "タイ",
+    "consistency": 0.4,
+    "total": 5
+  },
+  "犀": {
+    "dominant": "チ",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "黽": {
+    "dominant": "ソウ",
+    "consistency": 0.2,
+    "total": 5
+  },
+  "鼠": {
+    "dominant": "ザン",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "氾": {
+    "dominant": "ハン",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "族": {
+    "dominant": "ゾク",
+    "consistency": 0.6667,
+    "total": 3
+  },
+  "畢": {
+    "dominant": "ヒツ",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "數": {
+    "dominant": "ソウ",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "龠": {
+    "dominant": "ヤク",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "妥": {
+    "dominant": "スイ",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "威": {
+    "dominant": NaN,
+    "consistency": 0.5,
+    "total": 2
+  },
+  "頡": {
+    "dominant": "ケツ",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "美": {
+    "dominant": "カン",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "医": {
+    "dominant": "エイ",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "臾": {
+    "dominant": "ユ",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "伏": {
+    "dominant": "ブク",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "含": {
+    "dominant": "ガン",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "科": {
+    "dominant": "カ",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "翁": {
+    "dominant": "オウ",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "臧": {
+    "dominant": "ゾウ",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "黍": {
+    "dominant": "レイ",
+    "consistency": 0.5,
+    "total": 4
+  },
+  "号": {
+    "dominant": "ゴウ",
+    "consistency": 0.5,
+    "total": 2
+  },
+  "蔑": {
+    "dominant": "ベツ",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "襾": {
+    "dominant": "タン",
+    "consistency": 0.3333,
+    "total": 3
+  },
+  "贊": {
+    "dominant": "サン",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "羅": {
+    "dominant": "ラ",
+    "consistency": 1.0,
+    "total": 2
+  },
+  "芳": {
+    "dominant": NaN,
+    "consistency": 0.5,
+    "total": 2
+  },
+  "麥": {
+    "dominant": "フ",
+    "consistency": 0.3333,
+    "total": 3
+  },
+  "黹": {
+    "dominant": "フツ",
+    "consistency": 0.3333,
+    "total": 3
+  }
+}

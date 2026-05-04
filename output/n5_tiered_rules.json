@@ -1,0 +1,7727 @@
+{
+  "level": "N5",
+  "generated": "2026-05-03T22:57:19.945305",
+  "n_total": 652,
+  "n_rules": 334,
+  "coverage": 652,
+  "coverage_ratio": 1.0,
+  "stats": {
+    "by_confidence": {
+      "确定": {
+        "count": 938,
+        "min_acc": 0.8,
+        "max_acc": 1.0
+      },
+      "大概率": {
+        "count": 1373,
+        "min_acc": 0.6,
+        "max_acc": 0.778
+      },
+      "有时": {
+        "count": 2068,
+        "min_acc": 0.4,
+        "max_acc": 0.583
+      },
+      "偶尔": {
+        "count": 21998,
+        "min_acc": 0.002,
+        "max_acc": 0.391
+      }
+    },
+    "by_tier": {
+      "★ 最易(单特征)": {
+        "n_rules": 74,
+        "avg_accuracy": 0.785,
+        "total_new": 137
+      },
+      "★★ 容易(声符/结构)": {
+        "n_rules": 85,
+        "avg_accuracy": 0.581,
+        "total_new": 102
+      },
+      "★★★ 中等(双特征)": {
+        "n_rules": 134,
+        "avg_accuracy": 0.634,
+        "total_new": 280
+      },
+      "★★★★ 较难(挖掘双层)": {
+        "n_rules": 18,
+        "avg_accuracy": 0.801,
+        "total_new": 51
+      },
+      "★★★★★ 最难(三层+蒸馏)": {
+        "n_rules": 23,
+        "avg_accuracy": 0.82,
+        "total_new": 82
+      }
+    },
+    "by_feature_type": {
+      "xgboost_mining": 10061,
+      "mc_internal_pair": 5401,
+      "cross_domain_pair": 5163,
+      "mc_standalone": 1760,
+      "component": 1640,
+      "structure": 1204,
+      "pinyin_standalone": 582,
+      "pinyin_pair": 550,
+      "distilled": 16
+    },
+    "learning_paths": {
+      "A_quick": {
+        "tiers": "1-2",
+        "n_rules": 159,
+        "coverage": 0.367
+      },
+      "B_deep": {
+        "tiers": "1-3",
+        "n_rules": 293,
+        "coverage": 0.796
+      },
+      "C_complete": {
+        "tiers": "1-5",
+        "n_rules": 334,
+        "coverage": 1.0
+      }
+    }
+  },
+  "rules": [
+    {
+      "rank": 1,
+      "rule_text": "MC韵摄「止」+MC声类「齒」→ シ",
+      "onyomi": "シ",
+      "source": "中古音·MC韵摄+MC声类",
+      "tier": 3,
+      "accuracy": 0.7353,
+      "new_covered": 25,
+      "cumulative": 25,
+      "confidence": "大概率",
+      "feature_type": "mc_internal_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "四",
+        "試",
+        "誌",
+        "事",
+        "仕",
+        "是"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "二",
+          "actual": "ジ"
+        },
+        {
+          "kanji": "伎",
+          "actual": "キ"
+        },
+        {
+          "kanji": "出",
+          "actual": "シュツ"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "rule_text": "拼音 y+ou → ユウ",
+      "onyomi": "ユウ",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 1.0,
+      "new_covered": 8,
+      "cumulative": 33,
+      "confidence": "确定",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "油",
+        "又",
+        "友",
+        "有",
+        "右",
+        "幼"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 3,
+      "rule_text": "MC韵摄「果」+拼音韵母「e」→ カ",
+      "onyomi": "カ",
+      "source": "中古×拼音·韵摄+韵母",
+      "tier": 3,
+      "accuracy": 1.0,
+      "new_covered": 7,
+      "cumulative": 40,
+      "confidence": "确定",
+      "feature_type": "cross_domain_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "何",
+        "歌",
+        "可",
+        "個",
+        "荷",
+        "賀"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 4,
+      "rule_text": "MC清濁=全清 AND MC韵母=眞 AND 入声=非入声 → シン",
+      "onyomi": "シン",
+      "source": "XGBoost·三层",
+      "tier": 5,
+      "accuracy": 1.0,
+      "new_covered": 7,
+      "cumulative": 47,
+      "confidence": "确定",
+      "feature_type": "xgboost_mining",
+      "reading_type": "general",
+      "correct_examples": [
+        "振",
+        "震",
+        "辛",
+        "信",
+        "新",
+        "申"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 5,
+      "rule_text": "MC韵摄「止」+MC声类「牙」→ キ",
+      "onyomi": "キ",
+      "source": "中古音·MC韵摄+MC声类",
+      "tier": 3,
+      "accuracy": 0.8889,
+      "new_covered": 8,
+      "cumulative": 55,
+      "confidence": "确定",
+      "feature_type": "mc_internal_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "起",
+        "其",
+        "機",
+        "己",
+        "記",
+        "帰"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "居",
+          "actual": "キョ"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "rule_text": "MC声类=齒 AND MC韵母=尤 AND 入声=非入声 → シュウ",
+      "onyomi": "シュウ",
+      "source": "XGBoost·三层",
+      "tier": 5,
+      "accuracy": 1.0,
+      "new_covered": 6,
+      "cumulative": 61,
+      "confidence": "确定",
+      "feature_type": "xgboost_mining",
+      "reading_type": "general",
+      "correct_examples": [
+        "就",
+        "授",
+        "酒",
+        "秋",
+        "手",
+        "寿"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 7,
+      "rule_text": "MC韵摄「蟹」+拼音声母「h」→ カイ",
+      "onyomi": "カイ",
+      "source": "中古×拼音·韵摄+声母",
+      "tier": 3,
+      "accuracy": 0.875,
+      "new_covered": 7,
+      "cumulative": 68,
+      "confidence": "确定",
+      "feature_type": "cross_domain_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "晦",
+        "会",
+        "海",
+        "回",
+        "絵",
+        "灰"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "話",
+          "actual": "カ"
+        }
+      ]
+    },
+    {
+      "rank": 8,
+      "rule_text": "MC韵母=清 AND 鼻音=鼻音韵尾-ng → セイ",
+      "onyomi": "セイ",
+      "source": "XGBoost·双层",
+      "tier": 4,
+      "accuracy": 0.875,
+      "new_covered": 7,
+      "cumulative": 75,
+      "confidence": "确定",
+      "feature_type": "xgboost_mining",
+      "reading_type": "general",
+      "correct_examples": [
+        "晴",
+        "静",
+        "整",
+        "丼",
+        "性",
+        "声"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "営",
+          "actual": "エイ"
+        }
+      ]
+    },
+    {
+      "rank": 9,
+      "rule_text": "MC声类=齒 AND MC韵母=仙 AND 入声=非入声 → セン",
+      "onyomi": "セン",
+      "source": "XGBoost·三层",
+      "tier": 5,
+      "accuracy": 0.875,
+      "new_covered": 7,
+      "cumulative": 82,
+      "confidence": "确定",
+      "feature_type": "xgboost_mining",
+      "reading_type": "general",
+      "correct_examples": [
+        "泉",
+        "全",
+        "川",
+        "船",
+        "穿",
+        "選"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "然",
+          "actual": "ゼン"
+        }
+      ]
+    },
+    {
+      "rank": 10,
+      "rule_text": "MC韵母「麻」+MC等「二」→ カ",
+      "onyomi": "カ",
+      "source": "中古音·MC韵母+MC等",
+      "tier": 3,
+      "accuracy": 0.75,
+      "new_covered": 9,
+      "cumulative": 91,
+      "confidence": "大概率",
+      "feature_type": "mc_internal_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "暇",
+        "下",
+        "瓜",
+        "花",
+        "価",
+        "家"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "砂",
+          "actual": "サ"
+        },
+        {
+          "kanji": "茶",
+          "actual": "タ"
+        },
+        {
+          "kanji": "麻",
+          "actual": "バ"
+        }
+      ]
+    },
+    {
+      "rank": 11,
+      "rule_text": "MC韵母「宵」+MC声类「齒」→ ショウ",
+      "onyomi": "ショウ",
+      "source": "中古音·MC韵母+MC声类",
+      "tier": 3,
+      "accuracy": 1.0,
+      "new_covered": 5,
+      "cumulative": 96,
+      "confidence": "确定",
+      "feature_type": "mc_internal_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "少",
+        "消",
+        "紹",
+        "焼",
+        "小"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 12,
+      "rule_text": "MC韵母「虞」+拼音声母「f」→ フ",
+      "onyomi": "フ",
+      "source": "中古×拼音·韵母+声母",
+      "tier": 3,
+      "accuracy": 1.0,
+      "new_covered": 5,
+      "cumulative": 101,
+      "confidence": "确定",
+      "feature_type": "cross_domain_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "夫",
+        "父",
+        "符",
+        "麩",
+        "付"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 13,
+      "rule_text": "MC声母=端 AND 鼻音=鼻音韵尾-ng → トウ",
+      "onyomi": "トウ",
+      "source": "XGBoost·双层",
+      "tier": 4,
+      "accuracy": 1.0,
+      "new_covered": 5,
+      "cumulative": 106,
+      "confidence": "确定",
+      "feature_type": "xgboost_mining",
+      "reading_type": "general",
+      "correct_examples": [
+        "等",
+        "当",
+        "冬",
+        "東",
+        "登"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 14,
+      "rule_text": "MC清濁=全清 AND MC開合=合 AND MC韵摄=果 → カ",
+      "onyomi": "カ",
+      "source": "XGBoost·三层",
+      "tier": 5,
+      "accuracy": 1.0,
+      "new_covered": 5,
+      "cumulative": 111,
+      "confidence": "确定",
+      "feature_type": "xgboost_mining",
+      "reading_type": "general",
+      "correct_examples": [
+        "靴",
+        "菓",
+        "火",
+        "過",
+        "果"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 15,
+      "rule_text": "MC声类=舌 AND MC韵母=模 AND 呉漢異=有異 → ト",
+      "onyomi": "ト",
+      "source": "XGBoost·三层",
+      "tier": 5,
+      "accuracy": 1.0,
+      "new_covered": 5,
+      "cumulative": 116,
+      "confidence": "确定",
+      "feature_type": "xgboost_mining",
+      "reading_type": "general",
+      "correct_examples": [
+        "徒",
+        "図",
+        "渡",
+        "土",
+        "度"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 16,
+      "rule_text": "MC声类=舌 AND MC清濁=全濁 AND MC韵摄=止 → チ",
+      "onyomi": "チ",
+      "source": "XGBoost·三层",
+      "tier": 5,
+      "accuracy": 1.0,
+      "new_covered": 5,
+      "cumulative": 121,
+      "confidence": "确定",
+      "feature_type": "xgboost_mining",
+      "reading_type": "general",
+      "correct_examples": [
+        "地",
+        "遅",
+        "稚",
+        "池",
+        "持"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 17,
+      "rule_text": "MC声母「明」+MC韵摄「蟹」→ バイ",
+      "onyomi": "バイ",
+      "source": "中古音·MC声母+MC韵摄",
+      "tier": 3,
+      "accuracy": 0.8571,
+      "new_covered": 6,
+      "cumulative": 127,
+      "confidence": "确定",
+      "feature_type": "mc_internal_pair",
+      "reading_type": "divergent",
+      "correct_examples": [
+        "梅",
+        "妹",
+        "買",
+        "売",
+        "毎",
+        "枚"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "迷",
+          "actual": "ベイ"
+        }
+      ]
+    },
+    {
+      "rank": 18,
+      "rule_text": "MC韵母「寒」+拼音声母「d」→ タン",
+      "onyomi": "タン",
+      "source": "中古×拼音·韵母+声母",
+      "tier": 3,
+      "accuracy": 0.8571,
+      "new_covered": 6,
+      "cumulative": 133,
+      "confidence": "确定",
+      "feature_type": "cross_domain_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "弾",
+        "但",
+        "短",
+        "誕",
+        "断",
+        "段"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "達",
+          "actual": "タツ"
+        }
+      ]
+    },
+    {
+      "rank": 19,
+      "rule_text": "MC声类=喉 AND MC韵摄=止 AND 呉漢異=一致 → イ",
+      "onyomi": "イ",
+      "source": "XGBoost·三层",
+      "tier": 5,
+      "accuracy": 0.7778,
+      "new_covered": 7,
+      "cumulative": 140,
+      "confidence": "大概率",
+      "feature_type": "xgboost_mining",
+      "reading_type": "general",
+      "correct_examples": [
+        "衣",
+        "唯",
+        "惟",
+        "意",
+        "飴",
+        "違"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "台",
+          "actual": "タイ"
+        },
+        {
+          "kanji": "易",
+          "actual": "エキ"
+        }
+      ]
+    },
+    {
+      "rank": 20,
+      "rule_text": "拼音 b+ian → ヘン",
+      "onyomi": "ヘン",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 1.0,
+      "new_covered": 4,
+      "cumulative": 144,
+      "confidence": "确定",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "便",
+        "辺",
+        "弁",
+        "変"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 21,
+      "rule_text": "拼音 h+ou → コウ",
+      "onyomi": "コウ",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 1.0,
+      "new_covered": 4,
+      "cumulative": 148,
+      "confidence": "确定",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "後",
+        "候",
+        "喉",
+        "厚"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 22,
+      "rule_text": "MC韵母「皆」→ カイ",
+      "onyomi": "カイ",
+      "source": "中古音·韵母",
+      "tier": 1,
+      "accuracy": 1.0,
+      "new_covered": 4,
+      "cumulative": 152,
+      "confidence": "确定",
+      "feature_type": "mc_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "皆",
+        "介",
+        "階",
+        "界"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 23,
+      "rule_text": "拼音 j+ian4 → ケン",
+      "onyomi": "ケン",
+      "source": "拼音·声+韵+调",
+      "tier": 3,
+      "accuracy": 1.0,
+      "new_covered": 4,
+      "cumulative": 156,
+      "confidence": "确定",
+      "feature_type": "pinyin_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "見",
+        "建",
+        "健",
+        "鍵"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 24,
+      "rule_text": "MC韵母「齊」+MC声类「舌」→ テイ",
+      "onyomi": "テイ",
+      "source": "中古音·MC韵母+MC声类",
+      "tier": 3,
+      "accuracy": 1.0,
+      "new_covered": 4,
+      "cumulative": 160,
+      "confidence": "确定",
+      "feature_type": "mc_internal_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "弟",
+        "題",
+        "締",
+        "低"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 25,
+      "rule_text": "MC声母「並」+拼音韵母「ing」→ ヘイ",
+      "onyomi": "ヘイ",
+      "source": "中古×拼音·声母+韵母",
+      "tier": 3,
+      "accuracy": 1.0,
+      "new_covered": 4,
+      "cumulative": 164,
+      "confidence": "确定",
+      "feature_type": "cross_domain_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "平",
+        "並",
+        "病",
+        "併"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 26,
+      "rule_text": "MC韵母「元」+拼音声母「f」→ ハン",
+      "onyomi": "ハン",
+      "source": "中古×拼音·韵母+声母",
+      "tier": 3,
+      "accuracy": 1.0,
+      "new_covered": 4,
+      "cumulative": 168,
+      "confidence": "确定",
+      "feature_type": "cross_domain_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "番",
+        "飯",
+        "煩",
+        "返"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 27,
+      "rule_text": "声母=s AND 鼻音=鼻音韵尾-n → サン",
+      "onyomi": "サン",
+      "source": "XGBoost·双层",
+      "tier": 4,
+      "accuracy": 1.0,
+      "new_covered": 4,
+      "cumulative": 172,
+      "confidence": "确定",
+      "feature_type": "xgboost_mining",
+      "reading_type": "general",
+      "correct_examples": [
+        "傘",
+        "散",
+        "三",
+        "酸"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 28,
+      "rule_text": "MC声母=匣 AND 鼻音=鼻音韵尾-ng → コウ",
+      "onyomi": "コウ",
+      "source": "XGBoost·双层",
+      "tier": 4,
+      "accuracy": 1.0,
+      "new_covered": 4,
+      "cumulative": 176,
+      "confidence": "确定",
+      "feature_type": "xgboost_mining",
+      "reading_type": "general",
+      "correct_examples": [
+        "航",
+        "紅",
+        "行",
+        "降"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 29,
+      "rule_text": "MC声母=以 AND 韵母+调=i4 → エキ",
+      "onyomi": "エキ",
+      "source": "XGBoost·双层",
+      "tier": 4,
+      "accuracy": 1.0,
+      "new_covered": 4,
+      "cumulative": 180,
+      "confidence": "确定",
+      "feature_type": "xgboost_mining",
+      "reading_type": "general",
+      "correct_examples": [
+        "駅",
+        "易",
+        "役",
+        "亦"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 30,
+      "rule_text": "声母=g AND 鼻音=鼻音韵尾-n → カン",
+      "onyomi": "カン",
+      "source": "XGBoost·双层",
+      "tier": 4,
+      "accuracy": 1.0,
+      "new_covered": 4,
+      "cumulative": 184,
+      "confidence": "确定",
+      "feature_type": "xgboost_mining",
+      "reading_type": "general",
+      "correct_examples": [
+        "甘",
+        "館",
+        "関",
+        "官"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 31,
+      "rule_text": "MC入声韵尾=ク AND MC声类=齒 AND MC韵母=清 → セキ",
+      "onyomi": "セキ",
+      "source": "XGBoost·三层",
+      "tier": 5,
+      "accuracy": 1.0,
+      "new_covered": 4,
+      "cumulative": 188,
+      "confidence": "确定",
+      "feature_type": "xgboost_mining",
+      "reading_type": "general",
+      "correct_examples": [
+        "夕",
+        "石",
+        "席",
+        "赤"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 32,
+      "rule_text": "MC声类=喉 AND MC清濁=次濁 AND 画数_raw=13 → エン",
+      "onyomi": "エン",
+      "source": "XGBoost·三层",
+      "tier": 5,
+      "accuracy": 1.0,
+      "new_covered": 4,
+      "cumulative": 192,
+      "confidence": "确定",
+      "feature_type": "xgboost_mining",
+      "reading_type": "general",
+      "correct_examples": [
+        "遠",
+        "塩",
+        "鉛",
+        "園"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 33,
+      "rule_text": "MC声类=齒 AND MC声调=上 AND MC等=三 → シャ",
+      "onyomi": "シャ",
+      "source": "XGBoost·三层",
+      "tier": 5,
+      "accuracy": 1.0,
+      "new_covered": 4,
+      "cumulative": 196,
+      "confidence": "确定",
+      "feature_type": "xgboost_mining",
+      "reading_type": "general",
+      "correct_examples": [
+        "舎",
+        "社",
+        "写",
+        "者"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 34,
+      "rule_text": "MC入声韵尾=ク AND 声母=b → ハク",
+      "onyomi": "ハク",
+      "source": "XGBoost·双层",
+      "tier": 4,
+      "accuracy": 0.8333,
+      "new_covered": 5,
+      "cumulative": 201,
+      "confidence": "确定",
+      "feature_type": "xgboost_mining",
+      "reading_type": "general",
+      "correct_examples": [
+        "博",
+        "伯",
+        "薄",
+        "白",
+        "百"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "北",
+          "actual": "ホク"
+        }
+      ]
+    },
+    {
+      "rank": 35,
+      "rule_text": "MC声类=齒 AND MC韵摄=蟹 AND 入声=入声字 → セイ",
+      "onyomi": "セイ",
+      "source": "XGBoost·三层",
+      "tier": 5,
+      "accuracy": 0.8333,
+      "new_covered": 5,
+      "cumulative": 206,
+      "confidence": "确定",
+      "feature_type": "xgboost_mining",
+      "reading_type": "general",
+      "correct_examples": [
+        "製",
+        "西",
+        "細",
+        "祭",
+        "勢"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "切",
+          "actual": "セツ"
+        }
+      ]
+    },
+    {
+      "rank": 36,
+      "rule_text": "声母=t AND 鼻音=鼻音韵尾-ng → トウ",
+      "onyomi": "トウ",
+      "source": "XGBoost·双层",
+      "tier": 4,
+      "accuracy": 0.75,
+      "new_covered": 6,
+      "cumulative": 212,
+      "confidence": "大概率",
+      "feature_type": "xgboost_mining",
+      "reading_type": "general",
+      "correct_examples": [
+        "唐",
+        "筒",
+        "糖",
+        "堂",
+        "同",
+        "痛"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "庭",
+          "actual": "テイ"
+        },
+        {
+          "kanji": "町",
+          "actual": "テイ"
+        }
+      ]
+    },
+    {
+      "rank": 37,
+      "rule_text": "拼音 +an → アン",
+      "onyomi": "アン",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 1.0,
+      "new_covered": 3,
+      "cumulative": 215,
+      "confidence": "确定",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "暗",
+        "安",
+        "案"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 38,
+      "rule_text": "拼音 d+ian → テン",
+      "onyomi": "テン",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 1.0,
+      "new_covered": 3,
+      "cumulative": 218,
+      "confidence": "确定",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "電",
+        "店",
+        "点"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 39,
+      "rule_text": "拼音 g+ao → コウ",
+      "onyomi": "コウ",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 1.0,
+      "new_covered": 3,
+      "cumulative": 221,
+      "confidence": "确定",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "稿",
+        "高",
+        "告"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 40,
+      "rule_text": "拼音 h+u → コ",
+      "onyomi": "コ",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 1.0,
+      "new_covered": 3,
+      "cumulative": 224,
+      "confidence": "确定",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "戸",
+        "糊",
+        "呼"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 41,
+      "rule_text": "拼音 j+in → キン",
+      "onyomi": "キン",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 1.0,
+      "new_covered": 3,
+      "cumulative": 227,
+      "confidence": "确定",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "金",
+        "今",
+        "近"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 42,
+      "rule_text": "拼音 l+iang → リョウ",
+      "onyomi": "リョウ",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 1.0,
+      "new_covered": 3,
+      "cumulative": 230,
+      "confidence": "确定",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "両",
+        "良",
+        "涼"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 43,
+      "rule_text": "拼音 m+ian → ベン",
+      "onyomi": "ベン",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 1.0,
+      "new_covered": 3,
+      "cumulative": 233,
+      "confidence": "确定",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "面",
+        "勉",
+        "麺"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 44,
+      "rule_text": "拼音 n+an → ダン",
+      "onyomi": "ダン",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 1.0,
+      "new_covered": 3,
+      "cumulative": 236,
+      "confidence": "确定",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "南",
+        "男",
+        "難"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 45,
+      "rule_text": "拼音 y+ang → ヨウ",
+      "onyomi": "ヨウ",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 1.0,
+      "new_covered": 3,
+      "cumulative": 239,
+      "confidence": "确定",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "様",
+        "洋",
+        "揚"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 46,
+      "rule_text": "声符「交」→ コウ",
+      "onyomi": "コウ",
+      "source": "声符·V1V2",
+      "tier": 2,
+      "accuracy": 1.0,
+      "new_covered": 3,
+      "cumulative": 242,
+      "confidence": "确定",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "校",
+        "餃",
+        "交"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 47,
+      "rule_text": "拼音 l+in2 → リン",
+      "onyomi": "リン",
+      "source": "拼音·声+韵+调",
+      "tier": 3,
+      "accuracy": 1.0,
+      "new_covered": 3,
+      "cumulative": 245,
+      "confidence": "确定",
+      "feature_type": "pinyin_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "燐",
+        "隣",
+        "林"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 48,
+      "rule_text": "MC声母「澄」+MC韵母「陽」→ チョウ",
+      "onyomi": "チョウ",
+      "source": "中古音·MC声母+MC韵母",
+      "tier": 3,
+      "accuracy": 1.0,
+      "new_covered": 3,
+      "cumulative": 248,
+      "confidence": "确定",
+      "feature_type": "mc_internal_pair",
+      "reading_type": "divergent",
+      "correct_examples": [
+        "長",
+        "場",
+        "丈"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 49,
+      "rule_text": "MC声母「疑」+MC韵母「魚」→ ギョ",
+      "onyomi": "ギョ",
+      "source": "中古音·MC声母+MC韵母",
+      "tier": 3,
+      "accuracy": 1.0,
+      "new_covered": 3,
+      "cumulative": 251,
+      "confidence": "确定",
+      "feature_type": "mc_internal_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "語",
+        "御",
+        "魚"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 50,
+      "rule_text": "MC韵母「咍」+MC声类「齒」→ サイ",
+      "onyomi": "サイ",
+      "source": "中古音·MC韵母+MC声类",
+      "tier": 3,
+      "accuracy": 1.0,
+      "new_covered": 3,
+      "cumulative": 254,
+      "confidence": "确定",
+      "feature_type": "mc_internal_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "再",
+        "菜",
+        "財"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 51,
+      "rule_text": "MC韵母「模」+MC声类「脣」→ ホ",
+      "onyomi": "ホ",
+      "source": "中古音·MC韵母+MC声类",
+      "tier": 3,
+      "accuracy": 1.0,
+      "new_covered": 3,
+      "cumulative": 257,
+      "confidence": "确定",
+      "feature_type": "mc_internal_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "歩",
+        "布",
+        "部"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 52,
+      "rule_text": "MC韵母「豪」+MC声类「齒」→ ソウ",
+      "onyomi": "ソウ",
+      "source": "中古音·MC韵母+MC声类",
+      "tier": 3,
+      "accuracy": 1.0,
+      "new_covered": 3,
+      "cumulative": 260,
+      "confidence": "确定",
+      "feature_type": "mc_internal_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "掃",
+        "草",
+        "早"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 53,
+      "rule_text": "MC韵母「鍾」+MC声类「齒」→ ショウ",
+      "onyomi": "ショウ",
+      "source": "中古音·MC韵母+MC声类",
+      "tier": 3,
+      "accuracy": 1.0,
+      "new_covered": 3,
+      "cumulative": 263,
+      "confidence": "确定",
+      "feature_type": "mc_internal_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "種",
+        "松",
+        "縦"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 54,
+      "rule_text": "MC韵母「灰」+拼音声母「b」→ ハイ",
+      "onyomi": "ハイ",
+      "source": "中古×拼音·韵母+声母",
+      "tier": 3,
+      "accuracy": 1.0,
+      "new_covered": 3,
+      "cumulative": 266,
+      "confidence": "确定",
+      "feature_type": "cross_domain_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "輩",
+        "背",
+        "杯"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 55,
+      "rule_text": "MC声类「脣」+拼音韵母「eng」→ ホウ",
+      "onyomi": "ホウ",
+      "source": "中古×拼音·声类+韵母",
+      "tier": 3,
+      "accuracy": 1.0,
+      "new_covered": 3,
+      "cumulative": 269,
+      "confidence": "确定",
+      "feature_type": "cross_domain_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "棚",
+        "風",
+        "封"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 56,
+      "rule_text": "MC声类「齒」+拼音韵母「ian」→ セン",
+      "onyomi": "セン",
+      "source": "中古×拼音·声类+韵母",
+      "tier": 3,
+      "accuracy": 1.0,
+      "new_covered": 3,
+      "cumulative": 272,
+      "confidence": "确定",
+      "feature_type": "cross_domain_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "先",
+        "前",
+        "千",
+        "鮮"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 57,
+      "rule_text": "MC声母=見 AND 画数=17+ → ケイ",
+      "onyomi": "ケイ",
+      "source": "XGBoost·双层",
+      "tier": 4,
+      "accuracy": 1.0,
+      "new_covered": 3,
+      "cumulative": 275,
+      "confidence": "确定",
+      "feature_type": "xgboost_mining",
+      "reading_type": "general",
+      "correct_examples": [
+        "鏡",
+        "鶏",
+        "警"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 58,
+      "rule_text": "MC声类=牙 AND MC韵摄=蟹 AND 入声=非入声 → カイ",
+      "onyomi": "カイ",
+      "source": "XGBoost·三层",
+      "tier": 5,
+      "accuracy": 0.8333,
+      "new_covered": 3,
+      "cumulative": 278,
+      "confidence": "确定",
+      "feature_type": "xgboost_mining",
+      "reading_type": "general",
+      "correct_examples": [
+        "皆",
+        "掛",
+        "開",
+        "階",
+        "街"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "外",
+          "actual": "ガイ"
+        }
+      ]
+    },
+    {
+      "rank": 59,
+      "rule_text": "拼音 +er → ジ",
+      "onyomi": "ジ",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 1.0,
+      "new_covered": 2,
+      "cumulative": 280,
+      "confidence": "确定",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "二",
+        "耳"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 60,
+      "rule_text": "拼音 b+an → ハン",
+      "onyomi": "ハン",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 1.0,
+      "new_covered": 2,
+      "cumulative": 282,
+      "confidence": "确定",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "半",
+        "板"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 61,
+      "rule_text": "拼音 c+un → ソン",
+      "onyomi": "ソン",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 1.0,
+      "new_covered": 2,
+      "cumulative": 284,
+      "confidence": "确定",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "寸",
+        "村"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 62,
+      "rule_text": "拼音 d+ai → タイ",
+      "onyomi": "タイ",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 1.0,
+      "new_covered": 2,
+      "cumulative": 286,
+      "confidence": "确定",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "待",
+        "貸"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 63,
+      "rule_text": "拼音 d+ing → テイ",
+      "onyomi": "テイ",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 1.0,
+      "new_covered": 2,
+      "cumulative": 288,
+      "confidence": "确定",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "定",
+        "丁"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 64,
+      "rule_text": "拼音 g+u → コ",
+      "onyomi": "コ",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 1.0,
+      "new_covered": 2,
+      "cumulative": 290,
+      "confidence": "确定",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "故",
+        "古"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 65,
+      "rule_text": "拼音 h+an → カン",
+      "onyomi": "カン",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 1.0,
+      "new_covered": 2,
+      "cumulative": 292,
+      "confidence": "确定",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "寒",
+        "漢"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 66,
+      "rule_text": "拼音 h+ao → コウ",
+      "onyomi": "コウ",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 1.0,
+      "new_covered": 2,
+      "cumulative": 294,
+      "confidence": "确定",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "好",
+        "号"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 67,
+      "rule_text": "拼音 l+ai → ライ",
+      "onyomi": "ライ",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 1.0,
+      "new_covered": 2,
+      "cumulative": 296,
+      "confidence": "确定",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "頼",
+        "来"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 68,
+      "rule_text": "拼音 l+ei → ルイ",
+      "onyomi": "ルイ",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 1.0,
+      "new_covered": 2,
+      "cumulative": 298,
+      "confidence": "确定",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "類",
+        "涙"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 69,
+      "rule_text": "拼音 l+ian → レン",
+      "onyomi": "レン",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 1.0,
+      "new_covered": 2,
+      "cumulative": 300,
+      "confidence": "确定",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "連",
+        "練"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 70,
+      "rule_text": "拼音 l+iao → リョウ",
+      "onyomi": "リョウ",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 1.0,
+      "new_covered": 2,
+      "cumulative": 302,
+      "confidence": "确定",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "料",
+        "寮"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 71,
+      "rule_text": "拼音 m+ing → メイ",
+      "onyomi": "メイ",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 1.0,
+      "new_covered": 2,
+      "cumulative": 304,
+      "confidence": "确定",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "明",
+        "名"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 72,
+      "rule_text": "拼音 n+ian → デン",
+      "onyomi": "デン",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 1.0,
+      "new_covered": 2,
+      "cumulative": 306,
+      "confidence": "确定",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "年",
+        "念"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 73,
+      "rule_text": "拼音 p+ao → ホウ",
+      "onyomi": "ホウ",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 1.0,
+      "new_covered": 2,
+      "cumulative": 308,
+      "confidence": "确定",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "鞄",
+        "麭"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 74,
+      "rule_text": "拼音 q+iao → キョウ",
+      "onyomi": "キョウ",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 1.0,
+      "new_covered": 2,
+      "cumulative": 310,
+      "confidence": "确定",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "橋",
+        "蕎"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 75,
+      "rule_text": "拼音 r+uo → ジャク",
+      "onyomi": "ジャク",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 1.0,
+      "new_covered": 2,
+      "cumulative": 312,
+      "confidence": "确定",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "若",
+        "弱"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 76,
+      "rule_text": "拼音 sh+ui → スイ",
+      "onyomi": "スイ",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 1.0,
+      "new_covered": 2,
+      "cumulative": 314,
+      "confidence": "确定",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "水",
+        "誰"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 77,
+      "rule_text": "拼音 t+ai → タイ",
+      "onyomi": "タイ",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 1.0,
+      "new_covered": 2,
+      "cumulative": 316,
+      "confidence": "确定",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "台",
+        "太"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 78,
+      "rule_text": "拼音 t+an → タン",
+      "onyomi": "タン",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 1.0,
+      "new_covered": 2,
+      "cumulative": 318,
+      "confidence": "确定",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "探",
+        "曇"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 79,
+      "rule_text": "拼音 t+i → テイ",
+      "onyomi": "テイ",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 1.0,
+      "new_covered": 2,
+      "cumulative": 320,
+      "confidence": "确定",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "体",
+        "提",
+        "題"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 80,
+      "rule_text": "拼音 t+ian → テン",
+      "onyomi": "テン",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 1.0,
+      "new_covered": 2,
+      "cumulative": 322,
+      "confidence": "确定",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "田",
+        "天"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 81,
+      "rule_text": "拼音 t+ing → テイ",
+      "onyomi": "テイ",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 1.0,
+      "new_covered": 2,
+      "cumulative": 324,
+      "confidence": "确定",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "庭",
+        "町"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 82,
+      "rule_text": "拼音 y+un → ウン",
+      "onyomi": "ウン",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 1.0,
+      "new_covered": 2,
+      "cumulative": 326,
+      "confidence": "确定",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "伝",
+        "運"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 83,
+      "rule_text": "拼音 zh+uo → タク",
+      "onyomi": "タク",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 1.0,
+      "new_covered": 2,
+      "cumulative": 328,
+      "confidence": "确定",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "卓",
+        "濯"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 84,
+      "rule_text": "声符「央」→ エイ",
+      "onyomi": "エイ",
+      "source": "声符·V1V2",
+      "tier": 2,
+      "accuracy": 1.0,
+      "new_covered": 2,
+      "cumulative": 330,
+      "confidence": "确定",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "英",
+        "映"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 85,
+      "rule_text": "声符「黄」→ コウ",
+      "onyomi": "コウ",
+      "source": "声符·V1V2",
+      "tier": 2,
+      "accuracy": 1.0,
+      "new_covered": 2,
+      "cumulative": 332,
+      "confidence": "确定",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "黄",
+        "横"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 86,
+      "rule_text": "声符「労」→ カク",
+      "onyomi": "カク",
+      "source": "声符·V1V2",
+      "tier": 2,
+      "accuracy": 1.0,
+      "new_covered": 2,
+      "cumulative": 334,
+      "confidence": "确定",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "学",
+        "覚"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 87,
+      "rule_text": "声符「支」→ キ",
+      "onyomi": "キ",
+      "source": "声符·V1V2",
+      "tier": 2,
+      "accuracy": 1.0,
+      "new_covered": 2,
+      "cumulative": 336,
+      "confidence": "确定",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "伎",
+        "技"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 88,
+      "rule_text": "声符「曽」→ ソウ",
+      "onyomi": "ソウ",
+      "source": "声符·V1V2",
+      "tier": 2,
+      "accuracy": 1.0,
+      "new_covered": 2,
+      "cumulative": 338,
+      "confidence": "确定",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "贈",
+        "噌"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 89,
+      "rule_text": "声符「中」→ チュウ",
+      "onyomi": "チュウ",
+      "source": "声符·V1V2",
+      "tier": 2,
+      "accuracy": 1.0,
+      "new_covered": 2,
+      "cumulative": 340,
+      "confidence": "确定",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "仲",
+        "中"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 90,
+      "rule_text": "声符「無」→ ブ",
+      "onyomi": "ブ",
+      "source": "声符·V1V2",
+      "tier": 2,
+      "accuracy": 1.0,
+      "new_covered": 2,
+      "cumulative": 342,
+      "confidence": "确定",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "無",
+        "舞"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 91,
+      "rule_text": "声符「复」→ フク",
+      "onyomi": "フク",
+      "source": "声符·V1V2",
+      "tier": 2,
+      "accuracy": 1.0,
+      "new_covered": 2,
+      "cumulative": 344,
+      "confidence": "确定",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "復",
+        "腹"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 92,
+      "rule_text": "声符「匸」→ ボウ",
+      "onyomi": "ボウ",
+      "source": "声符·V1V2",
+      "tier": 2,
+      "accuracy": 1.0,
+      "new_covered": 2,
+      "cumulative": 346,
+      "confidence": "确定",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "忘",
+        "忙"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 93,
+      "rule_text": "声符「麻」→ バ",
+      "onyomi": "バ",
+      "source": "声符·V1V2",
+      "tier": 2,
+      "accuracy": 1.0,
+      "new_covered": 2,
+      "cumulative": 348,
+      "confidence": "确定",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "磨",
+        "麻"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 94,
+      "rule_text": "声符「令」→ レイ",
+      "onyomi": "レイ",
+      "source": "声符·V1V2",
+      "tier": 2,
+      "accuracy": 1.0,
+      "new_covered": 2,
+      "cumulative": 350,
+      "confidence": "确定",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "零",
+        "冷"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 95,
+      "rule_text": "声符 皮 → ヒ",
+      "onyomi": "ヒ",
+      "source": "声符·精确",
+      "tier": 2,
+      "accuracy": 1.0,
+      "new_covered": 2,
+      "cumulative": 352,
+      "confidence": "确定",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "被",
+        "疲"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 96,
+      "rule_text": "声符 門 → ブン",
+      "onyomi": "ブン",
+      "source": "声符·精确",
+      "tier": 2,
+      "accuracy": 1.0,
+      "new_covered": 2,
+      "cumulative": 354,
+      "confidence": "确定",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "問",
+        "聞"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 97,
+      "rule_text": "部首「工」→ サ",
+      "onyomi": "サ",
+      "source": "结构·部首",
+      "tier": 2,
+      "accuracy": 1.0,
+      "new_covered": 2,
+      "cumulative": 356,
+      "confidence": "确定",
+      "feature_type": "structure",
+      "reading_type": "general",
+      "correct_examples": [
+        "左",
+        "差"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 98,
+      "rule_text": "拼音 l+i3 → リ",
+      "onyomi": "リ",
+      "source": "拼音·声+韵+调",
+      "tier": 3,
+      "accuracy": 1.0,
+      "new_covered": 2,
+      "cumulative": 358,
+      "confidence": "确定",
+      "feature_type": "pinyin_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "理",
+        "里"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 99,
+      "rule_text": "拼音 m+u4 → ボク",
+      "onyomi": "ボク",
+      "source": "拼音·声+韵+调",
+      "tier": 3,
+      "accuracy": 1.0,
+      "new_covered": 2,
+      "cumulative": 360,
+      "confidence": "确定",
+      "feature_type": "pinyin_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "木",
+        "目"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 100,
+      "rule_text": "拼音 q+in2 → キン",
+      "onyomi": "キン",
+      "source": "拼音·声+韵+调",
+      "tier": 3,
+      "accuracy": 1.0,
+      "new_covered": 2,
+      "cumulative": 362,
+      "confidence": "确定",
+      "feature_type": "pinyin_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "勤",
+        "檎"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 101,
+      "rule_text": "拼音 w+ei4 → ビ",
+      "onyomi": "ビ",
+      "source": "拼音·声+韵+调",
+      "tier": 3,
+      "accuracy": 1.0,
+      "new_covered": 2,
+      "cumulative": 364,
+      "confidence": "确定",
+      "feature_type": "pinyin_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "未",
+        "味"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 102,
+      "rule_text": "拼音 y+in3 → イン",
+      "onyomi": "イン",
+      "source": "拼音·声+韵+调",
+      "tier": 3,
+      "accuracy": 1.0,
+      "new_covered": 2,
+      "cumulative": 366,
+      "confidence": "确定",
+      "feature_type": "pinyin_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "引",
+        "飲"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 103,
+      "rule_text": "拼音 z+uo4 → サ",
+      "onyomi": "サ",
+      "source": "拼音·声+韵+调",
+      "tier": 3,
+      "accuracy": 1.0,
+      "new_covered": 2,
+      "cumulative": 368,
+      "confidence": "确定",
+      "feature_type": "pinyin_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "座",
+        "作"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 104,
+      "rule_text": "拼音 zh+ou4 → チュウ",
+      "onyomi": "チュウ",
+      "source": "拼音·声+韵+调",
+      "tier": 3,
+      "accuracy": 1.0,
+      "new_covered": 2,
+      "cumulative": 370,
+      "confidence": "确定",
+      "feature_type": "pinyin_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "酎",
+        "昼"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 105,
+      "rule_text": "MC声类「齒」+拼音韵母「in」→ シン",
+      "onyomi": "シン",
+      "source": "中古×拼音·声类+韵母",
+      "tier": 3,
+      "accuracy": 1.0,
+      "new_covered": 2,
+      "cumulative": 372,
+      "confidence": "确定",
+      "feature_type": "cross_domain_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "親",
+        "辛",
+        "信",
+        "新",
+        "寝"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 106,
+      "rule_text": "MC声母「疑」+MC韵母「元」→ ゲン",
+      "onyomi": "ゲン",
+      "source": "中古音·MC声母+MC韵母",
+      "tier": 3,
+      "accuracy": 0.75,
+      "new_covered": 3,
+      "cumulative": 375,
+      "confidence": "大概率",
+      "feature_type": "mc_internal_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "原",
+        "言",
+        "元"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "月",
+          "actual": "ゲツ"
+        }
+      ]
+    },
+    {
+      "rank": 107,
+      "rule_text": "MC声类「齒」+拼音韵母「an」→ サン",
+      "onyomi": "サン",
+      "source": "中古×拼音·声类+韵母",
+      "tier": 3,
+      "accuracy": 0.8333,
+      "new_covered": 2,
+      "cumulative": 377,
+      "confidence": "确定",
+      "feature_type": "cross_domain_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "三",
+        "山",
+        "散",
+        "残",
+        "傘"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "然",
+          "actual": "ゼン"
+        }
+      ]
+    },
+    {
+      "rank": 108,
+      "rule_text": "MC声类=齒 AND MC声调=平 AND MC韵摄=梗 → セイ",
+      "onyomi": "セイ",
+      "source": "XGBoost·三层",
+      "tier": 5,
+      "accuracy": 0.8333,
+      "new_covered": 2,
+      "cumulative": 379,
+      "confidence": "确定",
+      "feature_type": "xgboost_mining",
+      "reading_type": "general",
+      "correct_examples": [
+        "晴",
+        "青",
+        "生",
+        "声",
+        "成"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "噌",
+          "actual": "ソウ"
+        }
+      ]
+    },
+    {
+      "rank": 109,
+      "rule_text": "MC声类=舌 AND MC韵摄=止 AND 声母=zh → チ",
+      "onyomi": "チ",
+      "source": "XGBoost·三层",
+      "tier": 5,
+      "accuracy": 0.75,
+      "new_covered": 2,
+      "cumulative": 381,
+      "confidence": "大概率",
+      "feature_type": "xgboost_mining",
+      "reading_type": "general",
+      "correct_examples": [
+        "置",
+        "知",
+        "稚"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "質",
+          "actual": "シツ"
+        }
+      ]
+    },
+    {
+      "rank": 110,
+      "rule_text": "IF 声母=y AND 声符画数>8.5 AND 部首画数>3.5 AND 总画数>13.5",
+      "onyomi": "ヨウ",
+      "source": "蒸馏·DT",
+      "tier": 5,
+      "accuracy": 0.75,
+      "new_covered": 2,
+      "cumulative": 383,
+      "confidence": "大概率",
+      "feature_type": "distilled",
+      "reading_type": "general",
+      "correct_examples": [
+        "曜",
+        "蝿",
+        "様"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "顔",
+          "actual": "ガン"
+        }
+      ]
+    },
+    {
+      "rank": 111,
+      "rule_text": "拼音 y+e → ヤ",
+      "onyomi": "ヤ",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 0.6,
+      "new_covered": 3,
+      "cumulative": 386,
+      "confidence": "大概率",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "野",
+        "爺",
+        "夜"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "業",
+          "actual": "ギョウ"
+        },
+        {
+          "kanji": "葉",
+          "actual": "ヨウ"
+        }
+      ]
+    },
+    {
+      "rank": 112,
+      "rule_text": "MC韵摄「深」+拼音韵母「i」→ シュウ",
+      "onyomi": "シュウ",
+      "source": "中古×拼音·韵摄+韵母",
+      "tier": 3,
+      "accuracy": 0.6,
+      "new_covered": 3,
+      "cumulative": 389,
+      "confidence": "大概率",
+      "feature_type": "cross_domain_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "汁",
+        "習",
+        "十"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "湿",
+          "actual": "シツ"
+        },
+        {
+          "kanji": "立",
+          "actual": "リュウ"
+        }
+      ]
+    },
+    {
+      "rank": 113,
+      "rule_text": "MC声调=平 AND MC韵摄=山 AND 声母=y → エン",
+      "onyomi": "エン",
+      "source": "XGBoost·三层",
+      "tier": 5,
+      "accuracy": 0.6,
+      "new_covered": 3,
+      "cumulative": 392,
+      "confidence": "大概率",
+      "feature_type": "xgboost_mining",
+      "reading_type": "general",
+      "correct_examples": [
+        "院",
+        "円",
+        "煙"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "伝",
+          "actual": "ウン"
+        },
+        {
+          "kanji": "顔",
+          "actual": "ガン"
+        }
+      ]
+    },
+    {
+      "rank": 114,
+      "rule_text": "MC韵母「侯」+拼音韵母「ou」→ コウ",
+      "onyomi": "コウ",
+      "source": "中古×拼音·韵母+韵母",
+      "tier": 3,
+      "accuracy": 0.7143,
+      "new_covered": 2,
+      "cumulative": 394,
+      "confidence": "大概率",
+      "feature_type": "cross_domain_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "構",
+        "喉",
+        "厚",
+        "後",
+        "口"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "走",
+          "actual": "ソウ"
+        },
+        {
+          "kanji": "頭",
+          "actual": "トウ"
+        }
+      ]
+    },
+    {
+      "rank": 115,
+      "rule_text": "拼音 x+ie → シャ",
+      "onyomi": "シャ",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 1.0,
+      "new_covered": 1,
+      "cumulative": 395,
+      "confidence": "确定",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "写",
+        "邪"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 116,
+      "rule_text": "拼音 z+i → シ",
+      "onyomi": "シ",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 1.0,
+      "new_covered": 1,
+      "cumulative": 396,
+      "confidence": "确定",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "姉",
+        "自",
+        "子",
+        "字",
+        "資"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 117,
+      "rule_text": "拼音 zh+en → シン",
+      "onyomi": "シン",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 1.0,
+      "new_covered": 1,
+      "cumulative": 397,
+      "confidence": "确定",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "振",
+        "震",
+        "賑",
+        "真"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 118,
+      "rule_text": "声符「示」→ セイ",
+      "onyomi": "セイ",
+      "source": "声符·V1V2",
+      "tier": 2,
+      "accuracy": 1.0,
+      "new_covered": 1,
+      "cumulative": 398,
+      "confidence": "确定",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "歳",
+        "祭"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 119,
+      "rule_text": "声符「先」→ セン",
+      "onyomi": "セン",
+      "source": "声符·V1V2",
+      "tier": 2,
+      "accuracy": 1.0,
+      "new_covered": 1,
+      "cumulative": 399,
+      "confidence": "确定",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "先",
+        "洗"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 120,
+      "rule_text": "声符「長」→ チョウ",
+      "onyomi": "チョウ",
+      "source": "声符·V1V2",
+      "tier": 2,
+      "accuracy": 1.0,
+      "new_covered": 1,
+      "cumulative": 400,
+      "confidence": "确定",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "長",
+        "張"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 121,
+      "rule_text": "拼音 p+i2 → ヒ",
+      "onyomi": "ヒ",
+      "source": "拼音·声+韵+调",
+      "tier": 3,
+      "accuracy": 1.0,
+      "new_covered": 1,
+      "cumulative": 401,
+      "confidence": "确定",
+      "feature_type": "pinyin_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "皮",
+        "疲"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 122,
+      "rule_text": "拼音 q+i3 → キ",
+      "onyomi": "キ",
+      "source": "拼音·声+韵+调",
+      "tier": 3,
+      "accuracy": 1.0,
+      "new_covered": 1,
+      "cumulative": 402,
+      "confidence": "确定",
+      "feature_type": "pinyin_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "起",
+        "綺"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 123,
+      "rule_text": "拼音 w+en2 → ブン",
+      "onyomi": "ブン",
+      "source": "拼音·声+韵+调",
+      "tier": 3,
+      "accuracy": 1.0,
+      "new_covered": 1,
+      "cumulative": 403,
+      "confidence": "确定",
+      "feature_type": "pinyin_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "聞",
+        "文"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 124,
+      "rule_text": "拼音 y+i3 → イ",
+      "onyomi": "イ",
+      "source": "拼音·声+韵+调",
+      "tier": 3,
+      "accuracy": 1.0,
+      "new_covered": 1,
+      "cumulative": 404,
+      "confidence": "确定",
+      "feature_type": "pinyin_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "椅",
+        "以"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 125,
+      "rule_text": "MC韵母「模」+拼音声母「d」→ ト",
+      "onyomi": "ト",
+      "source": "中古×拼音·韵母+声母",
+      "tier": 3,
+      "accuracy": 1.0,
+      "new_covered": 1,
+      "cumulative": 405,
+      "confidence": "确定",
+      "feature_type": "cross_domain_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "都",
+        "渡",
+        "度"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 126,
+      "rule_text": "声母=f AND 鼻音=鼻音韵尾-ng → ホウ",
+      "onyomi": "ホウ",
+      "source": "XGBoost·双层",
+      "tier": 4,
+      "accuracy": 1.0,
+      "new_covered": 1,
+      "cumulative": 406,
+      "confidence": "确定",
+      "feature_type": "xgboost_mining",
+      "reading_type": "general",
+      "correct_examples": [
+        "風",
+        "方",
+        "封"
+      ],
+      "exception_examples": []
+    },
+    {
+      "rank": 127,
+      "rule_text": "声符「谷」→ ヨク",
+      "onyomi": "ヨク",
+      "source": "声符·V1V2",
+      "tier": 2,
+      "accuracy": 0.6667,
+      "new_covered": 2,
+      "cumulative": 408,
+      "confidence": "大概率",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "浴",
+        "欲"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "容",
+          "actual": "ヨウ"
+        }
+      ]
+    },
+    {
+      "rank": 128,
+      "rule_text": "拼音 l+v3 → リョ",
+      "onyomi": "リョ",
+      "source": "拼音·声+韵+调",
+      "tier": 3,
+      "accuracy": 0.6667,
+      "new_covered": 2,
+      "cumulative": 410,
+      "confidence": "大概率",
+      "feature_type": "pinyin_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "呂",
+        "旅"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "履",
+          "actual": "リ"
+        }
+      ]
+    },
+    {
+      "rank": 129,
+      "rule_text": "拼音 w+u1 → オ",
+      "onyomi": "オ",
+      "source": "拼音·声+韵+调",
+      "tier": 3,
+      "accuracy": 0.6667,
+      "new_covered": 2,
+      "cumulative": 412,
+      "confidence": "大概率",
+      "feature_type": "pinyin_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "烏",
+        "汚"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "屋",
+          "actual": "オク"
+        }
+      ]
+    },
+    {
+      "rank": 130,
+      "rule_text": "拼音 w+u3 → ゴ",
+      "onyomi": "ゴ",
+      "source": "拼音·声+韵+调",
+      "tier": 3,
+      "accuracy": 0.6667,
+      "new_covered": 2,
+      "cumulative": 414,
+      "confidence": "大概率",
+      "feature_type": "pinyin_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "五",
+        "午"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "舞",
+          "actual": "ブ"
+        }
+      ]
+    },
+    {
+      "rank": 131,
+      "rule_text": "MC声母「曉」+MC開合「開」→ キョウ",
+      "onyomi": "キョウ",
+      "source": "中古音·MC声母+MC開合",
+      "tier": 3,
+      "accuracy": 0.6667,
+      "new_covered": 2,
+      "cumulative": 416,
+      "confidence": "大概率",
+      "feature_type": "mc_internal_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "郷",
+        "興"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "漢",
+          "actual": "カン"
+        }
+      ]
+    },
+    {
+      "rank": 132,
+      "rule_text": "MC韵母「眞」+MC声调「入」→ シツ",
+      "onyomi": "シツ",
+      "source": "中古音·MC韵母+MC声调",
+      "tier": 3,
+      "accuracy": 0.6667,
+      "new_covered": 2,
+      "cumulative": 418,
+      "confidence": "大概率",
+      "feature_type": "mc_internal_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "室",
+        "七"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "日",
+          "actual": "ジツ"
+        }
+      ]
+    },
+    {
+      "rank": 133,
+      "rule_text": "MC韵母「陽」+MC声调「上」→ ショウ",
+      "onyomi": "ショウ",
+      "source": "中古音·MC韵母+MC声调",
+      "tier": 3,
+      "accuracy": 0.6667,
+      "new_covered": 2,
+      "cumulative": 420,
+      "confidence": "大概率",
+      "feature_type": "mc_internal_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "上",
+        "象"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "丈",
+          "actual": "チョウ"
+        }
+      ]
+    },
+    {
+      "rank": 134,
+      "rule_text": "MC韵母「魚」+MC清濁「次清」→ ショ",
+      "onyomi": "ショ",
+      "source": "中古音·MC韵母+MC清濁",
+      "tier": 3,
+      "accuracy": 0.6667,
+      "new_covered": 2,
+      "cumulative": 422,
+      "confidence": "大概率",
+      "feature_type": "mc_internal_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "初",
+        "処"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "去",
+          "actual": "キョ"
+        }
+      ]
+    },
+    {
+      "rank": 135,
+      "rule_text": "MC韵母「尤」+MC声类「牙」→ キュウ",
+      "onyomi": "キュウ",
+      "source": "中古音·MC韵母+MC声类",
+      "tier": 3,
+      "accuracy": 0.6667,
+      "new_covered": 2,
+      "cumulative": 424,
+      "confidence": "大概率",
+      "feature_type": "mc_internal_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "九",
+        "球"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "牛",
+          "actual": "ギュウ"
+        }
+      ]
+    },
+    {
+      "rank": 136,
+      "rule_text": "MC韵母「歌」+MC声类「舌」→ タ",
+      "onyomi": "タ",
+      "source": "中古音·MC韵母+MC声类",
+      "tier": 3,
+      "accuracy": 0.6667,
+      "new_covered": 2,
+      "cumulative": 426,
+      "confidence": "大概率",
+      "feature_type": "mc_internal_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "多",
+        "他"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "羅",
+          "actual": "ラ"
+        }
+      ]
+    },
+    {
+      "rank": 137,
+      "rule_text": "MC韵母「鍾」+MC声类「牙」→ キョク",
+      "onyomi": "キョク",
+      "source": "中古音·MC韵母+MC声类",
+      "tier": 3,
+      "accuracy": 0.6667,
+      "new_covered": 2,
+      "cumulative": 428,
+      "confidence": "大概率",
+      "feature_type": "mc_internal_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "曲",
+        "局"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "供",
+          "actual": "キョウ"
+        }
+      ]
+    },
+    {
+      "rank": 138,
+      "rule_text": "MC韵摄「宕」+MC声类「牙」→ コウ",
+      "onyomi": "コウ",
+      "source": "中古音·MC韵摄+MC声类",
+      "tier": 3,
+      "accuracy": 0.6667,
+      "new_covered": 2,
+      "cumulative": 430,
+      "confidence": "大概率",
+      "feature_type": "mc_internal_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "康",
+        "広"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "強",
+          "actual": "キョウ"
+        }
+      ]
+    },
+    {
+      "rank": 139,
+      "rule_text": "MC声母「書」+拼音韵母「u」→ ショ",
+      "onyomi": "ショ",
+      "source": "中古×拼音·声母+韵母",
+      "tier": 3,
+      "accuracy": 0.6667,
+      "new_covered": 2,
+      "cumulative": 432,
+      "confidence": "大概率",
+      "feature_type": "cross_domain_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "書",
+        "暑"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "叔",
+          "actual": "シュク"
+        }
+      ]
+    },
+    {
+      "rank": 140,
+      "rule_text": "MC声母「疑」+拼音韵母「an」→ ガン",
+      "onyomi": "ガン",
+      "source": "中古×拼音·声母+韵母",
+      "tier": 3,
+      "accuracy": 0.6667,
+      "new_covered": 2,
+      "cumulative": 434,
+      "confidence": "大概率",
+      "feature_type": "cross_domain_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "眼",
+        "顔"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "言",
+          "actual": "ゲン"
+        }
+      ]
+    },
+    {
+      "rank": 141,
+      "rule_text": "MC韵摄「曾」+拼音韵母「e」→ ソク",
+      "onyomi": "ソク",
+      "source": "中古×拼音·韵摄+韵母",
+      "tier": 3,
+      "accuracy": 0.6667,
+      "new_covered": 2,
+      "cumulative": 436,
+      "confidence": "大概率",
+      "feature_type": "cross_domain_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "色",
+        "側"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "特",
+          "actual": "トク"
+        }
+      ]
+    },
+    {
+      "rank": 142,
+      "rule_text": "MC開合「合」+拼音韵母「un」→ シュン",
+      "onyomi": "シュン",
+      "source": "中古×拼音·開合+韵母",
+      "tier": 3,
+      "accuracy": 0.6667,
+      "new_covered": 2,
+      "cumulative": 438,
+      "confidence": "大概率",
+      "feature_type": "cross_domain_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "巡",
+        "春"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "伝",
+          "actual": "ウン"
+        }
+      ]
+    },
+    {
+      "rank": 143,
+      "rule_text": "MC声类「牙」+拼音韵母「ong」→ コウ",
+      "onyomi": "コウ",
+      "source": "中古×拼音·声类+韵母",
+      "tier": 3,
+      "accuracy": 0.6667,
+      "new_covered": 2,
+      "cumulative": 440,
+      "confidence": "大概率",
+      "feature_type": "cross_domain_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "空",
+        "公"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "供",
+          "actual": "キョウ"
+        }
+      ]
+    },
+    {
+      "rank": 144,
+      "rule_text": "部首「女」+MC清濁「次濁」→ ジョ",
+      "onyomi": "ジョ",
+      "source": "部首×中古·部首+清濁",
+      "tier": 3,
+      "accuracy": 0.6667,
+      "new_covered": 2,
+      "cumulative": 442,
+      "confidence": "大概率",
+      "feature_type": "cross_domain_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "女",
+        "如"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "妹",
+          "actual": "バイ"
+        }
+      ]
+    },
+    {
+      "rank": 145,
+      "rule_text": "MC声调=平 AND MC開合=合 AND MC韵母=寒 → カン",
+      "onyomi": "カン",
+      "source": "XGBoost·三层",
+      "tier": 5,
+      "accuracy": 0.6,
+      "new_covered": 2,
+      "cumulative": 444,
+      "confidence": "大概率",
+      "feature_type": "xgboost_mining",
+      "reading_type": "general",
+      "correct_examples": [
+        "丸",
+        "歓",
+        "官"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "酸",
+          "actual": "サン"
+        },
+        {
+          "kanji": "院",
+          "actual": "エン"
+        }
+      ]
+    },
+    {
+      "rank": 146,
+      "rule_text": "IF 声母=z AND 部首画数>6.5",
+      "onyomi": "ソウ",
+      "source": "蒸馏·DT",
+      "tier": 5,
+      "accuracy": 0.6,
+      "new_covered": 2,
+      "cumulative": 446,
+      "confidence": "大概率",
+      "feature_type": "distilled",
+      "reading_type": "general",
+      "correct_examples": [
+        "贈",
+        "走",
+        "雑"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "資",
+          "actual": "シ"
+        },
+        {
+          "kanji": "足",
+          "actual": "ショク"
+        }
+      ]
+    },
+    {
+      "rank": 147,
+      "rule_text": "MC入声韵尾=ク AND MC声类=齒 AND MC韵摄=梗 → セキ",
+      "onyomi": "セキ",
+      "source": "XGBoost·三层",
+      "tier": 5,
+      "accuracy": 0.8333,
+      "new_covered": 1,
+      "cumulative": 447,
+      "confidence": "确定",
+      "feature_type": "xgboost_mining",
+      "reading_type": "general",
+      "correct_examples": [
+        "赤",
+        "石",
+        "席",
+        "寂",
+        "夕"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "冊",
+          "actual": "サク"
+        }
+      ]
+    },
+    {
+      "rank": 148,
+      "rule_text": "MC声母「來」+MC韵摄「止」→ リ",
+      "onyomi": "リ",
+      "source": "中古音·MC声母+MC韵摄",
+      "tier": 3,
+      "accuracy": 0.5714,
+      "new_covered": 2,
+      "cumulative": 449,
+      "confidence": "有时",
+      "feature_type": "mc_internal_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "里",
+        "利",
+        "履",
+        "理"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "涙",
+          "actual": "ルイ"
+        },
+        {
+          "kanji": "類",
+          "actual": "ルイ"
+        },
+        {
+          "kanji": "麗",
+          "actual": "レイ"
+        }
+      ]
+    },
+    {
+      "rank": 149,
+      "rule_text": "MC声母=澄 AND 鼻音=鼻音韵尾-ng → チョウ",
+      "onyomi": "チョウ",
+      "source": "XGBoost·双层",
+      "tier": 4,
+      "accuracy": 0.8,
+      "new_covered": 1,
+      "cumulative": 450,
+      "confidence": "确定",
+      "feature_type": "xgboost_mining",
+      "reading_type": "general",
+      "correct_examples": [
+        "長",
+        "場",
+        "丈",
+        "重"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "仲",
+          "actual": "チュウ"
+        }
+      ]
+    },
+    {
+      "rank": 150,
+      "rule_text": "IF 声母=t AND 声符画数>5.5 AND 部首画数>4.5",
+      "onyomi": "トウ",
+      "source": "蒸馏·DT",
+      "tier": 5,
+      "accuracy": 0.8,
+      "new_covered": 1,
+      "cumulative": 451,
+      "confidence": "确定",
+      "feature_type": "distilled",
+      "reading_type": "general",
+      "correct_examples": [
+        "糖",
+        "筒",
+        "痛",
+        "頭"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "題",
+          "actual": "テイ"
+        }
+      ]
+    },
+    {
+      "rank": 151,
+      "rule_text": "拼音 d+ong → トウ",
+      "onyomi": "トウ",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 0.75,
+      "new_covered": 1,
+      "cumulative": 452,
+      "confidence": "大概率",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "東",
+        "冬",
+        "動"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "働",
+          "actual": "ドウ"
+        }
+      ]
+    },
+    {
+      "rank": 152,
+      "rule_text": "拼音 j+iao → コウ",
+      "onyomi": "コウ",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 0.75,
+      "new_covered": 1,
+      "cumulative": 453,
+      "confidence": "大概率",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "餃",
+        "教",
+        "交"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "角",
+          "actual": "カク"
+        }
+      ]
+    },
+    {
+      "rank": 153,
+      "rule_text": "拼音 x+iao → ショウ",
+      "onyomi": "ショウ",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 0.75,
+      "new_covered": 1,
+      "cumulative": 454,
+      "confidence": "大概率",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "咲",
+        "消",
+        "小"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "校",
+          "actual": "コウ"
+        }
+      ]
+    },
+    {
+      "rank": 154,
+      "rule_text": "拼音 y+in → イン",
+      "onyomi": "イン",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 0.75,
+      "new_covered": 1,
+      "cumulative": 455,
+      "confidence": "大概率",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "引",
+        "音",
+        "飲"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "銀",
+          "actual": "ギン"
+        }
+      ]
+    },
+    {
+      "rank": 155,
+      "rule_text": "MC韵母「寒」+MC声类「牙」→ カン",
+      "onyomi": "カン",
+      "source": "中古音·MC韵母+MC声类",
+      "tier": 3,
+      "accuracy": 0.75,
+      "new_covered": 1,
+      "cumulative": 456,
+      "confidence": "大概率",
+      "feature_type": "mc_internal_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "館",
+        "看",
+        "官"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "活",
+          "actual": "カツ"
+        }
+      ]
+    },
+    {
+      "rank": 156,
+      "rule_text": "MC声母「影」+拼音韵母「i」→ イ",
+      "onyomi": "イ",
+      "source": "中古×拼音·声母+韵母",
+      "tier": 3,
+      "accuracy": 0.75,
+      "new_covered": 1,
+      "cumulative": 457,
+      "confidence": "大概率",
+      "feature_type": "cross_domain_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "衣",
+        "医",
+        "意"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "億",
+          "actual": "ヨク"
+        }
+      ]
+    },
+    {
+      "rank": 157,
+      "rule_text": "MC韵摄「止」+拼音韵母「ui」→ スイ",
+      "onyomi": "スイ",
+      "source": "中古×拼音·韵摄+韵母",
+      "tier": 3,
+      "accuracy": 0.75,
+      "new_covered": 1,
+      "cumulative": 458,
+      "confidence": "大概率",
+      "feature_type": "cross_domain_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "誰",
+        "水",
+        "吹"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "帰",
+          "actual": "キ"
+        }
+      ]
+    },
+    {
+      "rank": 158,
+      "rule_text": "MC声类「喉」+拼音韵母「ua」→ カ",
+      "onyomi": "カ",
+      "source": "中古×拼音·声类+韵母",
+      "tier": 3,
+      "accuracy": 0.75,
+      "new_covered": 1,
+      "cumulative": 459,
+      "confidence": "大概率",
+      "feature_type": "cross_domain_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "華",
+        "話",
+        "花"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "画",
+          "actual": "カイ"
+        }
+      ]
+    },
+    {
+      "rank": 159,
+      "rule_text": "MC声母=端 AND 画数_raw=12 → トウ",
+      "onyomi": "トウ",
+      "source": "XGBoost·双层",
+      "tier": 4,
+      "accuracy": 0.75,
+      "new_covered": 1,
+      "cumulative": 460,
+      "confidence": "大概率",
+      "feature_type": "xgboost_mining",
+      "reading_type": "general",
+      "correct_examples": [
+        "等",
+        "答",
+        "登"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "短",
+          "actual": "タン"
+        }
+      ]
+    },
+    {
+      "rank": 160,
+      "rule_text": "MC声母=以 AND 鼻音=鼻音韵尾-ng → ヨウ",
+      "onyomi": "ヨウ",
+      "source": "XGBoost·双层",
+      "tier": 4,
+      "accuracy": 0.75,
+      "new_covered": 1,
+      "cumulative": 461,
+      "confidence": "大概率",
+      "feature_type": "xgboost_mining",
+      "reading_type": "general",
+      "correct_examples": [
+        "容",
+        "洋",
+        "揚"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "営",
+          "actual": "エイ"
+        }
+      ]
+    },
+    {
+      "rank": 161,
+      "rule_text": "呉漢異=一致 AND 画数=≤8 AND 韵母+调=ian4 → ヘン",
+      "onyomi": "ヘン",
+      "source": "XGBoost·三层",
+      "tier": 5,
+      "accuracy": 0.75,
+      "new_covered": 1,
+      "cumulative": 462,
+      "confidence": "大概率",
+      "feature_type": "xgboost_mining",
+      "reading_type": "general",
+      "correct_examples": [
+        "片",
+        "弁",
+        "変"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "店",
+          "actual": "テン"
+        }
+      ]
+    },
+    {
+      "rank": 162,
+      "rule_text": "MC声类=舌 AND MC韵摄=效 AND 入声=非入声 → チョウ",
+      "onyomi": "チョウ",
+      "source": "XGBoost·三层",
+      "tier": 5,
+      "accuracy": 0.4286,
+      "new_covered": 3,
+      "cumulative": 465,
+      "confidence": "有时",
+      "feature_type": "xgboost_mining",
+      "reading_type": "general",
+      "correct_examples": [
+        "鳥",
+        "釣",
+        "朝"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "寮",
+          "actual": "リョウ"
+        },
+        {
+          "kanji": "悩",
+          "actual": "ドウ"
+        },
+        {
+          "kanji": "料",
+          "actual": "リョウ"
+        }
+      ]
+    },
+    {
+      "rank": 163,
+      "rule_text": "韵母 -uang → ソウ",
+      "onyomi": "ソウ",
+      "source": "拼音·韵母",
+      "tier": 1,
+      "accuracy": 0.5,
+      "new_covered": 2,
+      "cumulative": 467,
+      "confidence": "有时",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "状",
+        "窓"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "広",
+          "actual": "コウ"
+        },
+        {
+          "kanji": "黄",
+          "actual": "コウ"
+        }
+      ]
+    },
+    {
+      "rank": 164,
+      "rule_text": "拼音 w+an → バン",
+      "onyomi": "バン",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 0.5,
+      "new_covered": 2,
+      "cumulative": 469,
+      "confidence": "有时",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "晩",
+        "万"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "丸",
+          "actual": "カン"
+        },
+        {
+          "kanji": "碗",
+          "actual": "ワン"
+        }
+      ]
+    },
+    {
+      "rank": 165,
+      "rule_text": "MC声母「溪」+MC声调「入」→ カク",
+      "onyomi": "カク",
+      "source": "中古音·MC声母+MC声调",
+      "tier": 3,
+      "accuracy": 0.5,
+      "new_covered": 2,
+      "cumulative": 471,
+      "confidence": "有时",
+      "feature_type": "mc_internal_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "客",
+        "確"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "喫",
+          "actual": "ケキ"
+        },
+        {
+          "kanji": "曲",
+          "actual": "キョク"
+        }
+      ]
+    },
+    {
+      "rank": 166,
+      "rule_text": "MC声母「見」+MC声调「入」→ カツ",
+      "onyomi": "カツ",
+      "source": "中古音·MC声母+MC声调",
+      "tier": 3,
+      "accuracy": 0.5,
+      "new_covered": 2,
+      "cumulative": 473,
+      "confidence": "有时",
+      "feature_type": "mc_internal_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "滑",
+        "活"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "国",
+          "actual": "コク"
+        },
+        {
+          "kanji": "結",
+          "actual": "ケツ"
+        }
+      ]
+    },
+    {
+      "rank": 167,
+      "rule_text": "MC韵母「魚」+MC清濁「全濁」→ チョ",
+      "onyomi": "チョ",
+      "source": "中古音·MC韵母+MC清濁",
+      "tier": 3,
+      "accuracy": 0.5,
+      "new_covered": 2,
+      "cumulative": 475,
+      "confidence": "有时",
+      "feature_type": "mc_internal_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "除",
+        "緒"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "野",
+          "actual": "ヤ"
+        },
+        {
+          "kanji": "鋤",
+          "actual": "ソ"
+        }
+      ]
+    },
+    {
+      "rank": 168,
+      "rule_text": "MC開合「合」+MC韵摄「梗」→ エイ",
+      "onyomi": "エイ",
+      "source": "中古音·MC開合+MC韵摄",
+      "tier": 3,
+      "accuracy": 0.5,
+      "new_covered": 2,
+      "cumulative": 477,
+      "confidence": "有时",
+      "feature_type": "mc_internal_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "営",
+        "泳"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "兄",
+          "actual": "ケイ"
+        },
+        {
+          "kanji": "役",
+          "actual": "エキ"
+        }
+      ]
+    },
+    {
+      "rank": 169,
+      "rule_text": "MC韵摄「曾」+拼音韵母「i」→ ショク",
+      "onyomi": "ショク",
+      "source": "中古×拼音·韵摄+韵母",
+      "tier": 3,
+      "accuracy": 0.5,
+      "new_covered": 2,
+      "cumulative": 479,
+      "confidence": "有时",
+      "feature_type": "cross_domain_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "職",
+        "式"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "億",
+          "actual": "ヨク"
+        },
+        {
+          "kanji": "直",
+          "actual": "チョク"
+        }
+      ]
+    },
+    {
+      "rank": 170,
+      "rule_text": "MC声类「齒」+拼音韵母「ie」→ セツ",
+      "onyomi": "セツ",
+      "source": "中古×拼音·声类+韵母",
+      "tier": 3,
+      "accuracy": 0.5,
+      "new_covered": 2,
+      "cumulative": 481,
+      "confidence": "有时",
+      "feature_type": "cross_domain_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "切",
+        "節"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "借",
+          "actual": "セキ"
+        },
+        {
+          "kanji": "写",
+          "actual": "シャ"
+        }
+      ]
+    },
+    {
+      "rank": 171,
+      "rule_text": "MC韵母「尤」+拼音韵母「u」→ シュク",
+      "onyomi": "シュク",
+      "source": "中古×拼音·韵母+韵母",
+      "tier": 3,
+      "accuracy": 0.5,
+      "new_covered": 2,
+      "cumulative": 483,
+      "confidence": "有时",
+      "feature_type": "cross_domain_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "祝",
+        "宿"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "不",
+          "actual": "フウ"
+        },
+        {
+          "kanji": "復",
+          "actual": "フク"
+        }
+      ]
+    },
+    {
+      "rank": 172,
+      "rule_text": "拼音 y+ao → ヨウ",
+      "onyomi": "ヨウ",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 0.6667,
+      "new_covered": 1,
+      "cumulative": 484,
+      "confidence": "大概率",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "曜",
+        "要"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "薬",
+          "actual": "ヤク"
+        }
+      ]
+    },
+    {
+      "rank": 173,
+      "rule_text": "拼音 j+i1 → キ",
+      "onyomi": "キ",
+      "source": "拼音·声+韵+调",
+      "tier": 3,
+      "accuracy": 0.6667,
+      "new_covered": 1,
+      "cumulative": 485,
+      "confidence": "大概率",
+      "feature_type": "pinyin_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "機",
+        "机"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "鶏",
+          "actual": "ケイ"
+        }
+      ]
+    },
+    {
+      "rank": 174,
+      "rule_text": "韵母 -ing3 → ケイ",
+      "onyomi": "ケイ",
+      "source": "拼音·韵母+调",
+      "tier": 3,
+      "accuracy": 0.6667,
+      "new_covered": 1,
+      "cumulative": 486,
+      "confidence": "大概率",
+      "feature_type": "pinyin_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "頃",
+        "警"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "丼",
+          "actual": "セイ"
+        }
+      ]
+    },
+    {
+      "rank": 175,
+      "rule_text": "MC声母「明」+MC等「三」→ メイ",
+      "onyomi": "メイ",
+      "source": "中古音·MC声母+MC等",
+      "tier": 3,
+      "accuracy": 0.6667,
+      "new_covered": 1,
+      "cumulative": 487,
+      "confidence": "大概率",
+      "feature_type": "mc_internal_pair",
+      "reading_type": "divergent",
+      "correct_examples": [
+        "明",
+        "皿"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "目",
+          "actual": "ボク"
+        }
+      ]
+    },
+    {
+      "rank": 176,
+      "rule_text": "MC声母「並」+MC韵摄「宕」→ ホウ",
+      "onyomi": "ホウ",
+      "source": "中古音·MC声母+MC韵摄",
+      "tier": 3,
+      "accuracy": 0.6667,
+      "new_covered": 1,
+      "cumulative": 488,
+      "confidence": "大概率",
+      "feature_type": "mc_internal_pair",
+      "reading_type": "divergent",
+      "correct_examples": [
+        "傍",
+        "方"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "薄",
+          "actual": "ハク"
+        }
+      ]
+    },
+    {
+      "rank": 177,
+      "rule_text": "MC声母「泥」+MC韵摄「山」→ ダン",
+      "onyomi": "ダン",
+      "source": "中古音·MC声母+MC韵摄",
+      "tier": 3,
+      "accuracy": 0.6667,
+      "new_covered": 1,
+      "cumulative": 489,
+      "confidence": "大概率",
+      "feature_type": "mc_internal_pair",
+      "reading_type": "divergent",
+      "correct_examples": [
+        "暖",
+        "難"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "年",
+          "actual": "デン"
+        }
+      ]
+    },
+    {
+      "rank": 178,
+      "rule_text": "MC声母「精」+MC韵摄「蟹」→ サイ",
+      "onyomi": "サイ",
+      "source": "中古音·MC声母+MC韵摄",
+      "tier": 3,
+      "accuracy": 0.6667,
+      "new_covered": 1,
+      "cumulative": 490,
+      "confidence": "大概率",
+      "feature_type": "mc_internal_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "最",
+        "再"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "祭",
+          "actual": "セイ"
+        }
+      ]
+    },
+    {
+      "rank": 179,
+      "rule_text": "MC韵母「泰」+MC開合「開」→ タイ",
+      "onyomi": "タイ",
+      "source": "中古音·MC韵母+MC開合",
+      "tier": 3,
+      "accuracy": 0.6667,
+      "new_covered": 1,
+      "cumulative": 491,
+      "confidence": "大概率",
+      "feature_type": "mc_internal_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "大",
+        "太"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "頼",
+          "actual": "ライ"
+        }
+      ]
+    },
+    {
+      "rank": 180,
+      "rule_text": "MC韵母「先」+MC声类「牙」→ ケン",
+      "onyomi": "ケン",
+      "source": "中古音·MC韵母+MC声类",
+      "tier": 3,
+      "accuracy": 0.6667,
+      "new_covered": 1,
+      "cumulative": 492,
+      "confidence": "大概率",
+      "feature_type": "mc_internal_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "見",
+        "犬"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "結",
+          "actual": "ケツ"
+        }
+      ]
+    },
+    {
+      "rank": 181,
+      "rule_text": "MC韵母「東」+拼音声母「f」→ フク",
+      "onyomi": "フク",
+      "source": "中古×拼音·韵母+声母",
+      "tier": 3,
+      "accuracy": 0.6667,
+      "new_covered": 1,
+      "cumulative": 493,
+      "confidence": "大概率",
+      "feature_type": "cross_domain_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "腹",
+        "服"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "風",
+          "actual": "ホウ"
+        }
+      ]
+    },
+    {
+      "rank": 182,
+      "rule_text": "MC清濁「全清」+拼音韵母「iu」→ キュウ",
+      "onyomi": "キュウ",
+      "source": "中古×拼音·清濁+韵母",
+      "tier": 3,
+      "accuracy": 0.6667,
+      "new_covered": 1,
+      "cumulative": 494,
+      "confidence": "大概率",
+      "feature_type": "cross_domain_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "九",
+        "休"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "酒",
+          "actual": "シュウ"
+        }
+      ]
+    },
+    {
+      "rank": 183,
+      "rule_text": "MC声类「齒」+拼音韵母「a」→ サ",
+      "onyomi": "サ",
+      "source": "中古×拼音·声类+韵母",
+      "tier": 3,
+      "accuracy": 0.6667,
+      "new_covered": 1,
+      "cumulative": 495,
+      "confidence": "大概率",
+      "feature_type": "cross_domain_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "差",
+        "砂"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "雑",
+          "actual": "ソウ"
+        }
+      ]
+    },
+    {
+      "rank": 184,
+      "rule_text": "部首「人」+MC声母「澄」→ チュウ",
+      "onyomi": "チュウ",
+      "source": "部首×中古·部首+声母",
+      "tier": 3,
+      "accuracy": 0.6667,
+      "new_covered": 1,
+      "cumulative": 496,
+      "confidence": "大概率",
+      "feature_type": "cross_domain_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "仲",
+        "住"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "伝",
+          "actual": "ウン"
+        }
+      ]
+    },
+    {
+      "rank": 185,
+      "rule_text": "部首「水」+MC声母「澄」→ タク",
+      "onyomi": "タク",
+      "source": "部首×中古·部首+声母",
+      "tier": 3,
+      "accuracy": 0.6667,
+      "new_covered": 1,
+      "cumulative": 497,
+      "confidence": "大概率",
+      "feature_type": "cross_domain_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "濯",
+        "沢"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "池",
+          "actual": "チ"
+        }
+      ]
+    },
+    {
+      "rank": 186,
+      "rule_text": "部首「言」+MC声母「見」→ ケイ",
+      "onyomi": "ケイ",
+      "source": "部首×中古·部首+声母",
+      "tier": 3,
+      "accuracy": 0.6667,
+      "new_covered": 1,
+      "cumulative": 498,
+      "confidence": "大概率",
+      "feature_type": "cross_domain_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "計",
+        "警"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "記",
+          "actual": "キ"
+        }
+      ]
+    },
+    {
+      "rank": 187,
+      "rule_text": "部首「門」+鼻音「鼻音韵尾-n」→ カン",
+      "onyomi": "カン",
+      "source": "部首×拼音·部首+鼻音",
+      "tier": 3,
+      "accuracy": 0.6667,
+      "new_covered": 1,
+      "cumulative": 499,
+      "confidence": "大概率",
+      "feature_type": "cross_domain_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "間",
+        "関"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "門",
+          "actual": "ボン"
+        }
+      ]
+    },
+    {
+      "rank": 188,
+      "rule_text": "声母=z AND 鼻音=鼻音韵尾-ng → ソウ",
+      "onyomi": "ソウ",
+      "source": "XGBoost·双层",
+      "tier": 4,
+      "accuracy": 0.6667,
+      "new_covered": 1,
+      "cumulative": 500,
+      "confidence": "大概率",
+      "feature_type": "xgboost_mining",
+      "reading_type": "general",
+      "correct_examples": [
+        "贈",
+        "蔵"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "縦",
+          "actual": "ショウ"
+        }
+      ]
+    },
+    {
+      "rank": 189,
+      "rule_text": "MC韵母「陽」+MC声类「齒」→ ショウ",
+      "onyomi": "ショウ",
+      "source": "中古音·MC韵母+MC声类",
+      "tier": 3,
+      "accuracy": 0.4444,
+      "new_covered": 2,
+      "cumulative": 502,
+      "confidence": "有时",
+      "feature_type": "mc_internal_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "象",
+        "相",
+        "上",
+        "章"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "向",
+          "actual": "キョウ"
+        },
+        {
+          "kanji": "弱",
+          "actual": "ジャク"
+        },
+        {
+          "kanji": "状",
+          "actual": "ソウ"
+        }
+      ]
+    },
+    {
+      "rank": 190,
+      "rule_text": "MC韵母「模」+MC声类「牙」→ コ",
+      "onyomi": "コ",
+      "source": "中古音·MC韵母+MC声类",
+      "tier": 3,
+      "accuracy": 0.6,
+      "new_covered": 1,
+      "cumulative": 503,
+      "confidence": "大概率",
+      "feature_type": "mc_internal_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "庫",
+        "故",
+        "古"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "五",
+          "actual": "ゴ"
+        },
+        {
+          "kanji": "午",
+          "actual": "ゴ"
+        }
+      ]
+    },
+    {
+      "rank": 191,
+      "rule_text": "MC清濁=全清 AND MC等=三 AND MC韵摄=梗 → ケイ",
+      "onyomi": "ケイ",
+      "source": "XGBoost·三层",
+      "tier": 5,
+      "accuracy": 0.6,
+      "new_covered": 1,
+      "cumulative": 504,
+      "confidence": "大概率",
+      "feature_type": "xgboost_mining",
+      "reading_type": "general",
+      "correct_examples": [
+        "鏡",
+        "警",
+        "兄"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "生",
+          "actual": "セイ"
+        },
+        {
+          "kanji": "英",
+          "actual": "エイ"
+        }
+      ]
+    },
+    {
+      "rank": 192,
+      "rule_text": "声母=l AND 鼻音=鼻音韵尾-ng → リョウ",
+      "onyomi": "リョウ",
+      "source": "XGBoost·双层",
+      "tier": 4,
+      "accuracy": 0.5714,
+      "new_covered": 1,
+      "cumulative": 505,
+      "confidence": "有时",
+      "feature_type": "xgboost_mining",
+      "reading_type": "general",
+      "correct_examples": [
+        "両",
+        "良",
+        "涼",
+        "竜"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "冷",
+          "actual": "レイ"
+        },
+        {
+          "kanji": "廊",
+          "actual": "ロウ"
+        },
+        {
+          "kanji": "零",
+          "actual": "レイ"
+        }
+      ]
+    },
+    {
+      "rank": 193,
+      "rule_text": "MC韵母「虞」+MC清濁「次濁」→ ウ",
+      "onyomi": "ウ",
+      "source": "中古音·MC韵母+MC清濁",
+      "tier": 3,
+      "accuracy": 0.4,
+      "new_covered": 2,
+      "cumulative": 507,
+      "confidence": "有时",
+      "feature_type": "mc_internal_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "雨",
+        "芋"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "乳",
+          "actual": "ジュ"
+        },
+        {
+          "kanji": "無",
+          "actual": "ブ"
+        },
+        {
+          "kanji": "舞",
+          "actual": "ブ"
+        }
+      ]
+    },
+    {
+      "rank": 194,
+      "rule_text": "MC等「一」+MC声类「齒」→ ソク",
+      "onyomi": "ソク",
+      "source": "中古音·MC等+MC声类",
+      "tier": 3,
+      "accuracy": 0.4,
+      "new_covered": 2,
+      "cumulative": 509,
+      "confidence": "有时",
+      "feature_type": "mc_internal_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "速",
+        "族"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "左",
+          "actual": "サ"
+        },
+        {
+          "kanji": "座",
+          "actual": "サ"
+        },
+        {
+          "kanji": "送",
+          "actual": "ソウ"
+        }
+      ]
+    },
+    {
+      "rank": 195,
+      "rule_text": "MC韵母「魂」+拼音韵母「un」→ コン",
+      "onyomi": "コン",
+      "source": "中古×拼音·韵母+韵母",
+      "tier": 3,
+      "accuracy": 0.4,
+      "new_covered": 2,
+      "cumulative": 511,
+      "confidence": "有时",
+      "feature_type": "cross_domain_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "婚",
+        "困"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "寸",
+          "actual": "ソン"
+        },
+        {
+          "kanji": "村",
+          "actual": "ソン"
+        },
+        {
+          "kanji": "豚",
+          "actual": "トン"
+        }
+      ]
+    },
+    {
+      "rank": 196,
+      "rule_text": "MC韵摄「宕」+拼音韵母「iang」→ キョウ",
+      "onyomi": "キョウ",
+      "source": "中古×拼音·韵摄+韵母",
+      "tier": 3,
+      "accuracy": 0.375,
+      "new_covered": 2,
+      "cumulative": 513,
+      "confidence": "偶尔",
+      "feature_type": "cross_domain_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "向",
+        "郷",
+        "強"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "涼",
+          "actual": "リョウ"
+        },
+        {
+          "kanji": "相",
+          "actual": "ショウ"
+        },
+        {
+          "kanji": "箱",
+          "actual": "ソウ"
+        }
+      ]
+    },
+    {
+      "rank": 197,
+      "rule_text": "拼音 c+e → サク",
+      "onyomi": "サク",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 514,
+      "confidence": "有时",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "冊"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "側",
+          "actual": "ソク"
+        }
+      ]
+    },
+    {
+      "rank": 198,
+      "rule_text": "拼音 ch+a → タ",
+      "onyomi": "タ",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 515,
+      "confidence": "有时",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "茶"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "差",
+          "actual": "サ"
+        }
+      ]
+    },
+    {
+      "rank": 199,
+      "rule_text": "拼音 ch+eng → ショウ",
+      "onyomi": "ショウ",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 516,
+      "confidence": "有时",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "乗"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "成",
+          "actual": "セイ"
+        }
+      ]
+    },
+    {
+      "rank": 200,
+      "rule_text": "拼音 g+ong → キョウ",
+      "onyomi": "キョウ",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 517,
+      "confidence": "有时",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "供"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "公",
+          "actual": "コウ"
+        }
+      ]
+    },
+    {
+      "rank": 201,
+      "rule_text": "拼音 j+iang → ショウ",
+      "onyomi": "ショウ",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 518,
+      "confidence": "有时",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "醤"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "降",
+          "actual": "コウ"
+        }
+      ]
+    },
+    {
+      "rank": 202,
+      "rule_text": "拼音 l+iu → リク",
+      "onyomi": "リク",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 519,
+      "confidence": "有时",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "六"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "留",
+          "actual": "リュウ"
+        }
+      ]
+    },
+    {
+      "rank": 203,
+      "rule_text": "拼音 l+iu → リュウ",
+      "onyomi": "リュウ",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 520,
+      "confidence": "有时",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "留"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "六",
+          "actual": "リク"
+        }
+      ]
+    },
+    {
+      "rank": 204,
+      "rule_text": "拼音 m+ao → ビョウ",
+      "onyomi": "ビョウ",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 521,
+      "confidence": "有时",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "猫"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "帽",
+          "actual": "ボウ"
+        }
+      ]
+    },
+    {
+      "rank": 205,
+      "rule_text": "拼音 m+ao → ボウ",
+      "onyomi": "ボウ",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 522,
+      "confidence": "有时",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "帽"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "猫",
+          "actual": "ビョウ"
+        }
+      ]
+    },
+    {
+      "rank": 206,
+      "rule_text": "拼音 m+o → バツ",
+      "onyomi": "バツ",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 523,
+      "confidence": "有时",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "末"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "磨",
+          "actual": "バ"
+        }
+      ]
+    },
+    {
+      "rank": 207,
+      "rule_text": "拼音 p+u → ホク",
+      "onyomi": "ホク",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 524,
+      "confidence": "有时",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "僕"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "撲",
+          "actual": "ボク"
+        }
+      ]
+    },
+    {
+      "rank": 208,
+      "rule_text": "拼音 p+u → ボク",
+      "onyomi": "ボク",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 525,
+      "confidence": "有时",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "撲"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "僕",
+          "actual": "ホク"
+        }
+      ]
+    },
+    {
+      "rank": 209,
+      "rule_text": "拼音 q+ue → シャク",
+      "onyomi": "シャク",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 526,
+      "confidence": "有时",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "雀"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "確",
+          "actual": "カク"
+        }
+      ]
+    },
+    {
+      "rank": 210,
+      "rule_text": "拼音 s+ong → ソウ",
+      "onyomi": "ソウ",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 527,
+      "confidence": "有时",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "送"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "松",
+          "actual": "ショウ"
+        }
+      ]
+    },
+    {
+      "rank": 211,
+      "rule_text": "拼音 t+uo → タ",
+      "onyomi": "タ",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 528,
+      "confidence": "有时",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "駄"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "脱",
+          "actual": "ダチ"
+        }
+      ]
+    },
+    {
+      "rank": 212,
+      "rule_text": "拼音 t+uo → ダチ",
+      "onyomi": "ダチ",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 529,
+      "confidence": "有时",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "脱"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "駄",
+          "actual": "タ"
+        }
+      ]
+    },
+    {
+      "rank": 213,
+      "rule_text": "拼音 x+iong → ユウ",
+      "onyomi": "ユウ",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 530,
+      "confidence": "有时",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "熊"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "兄",
+          "actual": "ケイ"
+        }
+      ]
+    },
+    {
+      "rank": 214,
+      "rule_text": "拼音 x+uan → ゲン",
+      "onyomi": "ゲン",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 531,
+      "confidence": "有时",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "玄"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "選",
+          "actual": "セン"
+        }
+      ]
+    },
+    {
+      "rank": 215,
+      "rule_text": "拼音 z+u → ショク",
+      "onyomi": "ショク",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 532,
+      "confidence": "有时",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "足"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "族",
+          "actual": "ソク"
+        }
+      ]
+    },
+    {
+      "rank": 216,
+      "rule_text": "拼音 zh+e → チャク",
+      "onyomi": "チャク",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 533,
+      "confidence": "有时",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "着"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "者",
+          "actual": "シャ"
+        }
+      ]
+    },
+    {
+      "rank": 217,
+      "rule_text": "MC韵母「鹽」→ ヨウ",
+      "onyomi": "ヨウ",
+      "source": "中古音·韵母",
+      "tier": 1,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 534,
+      "confidence": "有时",
+      "feature_type": "mc_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "葉"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "塩",
+          "actual": "エン"
+        }
+      ]
+    },
+    {
+      "rank": 218,
+      "rule_text": "声符「屋」→ アク",
+      "onyomi": "アク",
+      "source": "声符·V1V2",
+      "tier": 2,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 535,
+      "confidence": "有时",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "握"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "屋",
+          "actual": "オク"
+        }
+      ]
+    },
+    {
+      "rank": 219,
+      "rule_text": "声符「屋」→ オク",
+      "onyomi": "オク",
+      "source": "声符·V1V2",
+      "tier": 2,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 536,
+      "confidence": "有时",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "屋"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "握",
+          "actual": "アク"
+        }
+      ]
+    },
+    {
+      "rank": 220,
+      "rule_text": "声符「意」→ ヨク",
+      "onyomi": "ヨク",
+      "source": "声符·V1V2",
+      "tier": 2,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 537,
+      "confidence": "有时",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "億"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "意",
+          "actual": "イ"
+        }
+      ]
+    },
+    {
+      "rank": 221,
+      "rule_text": "声符「匚」→ ヒツ",
+      "onyomi": "ヒツ",
+      "source": "声符·V1V2",
+      "tier": 2,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 538,
+      "confidence": "有时",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "匹"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "医",
+          "actual": "イ"
+        }
+      ]
+    },
+    {
+      "rank": 222,
+      "rule_text": "声符「楽」→ ラク",
+      "onyomi": "ラク",
+      "source": "声符·V1V2",
+      "tier": 2,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 539,
+      "confidence": "有时",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "楽"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "薬",
+          "actual": "ヤク"
+        }
+      ]
+    },
+    {
+      "rank": 223,
+      "rule_text": "声符「楽」→ ヤク",
+      "onyomi": "ヤク",
+      "source": "声符·V1V2",
+      "tier": 2,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 540,
+      "confidence": "有时",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "薬"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "楽",
+          "actual": "ラク"
+        }
+      ]
+    },
+    {
+      "rank": 224,
+      "rule_text": "声符「各」→ ロ",
+      "onyomi": "ロ",
+      "source": "声符·V1V2",
+      "tier": 2,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 541,
+      "confidence": "有时",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "露"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "客",
+          "actual": "カク"
+        }
+      ]
+    },
+    {
+      "rank": 225,
+      "rule_text": "声符「牛」→ ギュウ",
+      "onyomi": "ギュウ",
+      "source": "声符·V1V2",
+      "tier": 2,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 542,
+      "confidence": "有时",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "牛"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "特",
+          "actual": "トク"
+        }
+      ]
+    },
+    {
+      "rank": 226,
+      "rule_text": "声符「牛」→ トク",
+      "onyomi": "トク",
+      "source": "声符·V1V2",
+      "tier": 2,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 543,
+      "confidence": "有时",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "特"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "牛",
+          "actual": "ギュウ"
+        }
+      ]
+    },
+    {
+      "rank": 227,
+      "rule_text": "声符「去」→ キョ",
+      "onyomi": "キョ",
+      "source": "声符·V1V2",
+      "tier": 2,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 544,
+      "confidence": "有时",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "去"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "法",
+          "actual": "ホウ"
+        }
+      ]
+    },
+    {
+      "rank": 228,
+      "rule_text": "声符「去」→ ホウ",
+      "onyomi": "ホウ",
+      "source": "声符·V1V2",
+      "tier": 2,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 545,
+      "confidence": "有时",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "法"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "去",
+          "actual": "キョ"
+        }
+      ]
+    },
+    {
+      "rank": 229,
+      "rule_text": "声符「曲」→ ジョウ",
+      "onyomi": "ジョウ",
+      "source": "声符·V1V2",
+      "tier": 2,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 546,
+      "confidence": "有时",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "濃"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "曲",
+          "actual": "キョク"
+        }
+      ]
+    },
+    {
+      "rank": 230,
+      "rule_text": "声符「㑒」→ ゲン",
+      "onyomi": "ゲン",
+      "source": "声符·V1V2",
+      "tier": 2,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 547,
+      "confidence": "有时",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "験"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "鹸",
+          "actual": "カン"
+        }
+      ]
+    },
+    {
+      "rank": 231,
+      "rule_text": "声符「㑒」→ カン",
+      "onyomi": "カン",
+      "source": "声符·V1V2",
+      "tier": 2,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 548,
+      "confidence": "有时",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "鹸"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "験",
+          "actual": "ゲン"
+        }
+      ]
+    },
+    {
+      "rank": 232,
+      "rule_text": "声符「最」→ サツ",
+      "onyomi": "サツ",
+      "source": "声符·V1V2",
+      "tier": 2,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 549,
+      "confidence": "有时",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "撮"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "最",
+          "actual": "サイ"
+        }
+      ]
+    },
+    {
+      "rank": 233,
+      "rule_text": "声符「才」→ ヘイ",
+      "onyomi": "ヘイ",
+      "source": "声符·V1V2",
+      "tier": 2,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 550,
+      "confidence": "有时",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "閉"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "財",
+          "actual": "サイ"
+        }
+      ]
+    },
+    {
+      "rank": 234,
+      "rule_text": "声符「乍」→ サク",
+      "onyomi": "サク",
+      "source": "声符·V1V2",
+      "tier": 2,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 551,
+      "confidence": "有时",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "昨"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "作",
+          "actual": "サ"
+        }
+      ]
+    },
+    {
+      "rank": 235,
+      "rule_text": "声符「叔」→ シュク",
+      "onyomi": "シュク",
+      "source": "声符·V1V2",
+      "tier": 2,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 552,
+      "confidence": "有时",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "叔"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "寂",
+          "actual": "セキ"
+        }
+      ]
+    },
+    {
+      "rank": 236,
+      "rule_text": "声符「主」→ シュ",
+      "onyomi": "シュ",
+      "source": "声符·V1V2",
+      "tier": 2,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 553,
+      "confidence": "有时",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "主"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "住",
+          "actual": "チュウ"
+        }
+      ]
+    },
+    {
+      "rank": 237,
+      "rule_text": "声符「冬」→ シュウ",
+      "onyomi": "シュウ",
+      "source": "声符·V1V2",
+      "tier": 2,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 554,
+      "confidence": "有时",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "終"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "冬",
+          "actual": "トウ"
+        }
+      ]
+    },
+    {
+      "rank": 238,
+      "rule_text": "声符「余」→ ヨ",
+      "onyomi": "ヨ",
+      "source": "声符·V1V2",
+      "tier": 2,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 555,
+      "confidence": "有时",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "余"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "除",
+          "actual": "チョ"
+        }
+      ]
+    },
+    {
+      "rank": 239,
+      "rule_text": "声符「世」→ セイ",
+      "onyomi": "セイ",
+      "source": "声符·V1V2",
+      "tier": 2,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 556,
+      "confidence": "有时",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "世"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "葉",
+          "actual": "ヨウ"
+        }
+      ]
+    },
+    {
+      "rank": 240,
+      "rule_text": "声符「埶」→ ゼツ",
+      "onyomi": "ゼツ",
+      "source": "声符·V1V2",
+      "tier": 2,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 557,
+      "confidence": "有时",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "熱"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "勢",
+          "actual": "セイ"
+        }
+      ]
+    },
+    {
+      "rank": 241,
+      "rule_text": "声符「妇」→ セツ",
+      "onyomi": "セツ",
+      "source": "声符·V1V2",
+      "tier": 2,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 558,
+      "confidence": "有时",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "雪"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "当",
+          "actual": "トウ"
+        }
+      ]
+    },
+    {
+      "rank": 242,
+      "rule_text": "声符「相」→ ソウ",
+      "onyomi": "ソウ",
+      "source": "声符·V1V2",
+      "tier": 2,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 559,
+      "confidence": "有时",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "箱"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "相",
+          "actual": "ショウ"
+        }
+      ]
+    },
+    {
+      "rank": 243,
+      "rule_text": "声符「本」→ ホン",
+      "onyomi": "ホン",
+      "source": "声符·V1V2",
+      "tier": 2,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 560,
+      "confidence": "有时",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "本"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "体",
+          "actual": "テイ"
+        }
+      ]
+    },
+    {
+      "rank": 244,
+      "rule_text": "声符「直」→ チョク",
+      "onyomi": "チョク",
+      "source": "声符·V1V2",
+      "tier": 2,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 561,
+      "confidence": "有时",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "直"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "置",
+          "actual": "チ"
+        }
+      ]
+    },
+    {
+      "rank": 245,
+      "rule_text": "声符「壬」→ ジン",
+      "onyomi": "ジン",
+      "source": "声符·V1V2",
+      "tier": 2,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 562,
+      "confidence": "有时",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "賃"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "庭",
+          "actual": "テイ"
+        }
+      ]
+    },
+    {
+      "rank": 246,
+      "rule_text": "声符「動」→ ドウ",
+      "onyomi": "ドウ",
+      "source": "声符·V1V2",
+      "tier": 2,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 563,
+      "confidence": "有时",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "働"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "動",
+          "actual": "トウ"
+        }
+      ]
+    },
+    {
+      "rank": 247,
+      "rule_text": "声符「売」→ トク",
+      "onyomi": "トク",
+      "source": "声符·V1V2",
+      "tier": 2,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 564,
+      "confidence": "有时",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "読"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "売",
+          "actual": "バイ"
+        }
+      ]
+    },
+    {
+      "rank": 248,
+      "rule_text": "声符「不」→ フウ",
+      "onyomi": "フウ",
+      "source": "声符·V1V2",
+      "tier": 2,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 565,
+      "confidence": "有时",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "不"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "杯",
+          "actual": "ハイ"
+        }
+      ]
+    },
+    {
+      "rank": 249,
+      "rule_text": "声符「北」→ ホク",
+      "onyomi": "ホク",
+      "source": "声符·V1V2",
+      "tier": 2,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 566,
+      "confidence": "有时",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "北"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "背",
+          "actual": "ハイ"
+        }
+      ]
+    },
+    {
+      "rank": 250,
+      "rule_text": "声符「麦」→ バク",
+      "onyomi": "バク",
+      "source": "声符·V1V2",
+      "tier": 2,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 567,
+      "confidence": "有时",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "麦"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "麺",
+          "actual": "ベン"
+        }
+      ]
+    },
+    {
+      "rank": 251,
+      "rule_text": "声符「必」→ ヒ",
+      "onyomi": "ヒ",
+      "source": "声符·V1V2",
+      "tier": 2,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 568,
+      "confidence": "有时",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "秘"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "密",
+          "actual": "ビツ"
+        }
+      ]
+    },
+    {
+      "rank": 252,
+      "rule_text": "声符「必」→ ビツ",
+      "onyomi": "ビツ",
+      "source": "声符·V1V2",
+      "tier": 2,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 569,
+      "confidence": "有时",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "密"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "秘",
+          "actual": "ヒ"
+        }
+      ]
+    },
+    {
+      "rank": 253,
+      "rule_text": "声符 八 → ブ",
+      "onyomi": "ブ",
+      "source": "声符·精确",
+      "tier": 2,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 570,
+      "confidence": "有时",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "分"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "只",
+          "actual": "シ"
+        }
+      ]
+    },
+    {
+      "rank": 254,
+      "rule_text": "声符 勿 → ブツ",
+      "onyomi": "ブツ",
+      "source": "声符·精确",
+      "tier": 2,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 571,
+      "confidence": "有时",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "物"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "易",
+          "actual": "エキ"
+        }
+      ]
+    },
+    {
+      "rank": 255,
+      "rule_text": "声符 古 → キョ",
+      "onyomi": "キョ",
+      "source": "声符·精确",
+      "tier": 2,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 572,
+      "confidence": "有时",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "居"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "故",
+          "actual": "コ"
+        }
+      ]
+    },
+    {
+      "rank": 256,
+      "rule_text": "声符 斤 → ソ",
+      "onyomi": "ソ",
+      "source": "声符·精确",
+      "tier": 2,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 573,
+      "confidence": "有时",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "所"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "近",
+          "actual": "キン"
+        }
+      ]
+    },
+    {
+      "rank": 257,
+      "rule_text": "声符 月 → トン",
+      "onyomi": "トン",
+      "source": "声符·精确",
+      "tier": 2,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 574,
+      "confidence": "有时",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "豚"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "明",
+          "actual": "メイ"
+        }
+      ]
+    },
+    {
+      "rank": 258,
+      "rule_text": "声符 立 → キュウ",
+      "onyomi": "キュウ",
+      "source": "声符·精确",
+      "tier": 2,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 575,
+      "confidence": "有时",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "泣"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "拉",
+          "actual": "ロウ"
+        }
+      ]
+    },
+    {
+      "rank": 259,
+      "rule_text": "声符 立 → ロウ",
+      "onyomi": "ロウ",
+      "source": "声符·精确",
+      "tier": 2,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 576,
+      "confidence": "有时",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "拉"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "泣",
+          "actual": "キュウ"
+        }
+      ]
+    },
+    {
+      "rank": 260,
+      "rule_text": "声符 米 → ベイ",
+      "onyomi": "ベイ",
+      "source": "声符·精确",
+      "tier": 2,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 577,
+      "confidence": "有时",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "迷"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "料",
+          "actual": "リョウ"
+        }
+      ]
+    },
+    {
+      "rank": 261,
+      "rule_text": "声符 聿 → ヒツ",
+      "onyomi": "ヒツ",
+      "source": "声符·精确",
+      "tier": 2,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 578,
+      "confidence": "有时",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "筆"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "建",
+          "actual": "ケン"
+        }
+      ]
+    },
+    {
+      "rank": 262,
+      "rule_text": "声符 艮 → ギン",
+      "onyomi": "ギン",
+      "source": "声符·精确",
+      "tier": 2,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 579,
+      "confidence": "有时",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "銀"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "眼",
+          "actual": "ガン"
+        }
+      ]
+    },
+    {
+      "rank": 263,
+      "rule_text": "部首「乙」→ ジュ",
+      "onyomi": "ジュ",
+      "source": "结构·部首",
+      "tier": 2,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 580,
+      "confidence": "有时",
+      "feature_type": "structure",
+      "reading_type": "general",
+      "correct_examples": [
+        "乳"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "九",
+          "actual": "キュウ"
+        }
+      ]
+    },
+    {
+      "rank": 264,
+      "rule_text": "部首「入」→ ジュウ",
+      "onyomi": "ジュウ",
+      "source": "结构·部首",
+      "tier": 2,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 581,
+      "confidence": "有时",
+      "feature_type": "structure",
+      "reading_type": "general",
+      "correct_examples": [
+        "入"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "全",
+          "actual": "セン"
+        }
+      ]
+    },
+    {
+      "rank": 265,
+      "rule_text": "部首「卩」→ ギ",
+      "onyomi": "ギ",
+      "source": "结构·部首",
+      "tier": 2,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 582,
+      "confidence": "有时",
+      "feature_type": "structure",
+      "reading_type": "general",
+      "correct_examples": [
+        "危"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "卵",
+          "actual": "ラン"
+        }
+      ]
+    },
+    {
+      "rank": 266,
+      "rule_text": "部首「卩」→ ラン",
+      "onyomi": "ラン",
+      "source": "结构·部首",
+      "tier": 2,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 583,
+      "confidence": "有时",
+      "feature_type": "structure",
+      "reading_type": "general",
+      "correct_examples": [
+        "卵"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "危",
+          "actual": "ギ"
+        }
+      ]
+    },
+    {
+      "rank": 267,
+      "rule_text": "部首「月」→ ゲツ",
+      "onyomi": "ゲツ",
+      "source": "结构·部首",
+      "tier": 2,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 584,
+      "confidence": "有时",
+      "feature_type": "structure",
+      "reading_type": "general",
+      "correct_examples": [
+        "月"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "有",
+          "actual": "ユウ"
+        }
+      ]
+    },
+    {
+      "rank": 268,
+      "rule_text": "部首「毋」→ ボウ",
+      "onyomi": "ボウ",
+      "source": "结构·部首",
+      "tier": 2,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 585,
+      "confidence": "有时",
+      "feature_type": "structure",
+      "reading_type": "general",
+      "correct_examples": [
+        "母"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "毎",
+          "actual": "バイ"
+        }
+      ]
+    },
+    {
+      "rank": 269,
+      "rule_text": "部首「生」→ サン",
+      "onyomi": "サン",
+      "source": "结构·部首",
+      "tier": 2,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 586,
+      "confidence": "有时",
+      "feature_type": "structure",
+      "reading_type": "general",
+      "correct_examples": [
+        "産"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "生",
+          "actual": "セイ"
+        }
+      ]
+    },
+    {
+      "rank": 270,
+      "rule_text": "部首「网」→ ラ",
+      "onyomi": "ラ",
+      "source": "结构·部首",
+      "tier": 2,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 587,
+      "confidence": "有时",
+      "feature_type": "structure",
+      "reading_type": "general",
+      "correct_examples": [
+        "羅"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "置",
+          "actual": "チ"
+        }
+      ]
+    },
+    {
+      "rank": 271,
+      "rule_text": "部首「羊」→ ビ",
+      "onyomi": "ビ",
+      "source": "结构·部首",
+      "tier": 2,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 588,
+      "confidence": "有时",
+      "feature_type": "structure",
+      "reading_type": "general",
+      "correct_examples": [
+        "美"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "着",
+          "actual": "チャク"
+        }
+      ]
+    },
+    {
+      "rank": 272,
+      "rule_text": "拼音 b+ei4 → ヒ",
+      "onyomi": "ヒ",
+      "source": "拼音·声+韵+调",
+      "tier": 3,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 589,
+      "confidence": "有时",
+      "feature_type": "pinyin_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "被",
+        "備"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "背",
+          "actual": "ハイ"
+        },
+        {
+          "kanji": "輩",
+          "actual": "ハイ"
+        }
+      ]
+    },
+    {
+      "rank": 273,
+      "rule_text": "拼音 ch+u1 → シュツ",
+      "onyomi": "シュツ",
+      "source": "拼音·声+韵+调",
+      "tier": 3,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 590,
+      "confidence": "有时",
+      "feature_type": "pinyin_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "出"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "初",
+          "actual": "ショ"
+        }
+      ]
+    },
+    {
+      "rank": 274,
+      "rule_text": "拼音 d+a2 → タツ",
+      "onyomi": "タツ",
+      "source": "拼音·声+韵+调",
+      "tier": 3,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 591,
+      "confidence": "有时",
+      "feature_type": "pinyin_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "達"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "答",
+          "actual": "トウ"
+        }
+      ]
+    },
+    {
+      "rank": 275,
+      "rule_text": "拼音 j+iao3 → カク",
+      "onyomi": "カク",
+      "source": "拼音·声+韵+调",
+      "tier": 3,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 592,
+      "confidence": "有时",
+      "feature_type": "pinyin_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "角"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "餃",
+          "actual": "コウ"
+        }
+      ]
+    },
+    {
+      "rank": 276,
+      "rule_text": "拼音 w+an3 → ワン",
+      "onyomi": "ワン",
+      "source": "拼音·声+韵+调",
+      "tier": 3,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 593,
+      "confidence": "有时",
+      "feature_type": "pinyin_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "碗"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "晩",
+          "actual": "バン"
+        }
+      ]
+    },
+    {
+      "rank": 277,
+      "rule_text": "拼音 x+ia2 → キョウ",
+      "onyomi": "キョウ",
+      "source": "拼音·声+韵+调",
+      "tier": 3,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 594,
+      "confidence": "有时",
+      "feature_type": "pinyin_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "狭"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "暇",
+          "actual": "カ"
+        }
+      ]
+    },
+    {
+      "rank": 278,
+      "rule_text": "拼音 zh+ou1 → シュウ",
+      "onyomi": "シュウ",
+      "source": "拼音·声+韵+调",
+      "tier": 3,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 595,
+      "confidence": "有时",
+      "feature_type": "pinyin_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "週"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "粥",
+          "actual": "シュク"
+        }
+      ]
+    },
+    {
+      "rank": 279,
+      "rule_text": "拼音 zh+ou1 → シュク",
+      "onyomi": "シュク",
+      "source": "拼音·声+韵+调",
+      "tier": 3,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 596,
+      "confidence": "有时",
+      "feature_type": "pinyin_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "粥"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "週",
+          "actual": "シュウ"
+        }
+      ]
+    },
+    {
+      "rank": 280,
+      "rule_text": "MC声母「書」+MC声调「入」→ シツ",
+      "onyomi": "シツ",
+      "source": "中古音·MC声母+MC声调",
+      "tier": 3,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 597,
+      "confidence": "有时",
+      "feature_type": "mc_internal_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "湿",
+        "室"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "叔",
+          "actual": "シュク"
+        },
+        {
+          "kanji": "式",
+          "actual": "ショク"
+        }
+      ]
+    },
+    {
+      "rank": 281,
+      "rule_text": "MC清濁「全濁」+拼音韵母「ian」→ ケン",
+      "onyomi": "ケン",
+      "source": "中古×拼音·清濁+韵母",
+      "tier": 3,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 598,
+      "confidence": "有时",
+      "feature_type": "cross_domain_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "嫌",
+        "健",
+        "鍵"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "前",
+          "actual": "セン"
+        },
+        {
+          "kanji": "田",
+          "actual": "テン"
+        },
+        {
+          "kanji": "電",
+          "actual": "テン"
+        }
+      ]
+    },
+    {
+      "rank": 282,
+      "rule_text": "画数_raw=7 AND 韵母=e → シャ",
+      "onyomi": "シャ",
+      "source": "XGBoost·双层",
+      "tier": 4,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 599,
+      "confidence": "有时",
+      "feature_type": "xgboost_mining",
+      "reading_type": "general",
+      "correct_examples": [
+        "社",
+        "車"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "何",
+          "actual": "カ"
+        },
+        {
+          "kanji": "沢",
+          "actual": "タク"
+        }
+      ]
+    },
+    {
+      "rank": 283,
+      "rule_text": "MC声母=定 AND 画数_raw=12 → トウ",
+      "onyomi": "トウ",
+      "source": "XGBoost·双层",
+      "tier": 4,
+      "accuracy": 0.5,
+      "new_covered": 1,
+      "cumulative": 600,
+      "confidence": "有时",
+      "feature_type": "xgboost_mining",
+      "reading_type": "general",
+      "correct_examples": [
+        "道",
+        "筒"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "弾",
+          "actual": "タン"
+        },
+        {
+          "kanji": "渡",
+          "actual": "ト"
+        }
+      ]
+    },
+    {
+      "rank": 284,
+      "rule_text": "MC韵母「虞」+MC声类「齒」→ ス",
+      "onyomi": "ス",
+      "source": "中古音·MC韵母+MC声类",
+      "tier": 3,
+      "accuracy": 0.3333,
+      "new_covered": 2,
+      "cumulative": 602,
+      "confidence": "偶尔",
+      "feature_type": "mc_internal_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "数",
+        "雛"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "主",
+          "actual": "シュ"
+        },
+        {
+          "kanji": "乳",
+          "actual": "ジュ"
+        },
+        {
+          "kanji": "取",
+          "actual": "シュ"
+        }
+      ]
+    },
+    {
+      "rank": 285,
+      "rule_text": "呉漢異=一致 AND 韵母+调=i2 → ヒ",
+      "onyomi": "ヒ",
+      "source": "XGBoost·双层",
+      "tier": 4,
+      "accuracy": 0.4286,
+      "new_covered": 1,
+      "cumulative": 603,
+      "confidence": "有时",
+      "feature_type": "xgboost_mining",
+      "reading_type": "general",
+      "correct_examples": [
+        "皮",
+        "疲",
+        "鼻"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "急",
+          "actual": "キュウ"
+        },
+        {
+          "kanji": "職",
+          "actual": "ショク"
+        },
+        {
+          "kanji": "鉄",
+          "actual": "テツ"
+        }
+      ]
+    },
+    {
+      "rank": 286,
+      "rule_text": "拼音 j+u → ク",
+      "onyomi": "ク",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 0.3333,
+      "new_covered": 1,
+      "cumulative": 604,
+      "confidence": "偶尔",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "具"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "局",
+          "actual": "キョク"
+        },
+        {
+          "kanji": "居",
+          "actual": "キョ"
+        }
+      ]
+    },
+    {
+      "rank": 287,
+      "rule_text": "拼音 q+u → シュ",
+      "onyomi": "シュ",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 0.3333,
+      "new_covered": 1,
+      "cumulative": 605,
+      "confidence": "偶尔",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "取"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "去",
+          "actual": "キョ"
+        },
+        {
+          "kanji": "曲",
+          "actual": "キョク"
+        }
+      ]
+    },
+    {
+      "rank": 288,
+      "rule_text": "拼音 s+u → ソ",
+      "onyomi": "ソ",
+      "source": "拼音·声+韵",
+      "tier": 1,
+      "accuracy": 0.3333,
+      "new_covered": 1,
+      "cumulative": 606,
+      "confidence": "偶尔",
+      "feature_type": "pinyin_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "素"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "宿",
+          "actual": "シュク"
+        },
+        {
+          "kanji": "速",
+          "actual": "ソク"
+        }
+      ]
+    },
+    {
+      "rank": 289,
+      "rule_text": "MC韵母「山」→ ハツ",
+      "onyomi": "ハツ",
+      "source": "中古音·韵母",
+      "tier": 1,
+      "accuracy": 0.3333,
+      "new_covered": 1,
+      "cumulative": 607,
+      "confidence": "偶尔",
+      "feature_type": "mc_standalone",
+      "reading_type": "general",
+      "correct_examples": [
+        "八"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "山",
+          "actual": "サン"
+        },
+        {
+          "kanji": "眼",
+          "actual": "ガン"
+        }
+      ]
+    },
+    {
+      "rank": 290,
+      "rule_text": "声符「皿」→ オン",
+      "onyomi": "オン",
+      "source": "声符·V1V2",
+      "tier": 2,
+      "accuracy": 0.3333,
+      "new_covered": 1,
+      "cumulative": 608,
+      "confidence": "偶尔",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "温"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "塩",
+          "actual": "エン"
+        },
+        {
+          "kanji": "皿",
+          "actual": "メイ"
+        }
+      ]
+    },
+    {
+      "rank": 291,
+      "rule_text": "声符「比」→ レイ",
+      "onyomi": "レイ",
+      "source": "声符·V1V2",
+      "tier": 2,
+      "accuracy": 0.3333,
+      "new_covered": 1,
+      "cumulative": 609,
+      "confidence": "偶尔",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "麗"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "皆",
+          "actual": "カイ"
+        },
+        {
+          "kanji": "階",
+          "actual": "カイ"
+        }
+      ]
+    },
+    {
+      "rank": 292,
+      "rule_text": "声符「吉」→ キツ",
+      "onyomi": "キツ",
+      "source": "声符·V1V2",
+      "tier": 2,
+      "accuracy": 0.3333,
+      "new_covered": 1,
+      "cumulative": 610,
+      "confidence": "偶尔",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "詰"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "結",
+          "actual": "ケツ"
+        },
+        {
+          "kanji": "舎",
+          "actual": "シャ"
+        }
+      ]
+    },
+    {
+      "rank": 293,
+      "rule_text": "声符「吉」→ ケツ",
+      "onyomi": "ケツ",
+      "source": "声符·V1V2",
+      "tier": 2,
+      "accuracy": 0.3333,
+      "new_covered": 1,
+      "cumulative": 611,
+      "confidence": "偶尔",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "結"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "舎",
+          "actual": "シャ"
+        },
+        {
+          "kanji": "詰",
+          "actual": "キツ"
+        }
+      ]
+    },
+    {
+      "rank": 294,
+      "rule_text": "声符「犬」→ ゼン",
+      "onyomi": "ゼン",
+      "source": "声符·V1V2",
+      "tier": 2,
+      "accuracy": 0.3333,
+      "new_covered": 1,
+      "cumulative": 612,
+      "confidence": "偶尔",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "然"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "犬",
+          "actual": "ケン"
+        },
+        {
+          "kanji": "状",
+          "actual": "ソウ"
+        }
+      ]
+    },
+    {
+      "rank": 295,
+      "rule_text": "声符「占」→ チョウ",
+      "onyomi": "チョウ",
+      "source": "声符·V1V2",
+      "tier": 2,
+      "accuracy": 0.3333,
+      "new_covered": 1,
+      "cumulative": 613,
+      "confidence": "偶尔",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "貼"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "店",
+          "actual": "テン"
+        },
+        {
+          "kanji": "点",
+          "actual": "テン"
+        }
+      ]
+    },
+    {
+      "rank": 296,
+      "rule_text": "声符 云 → テン",
+      "onyomi": "テン",
+      "source": "声符·精确",
+      "tier": 2,
+      "accuracy": 0.3333,
+      "new_covered": 1,
+      "cumulative": 614,
+      "confidence": "偶尔",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "転"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "会",
+          "actual": "カイ"
+        },
+        {
+          "kanji": "伝",
+          "actual": "ウン"
+        }
+      ]
+    },
+    {
+      "rank": 297,
+      "rule_text": "声符 卜 → ガイ",
+      "onyomi": "ガイ",
+      "source": "声符·精确",
+      "tier": 2,
+      "accuracy": 0.3333,
+      "new_covered": 1,
+      "cumulative": 615,
+      "confidence": "偶尔",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "外"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "上",
+          "actual": "ショウ"
+        },
+        {
+          "kanji": "下",
+          "actual": "カ"
+        }
+      ]
+    },
+    {
+      "rank": 298,
+      "rule_text": "部首「立」→ リュウ",
+      "onyomi": "リュウ",
+      "source": "结构·部首",
+      "tier": 2,
+      "accuracy": 0.3333,
+      "new_covered": 1,
+      "cumulative": 616,
+      "confidence": "偶尔",
+      "feature_type": "structure",
+      "reading_type": "general",
+      "correct_examples": [
+        "立"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "竜",
+          "actual": "リョウ"
+        },
+        {
+          "kanji": "章",
+          "actual": "ショウ"
+        }
+      ]
+    },
+    {
+      "rank": 299,
+      "rule_text": "拼音 ch+u2 → ソ",
+      "onyomi": "ソ",
+      "source": "拼音·声+韵+调",
+      "tier": 3,
+      "accuracy": 0.3333,
+      "new_covered": 1,
+      "cumulative": 617,
+      "confidence": "偶尔",
+      "feature_type": "pinyin_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "鋤"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "除",
+          "actual": "チョ"
+        },
+        {
+          "kanji": "雛",
+          "actual": "ス"
+        }
+      ]
+    },
+    {
+      "rank": 300,
+      "rule_text": "拼音 j+ie4 → セキ",
+      "onyomi": "セキ",
+      "source": "拼音·声+韵+调",
+      "tier": 3,
+      "accuracy": 0.3333,
+      "new_covered": 1,
+      "cumulative": 618,
+      "confidence": "偶尔",
+      "feature_type": "pinyin_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "借"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "介",
+          "actual": "カイ"
+        },
+        {
+          "kanji": "界",
+          "actual": "カイ"
+        }
+      ]
+    },
+    {
+      "rank": 301,
+      "rule_text": "拼音 x+i1 → キュウ",
+      "onyomi": "キュウ",
+      "source": "拼音·声+韵+调",
+      "tier": 3,
+      "accuracy": 0.3333,
+      "new_covered": 1,
+      "cumulative": 619,
+      "confidence": "偶尔",
+      "feature_type": "pinyin_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "吸"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "夕",
+          "actual": "セキ"
+        },
+        {
+          "kanji": "西",
+          "actual": "セイ"
+        }
+      ]
+    },
+    {
+      "rank": 302,
+      "rule_text": "拼音 y+e4 → ギョウ",
+      "onyomi": "ギョウ",
+      "source": "拼音·声+韵+调",
+      "tier": 3,
+      "accuracy": 0.3333,
+      "new_covered": 1,
+      "cumulative": 620,
+      "confidence": "偶尔",
+      "feature_type": "pinyin_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "業"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "夜",
+          "actual": "ヤ"
+        },
+        {
+          "kanji": "葉",
+          "actual": "ヨウ"
+        }
+      ]
+    },
+    {
+      "rank": 303,
+      "rule_text": "拼音 y+i1 → イチ",
+      "onyomi": "イチ",
+      "source": "拼音·声+韵+调",
+      "tier": 3,
+      "accuracy": 0.3333,
+      "new_covered": 1,
+      "cumulative": 621,
+      "confidence": "偶尔",
+      "feature_type": "pinyin_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "一"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "医",
+          "actual": "イ"
+        },
+        {
+          "kanji": "衣",
+          "actual": "イ"
+        }
+      ]
+    },
+    {
+      "rank": 304,
+      "rule_text": "拼音 y+ing2 → ゲイ",
+      "onyomi": "ゲイ",
+      "source": "拼音·声+韵+调",
+      "tier": 3,
+      "accuracy": 0.3333,
+      "new_covered": 1,
+      "cumulative": 622,
+      "confidence": "偶尔",
+      "feature_type": "pinyin_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "迎"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "営",
+          "actual": "エイ"
+        },
+        {
+          "kanji": "蝿",
+          "actual": "ヨウ"
+        }
+      ]
+    },
+    {
+      "rank": 305,
+      "rule_text": "拼音 zh+i2 → テツ",
+      "onyomi": "テツ",
+      "source": "拼音·声+韵+调",
+      "tier": 3,
+      "accuracy": 0.3333,
+      "new_covered": 1,
+      "cumulative": 623,
+      "confidence": "偶尔",
+      "feature_type": "pinyin_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "鉄"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "直",
+          "actual": "チョク"
+        },
+        {
+          "kanji": "職",
+          "actual": "ショク"
+        }
+      ]
+    },
+    {
+      "rank": 306,
+      "rule_text": "拼音 zh+u4 → チャク",
+      "onyomi": "チャク",
+      "source": "拼音·声+韵+调",
+      "tier": 3,
+      "accuracy": 0.3333,
+      "new_covered": 1,
+      "cumulative": 624,
+      "confidence": "偶尔",
+      "feature_type": "pinyin_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "箸"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "住",
+          "actual": "チュウ"
+        },
+        {
+          "kanji": "祝",
+          "actual": "シュク"
+        }
+      ]
+    },
+    {
+      "rank": 307,
+      "rule_text": "MC声母「影」+MC韵母「模」→ アク",
+      "onyomi": "アク",
+      "source": "中古音·MC声母+MC韵母",
+      "tier": 3,
+      "accuracy": 0.3333,
+      "new_covered": 1,
+      "cumulative": 625,
+      "confidence": "偶尔",
+      "feature_type": "mc_internal_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "悪"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "汚",
+          "actual": "オ"
+        },
+        {
+          "kanji": "烏",
+          "actual": "オ"
+        }
+      ]
+    },
+    {
+      "rank": 308,
+      "rule_text": "MC声母「泥」+MC開合「開」→ ネイ",
+      "onyomi": "ネイ",
+      "source": "中古音·MC声母+MC開合",
+      "tier": 3,
+      "accuracy": 0.3333,
+      "new_covered": 1,
+      "cumulative": 626,
+      "confidence": "偶尔",
+      "feature_type": "mc_internal_pair",
+      "reading_type": "divergent",
+      "correct_examples": [
+        "寧"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "年",
+          "actual": "デン"
+        },
+        {
+          "kanji": "難",
+          "actual": "ダン"
+        }
+      ]
+    },
+    {
+      "rank": 309,
+      "rule_text": "MC声母「來」+MC韵摄「宕」→ ロウ",
+      "onyomi": "ロウ",
+      "source": "中古音·MC声母+MC韵摄",
+      "tier": 3,
+      "accuracy": 0.3333,
+      "new_covered": 1,
+      "cumulative": 627,
+      "confidence": "偶尔",
+      "feature_type": "mc_internal_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "廊"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "涼",
+          "actual": "リョウ"
+        },
+        {
+          "kanji": "良",
+          "actual": "リョウ"
+        }
+      ]
+    },
+    {
+      "rank": 310,
+      "rule_text": "MC声母「知」+MC韵摄「止」→ シツ",
+      "onyomi": "シツ",
+      "source": "中古音·MC声母+MC韵摄",
+      "tier": 3,
+      "accuracy": 0.3333,
+      "new_covered": 1,
+      "cumulative": 628,
+      "confidence": "偶尔",
+      "feature_type": "mc_internal_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "質"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "知",
+          "actual": "チ"
+        },
+        {
+          "kanji": "置",
+          "actual": "チ"
+        }
+      ]
+    },
+    {
+      "rank": 311,
+      "rule_text": "MC声母「見」+MC韵摄「臻」→ クン",
+      "onyomi": "クン",
+      "source": "中古音·MC声母+MC韵摄",
+      "tier": 3,
+      "accuracy": 0.3333,
+      "new_covered": 1,
+      "cumulative": 629,
+      "confidence": "偶尔",
+      "feature_type": "mc_internal_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "君"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "建",
+          "actual": "ケン"
+        },
+        {
+          "kanji": "滑",
+          "actual": "カツ"
+        }
+      ]
+    },
+    {
+      "rank": 312,
+      "rule_text": "MC韵母「登」+MC声调「入」→ コク",
+      "onyomi": "コク",
+      "source": "中古音·MC韵母+MC声调",
+      "tier": 3,
+      "accuracy": 0.3333,
+      "new_covered": 1,
+      "cumulative": 630,
+      "confidence": "偶尔",
+      "feature_type": "mc_internal_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "国"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "北",
+          "actual": "ホク"
+        },
+        {
+          "kanji": "特",
+          "actual": "トク"
+        }
+      ]
+    },
+    {
+      "rank": 313,
+      "rule_text": "MC韵母「眞」+MC声调「入」→ ジツ",
+      "onyomi": "ジツ",
+      "source": "中古音·MC韵母+MC声调",
+      "tier": 3,
+      "accuracy": 0.3333,
+      "new_covered": 1,
+      "cumulative": 631,
+      "confidence": "偶尔",
+      "feature_type": "mc_internal_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "日"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "七",
+          "actual": "シツ"
+        },
+        {
+          "kanji": "室",
+          "actual": "シツ"
+        }
+      ]
+    },
+    {
+      "rank": 314,
+      "rule_text": "MC韵母「青」+MC清濁「次清」→ ケキ",
+      "onyomi": "ケキ",
+      "source": "中古音·MC韵母+MC清濁",
+      "tier": 3,
+      "accuracy": 0.3333,
+      "new_covered": 1,
+      "cumulative": 632,
+      "confidence": "偶尔",
+      "feature_type": "mc_internal_pair",
+      "reading_type": "divergent",
+      "correct_examples": [
+        "喫"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "町",
+          "actual": "テイ"
+        },
+        {
+          "kanji": "青",
+          "actual": "セイ"
+        }
+      ]
+    },
+    {
+      "rank": 315,
+      "rule_text": "MC韵母「佳」+MC声类「脣」→ ハイ",
+      "onyomi": "ハイ",
+      "source": "中古音·MC韵母+MC声类",
+      "tier": 3,
+      "accuracy": 0.3333,
+      "new_covered": 1,
+      "cumulative": 633,
+      "confidence": "偶尔",
+      "feature_type": "mc_internal_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "派"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "売",
+          "actual": "バイ"
+        },
+        {
+          "kanji": "買",
+          "actual": "バイ"
+        }
+      ]
+    },
+    {
+      "rank": 316,
+      "rule_text": "MC韵母「微」+MC声类「脣」→ ヒ",
+      "onyomi": "ヒ",
+      "source": "中古音·MC韵母+MC声类",
+      "tier": 3,
+      "accuracy": 0.3333,
+      "new_covered": 1,
+      "cumulative": 634,
+      "confidence": "偶尔",
+      "feature_type": "mc_internal_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "飛"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "味",
+          "actual": "ビ"
+        },
+        {
+          "kanji": "未",
+          "actual": "ビ"
+        }
+      ]
+    },
+    {
+      "rank": 317,
+      "rule_text": "MC韵母「魂」+MC声类「脣」→ ボン",
+      "onyomi": "ボン",
+      "source": "中古音·MC韵母+MC声类",
+      "tier": 3,
+      "accuracy": 0.3333,
+      "new_covered": 1,
+      "cumulative": 635,
+      "confidence": "偶尔",
+      "feature_type": "mc_internal_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "門"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "体",
+          "actual": "テイ"
+        },
+        {
+          "kanji": "本",
+          "actual": "ホン"
+        }
+      ]
+    },
+    {
+      "rank": 318,
+      "rule_text": "MC声母「來」+拼音韵母「v」→ リョク",
+      "onyomi": "リョク",
+      "source": "中古×拼音·声母+韵母",
+      "tier": 3,
+      "accuracy": 0.3333,
+      "new_covered": 1,
+      "cumulative": 636,
+      "confidence": "偶尔",
+      "feature_type": "cross_domain_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "緑"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "履",
+          "actual": "リ"
+        },
+        {
+          "kanji": "旅",
+          "actual": "リョ"
+        }
+      ]
+    },
+    {
+      "rank": 319,
+      "rule_text": "MC声类「喉」+拼音韵母「ai」→ アイ",
+      "onyomi": "アイ",
+      "source": "中古×拼音·声类+韵母",
+      "tier": 3,
+      "accuracy": 0.3333,
+      "new_covered": 1,
+      "cumulative": 637,
+      "confidence": "偶尔",
+      "feature_type": "cross_domain_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "愛"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "台",
+          "actual": "タイ"
+        },
+        {
+          "kanji": "海",
+          "actual": "カイ"
+        }
+      ]
+    },
+    {
+      "rank": 320,
+      "rule_text": "MC声类「舌」+拼音韵母「ao」→ ドウ",
+      "onyomi": "ドウ",
+      "source": "中古×拼音·声类+韵母",
+      "tier": 3,
+      "accuracy": 0.3333,
+      "new_covered": 1,
+      "cumulative": 638,
+      "confidence": "偶尔",
+      "feature_type": "cross_domain_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "悩"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "朝",
+          "actual": "チョウ"
+        },
+        {
+          "kanji": "道",
+          "actual": "トウ"
+        }
+      ]
+    },
+    {
+      "rank": 321,
+      "rule_text": "MC韵摄「通」+拼音声母「y」→ イク",
+      "onyomi": "イク",
+      "source": "中古×拼音·韵摄+声母",
+      "tier": 3,
+      "accuracy": 0.3333,
+      "new_covered": 1,
+      "cumulative": 639,
+      "confidence": "偶尔",
+      "feature_type": "cross_domain_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "育"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "欲",
+          "actual": "ヨク"
+        },
+        {
+          "kanji": "浴",
+          "actual": "ヨク"
+        }
+      ]
+    },
+    {
+      "rank": 322,
+      "rule_text": "部首「口」+MC韵母「文」→ イン",
+      "onyomi": "イン",
+      "source": "部首×中古·部首+韵母",
+      "tier": 3,
+      "accuracy": 0.3333,
+      "new_covered": 1,
+      "cumulative": 640,
+      "confidence": "偶尔",
+      "feature_type": "cross_domain_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "員"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "君",
+          "actual": "クン"
+        },
+        {
+          "kanji": "問",
+          "actual": "ブン"
+        }
+      ]
+    },
+    {
+      "rank": 323,
+      "rule_text": "部首「人」+MC清濁「次濁」→ ジン",
+      "onyomi": "ジン",
+      "source": "部首×中古·部首+清濁",
+      "tier": 3,
+      "accuracy": 0.3333,
+      "new_covered": 1,
+      "cumulative": 641,
+      "confidence": "偶尔",
+      "feature_type": "cross_domain_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "人"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "以",
+          "actual": "イ"
+        },
+        {
+          "kanji": "余",
+          "actual": "ヨ"
+        }
+      ]
+    },
+    {
+      "rank": 324,
+      "rule_text": "部首「手」+MC韵摄「咸」→ オウ",
+      "onyomi": "オウ",
+      "source": "部首×中古·部首+韵摄",
+      "tier": 3,
+      "accuracy": 0.3333,
+      "new_covered": 1,
+      "cumulative": 642,
+      "confidence": "偶尔",
+      "feature_type": "cross_domain_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "押"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "拉",
+          "actual": "ロウ"
+        },
+        {
+          "kanji": "探",
+          "actual": "タン"
+        }
+      ]
+    },
+    {
+      "rank": 325,
+      "rule_text": "部首「心」+拼音韵母「i」→ キュウ",
+      "onyomi": "キュウ",
+      "source": "部首×拼音·部首+韵母",
+      "tier": 3,
+      "accuracy": 0.3333,
+      "new_covered": 1,
+      "cumulative": 643,
+      "confidence": "偶尔",
+      "feature_type": "cross_domain_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "急"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "思",
+          "actual": "シ"
+        },
+        {
+          "kanji": "意",
+          "actual": "イ"
+        }
+      ]
+    },
+    {
+      "rank": 326,
+      "rule_text": "部首「冂」+鼻音「非鼻音」→ ダイ",
+      "onyomi": "ダイ",
+      "source": "部首×拼音·部首+鼻音",
+      "tier": 3,
+      "accuracy": 0.3333,
+      "new_covered": 1,
+      "cumulative": 644,
+      "confidence": "偶尔",
+      "feature_type": "cross_domain_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "内"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "冊",
+          "actual": "サク"
+        },
+        {
+          "kanji": "再",
+          "actual": "サイ"
+        }
+      ]
+    },
+    {
+      "rank": 327,
+      "rule_text": "部首「車」+鼻音「非鼻音」→ ケイ",
+      "onyomi": "ケイ",
+      "source": "部首×拼音·部首+鼻音",
+      "tier": 3,
+      "accuracy": 0.3333,
+      "new_covered": 1,
+      "cumulative": 645,
+      "confidence": "偶尔",
+      "feature_type": "cross_domain_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "軽"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "車",
+          "actual": "シャ"
+        },
+        {
+          "kanji": "輩",
+          "actual": "ハイ"
+        }
+      ]
+    },
+    {
+      "rank": 328,
+      "rule_text": "部首「食」+鼻音「非鼻音」→ ショク",
+      "onyomi": "ショク",
+      "source": "部首×拼音·部首+鼻音",
+      "tier": 3,
+      "accuracy": 0.3333,
+      "new_covered": 1,
+      "cumulative": 646,
+      "confidence": "偶尔",
+      "feature_type": "cross_domain_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "食"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "飴",
+          "actual": "イ"
+        },
+        {
+          "kanji": "餃",
+          "actual": "コウ"
+        }
+      ]
+    },
+    {
+      "rank": 329,
+      "rule_text": "声符「里」→ コク",
+      "onyomi": "コク",
+      "source": "声符·V1V2",
+      "tier": 2,
+      "accuracy": 0.25,
+      "new_covered": 1,
+      "cumulative": 647,
+      "confidence": "偶尔",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "黒"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "理",
+          "actual": "リ"
+        },
+        {
+          "kanji": "里",
+          "actual": "リ"
+        },
+        {
+          "kanji": "野",
+          "actual": "ヤ"
+        }
+      ]
+    },
+    {
+      "rank": 330,
+      "rule_text": "声符「上」→ カ",
+      "onyomi": "カ",
+      "source": "声符·V1V2",
+      "tier": 2,
+      "accuracy": 0.25,
+      "new_covered": 1,
+      "cumulative": 648,
+      "confidence": "偶尔",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "卡"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "上",
+          "actual": "ショウ"
+        },
+        {
+          "kanji": "叔",
+          "actual": "シュク"
+        },
+        {
+          "kanji": "寂",
+          "actual": "セキ"
+        }
+      ]
+    },
+    {
+      "rank": 331,
+      "rule_text": "声符「皮」→ ハ",
+      "onyomi": "ハ",
+      "source": "声符·V1V2",
+      "tier": 2,
+      "accuracy": 0.25,
+      "new_covered": 1,
+      "cumulative": 649,
+      "confidence": "偶尔",
+      "feature_type": "component",
+      "reading_type": "general",
+      "correct_examples": [
+        "婆"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "疲",
+          "actual": "ヒ"
+        },
+        {
+          "kanji": "皮",
+          "actual": "ヒ"
+        },
+        {
+          "kanji": "被",
+          "actual": "ヒ"
+        }
+      ]
+    },
+    {
+      "rank": 332,
+      "rule_text": "部首「口」+鼻音「鼻音韵尾-n」→ ヒン",
+      "onyomi": "ヒン",
+      "source": "部首×拼音·部首+鼻音",
+      "tier": 3,
+      "accuracy": 0.25,
+      "new_covered": 1,
+      "cumulative": 650,
+      "confidence": "偶尔",
+      "feature_type": "cross_domain_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "品"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "君",
+          "actual": "クン"
+        },
+        {
+          "kanji": "員",
+          "actual": "イン"
+        },
+        {
+          "kanji": "問",
+          "actual": "ブン"
+        }
+      ]
+    },
+    {
+      "rank": 333,
+      "rule_text": "部首「大」+鼻音「非鼻音」→ オウ",
+      "onyomi": "オウ",
+      "source": "部首×拼音·部首+鼻音",
+      "tier": 3,
+      "accuracy": 0.25,
+      "new_covered": 1,
+      "cumulative": 651,
+      "confidence": "偶尔",
+      "feature_type": "cross_domain_pair",
+      "reading_type": "general",
+      "correct_examples": [
+        "奥"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "大",
+          "actual": "タイ"
+        },
+        {
+          "kanji": "太",
+          "actual": "タイ"
+        },
+        {
+          "kanji": "夫",
+          "actual": "フ"
+        }
+      ]
+    },
+    {
+      "rank": 334,
+      "rule_text": "MC声母「日」+MC声调「入」→ ジク",
+      "onyomi": "ジク",
+      "source": "中古音·MC声母+MC声调",
+      "tier": 3,
+      "accuracy": 0.2,
+      "new_covered": 1,
+      "cumulative": 652,
+      "confidence": "偶尔",
+      "feature_type": "mc_internal_pair",
+      "reading_type": "divergent",
+      "correct_examples": [
+        "肉"
+      ],
+      "exception_examples": [
+        {
+          "kanji": "入",
+          "actual": "ジュウ"
+        },
+        {
+          "kanji": "弱",
+          "actual": "ジャク"
+        },
+        {
+          "kanji": "日",
+          "actual": "ジツ"
+        }
+      ]
+    }
+  ]
+}

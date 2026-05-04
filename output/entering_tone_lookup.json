@@ -1,0 +1,152 @@
+{
+  "a1": {
+    "ratio": 0.39,
+    "coda": "-t",
+    "count": 18,
+    "entering_count": 7
+  },
+  "a2": {
+    "ratio": 0.4,
+    "coda": "-t",
+    "count": 15,
+    "entering_count": 6
+  },
+  "e": {
+    "ratio": 0.67,
+    "coda": "-k",
+    "count": 3,
+    "entering_count": 2
+  },
+  "e2": {
+    "ratio": 0.57,
+    "coda": "-k",
+    "count": 28,
+    "entering_count": 16
+  },
+  "e4": {
+    "ratio": 0.56,
+    "coda": "-k",
+    "count": 36,
+    "entering_count": 20
+  },
+  "i1": {
+    "ratio": 0.34,
+    "coda": "-k",
+    "count": 65,
+    "entering_count": 22
+  },
+  "ie2": {
+    "ratio": 0.35,
+    "coda": "-t",
+    "count": 17,
+    "entering_count": 6
+  },
+  "ie4": {
+    "ratio": 0.52,
+    "coda": "-t",
+    "count": 23,
+    "entering_count": 12
+  },
+  "o1": {
+    "ratio": 0.5,
+    "coda": "-k",
+    "count": 8,
+    "entering_count": 4
+  },
+  "o3": {
+    "ratio": 0.5,
+    "coda": "-t",
+    "count": 2,
+    "entering_count": 1
+  },
+  "o4": {
+    "ratio": 0.8,
+    "coda": "-k",
+    "count": 10,
+    "entering_count": 8
+  },
+  "u1": {
+    "ratio": 0.34,
+    "coda": "-k",
+    "count": 47,
+    "entering_count": 16
+  },
+  "u2": {
+    "ratio": 0.4,
+    "coda": "-k",
+    "count": 47,
+    "entering_count": 19
+  },
+  "u4": {
+    "ratio": 0.36,
+    "coda": "-k",
+    "count": 121,
+    "entering_count": 43
+  },
+  "ua2": {
+    "ratio": 0.5,
+    "coda": "-t",
+    "count": 2,
+    "entering_count": 1
+  },
+  "uai1": {
+    "ratio": 0.5,
+    "coda": "-k",
+    "count": 2,
+    "entering_count": 1
+  },
+  "ue1": {
+    "ratio": 0.67,
+    "coda": "-k",
+    "count": 3,
+    "entering_count": 2
+  },
+  "ue2": {
+    "ratio": 1.0,
+    "coda": "-t",
+    "count": 8,
+    "entering_count": 8
+  },
+  "ue3": {
+    "ratio": 1.0,
+    "coda": "-t",
+    "count": 2,
+    "entering_count": 2
+  },
+  "ue4": {
+    "ratio": 1.0,
+    "coda": "-k",
+    "count": 9,
+    "entering_count": 9
+  },
+  "uo1": {
+    "ratio": 0.64,
+    "coda": "-k",
+    "count": 11,
+    "entering_count": 7
+  },
+  "uo2": {
+    "ratio": 0.7,
+    "coda": "-k",
+    "count": 10,
+    "entering_count": 7
+  },
+  "uo4": {
+    "ratio": 0.68,
+    "coda": "-k",
+    "count": 22,
+    "entering_count": 15
+  },
+  "v4": {
+    "ratio": 0.75,
+    "coda": "-t",
+    "count": 4,
+    "entering_count": 3
+  },
+  "ve4": {
+    "ratio": 1.0,
+    "coda": "-k",
+    "count": 4,
+    "entering_count": 4
+  }
+}

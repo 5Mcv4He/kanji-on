@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>汉字音读训读 — Kanji Learn</title>
+<style>
+/* ═══════════ Reset ═══════════ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:16px}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC","Noto Sans JP",sans-serif;color:#1a1a1a;background:#fafaf9;line-height:1.6;-webkit-font-smoothing:antialiased}
+
+/* ═══════════ Header ═══════════ */
+.header{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-index:10;gap:8px}
+.header-left{display:flex;align-items:center;gap:8px}
+.header-title{font-weight:800;font-size:1rem;color:#1a1a1a;white-space:nowrap}
+.level-dots{display:flex;gap:2px}
+.level-dot{width:28px;height:28px;border-radius:50%;border:1.5px solid #e5e7eb;background:#fff;font-size:0.7rem;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;color:#9ca3af;transition:all .15s}
+.level-dot:hover{border-color:#93c5fd;color:#2563eb}
+.level-dot.active{background:#2563eb;color:#fff;border-color:#2563eb}
+.header-right{display:flex;align-items:center;gap:12px}
+.mc-label{font-size:0.75rem;color:#9ca3af;cursor:pointer;user-select:none;white-space:nowrap}
+.mc-label input{vertical-align:middle;margin-right:4px;accent-color:#7c3aed}
+.btn-icon{width:36px;height:36px;border-radius:50%;border:1px solid #e5e7eb;background:#fff;cursor:pointer;font-size:1rem;display:flex;align-items:center;justify-content:center;color:#6b7280;transition:all .15s}
+.btn-icon:hover{background:#f3f4f6;color:#2563eb}
+.btn-icon.active{background:#2563eb;color:#fff;border-color:#2563eb}
+
+/* ═══════════ Main: Kanji Detail ═══════════ */
+.main-view{max-width:600px;margin:0 auto;padding:16px 20px}
+.kanji-hero{text-align:center;padding:20px 0 12px}
+.kanji-char{font-size:5rem;font-weight:400;line-height:1.2;color:#1a1a1a;font-family:"Noto Serif JP","Hiragino Mincho Pro",serif}
+.kanji-pinyin{font-size:0.9rem;color:#9ca3af;margin-top:2px}
+.kanji-meta{display:flex;justify-content:center;gap:16px;font-size:0.78rem;color:#9ca3af;margin-top:4px}
+
+/* ═══════════ Reading Sections ═══════════ */
+.reading-section{margin-bottom:16px;background:#fff;border:1px solid #e5e7eb;border-radius:14px;overflow:hidden}
+.reading-header{display:flex;align-items:center;padding:14px 16px;cursor:pointer;gap:10px;transition:background .1s}
+.reading-header:hover{background:#f9fafb}
+.reading-badge{font-size:0.7rem;padding:2px 8px;border-radius:8px;font-weight:700;white-space:nowrap}
+.badge-on{background:#dbeafe;color:#1d4ed8}
+.badge-kun{background:#dcfce7;color:#15803d}
+.reading-values{display:flex;flex-wrap:wrap;gap:6px;font-size:1.05rem}
+.reading-val{font-weight:600;color:#1a1a1a}
+.reading-arrow{font-size:0.7rem;color:#9ca3af;transition:transform .2s}
+.reading-arrow.open{transform:rotate(90deg)}
+.reading-body{display:none;padding:0 16px 16px;border-top:1px solid #f3f4f6}
+
+/* ═══════════ Rules in Reading Body ═══════════ */
+.rule-item{font-size:0.85rem;padding:8px 0;border-bottom:1px solid #f9fafb}
+.rule-item:last-child{border-bottom:none}
+.rule-item .rule-text{font-weight:500;margin-bottom:2px}
+.rule-item .rule-meta{font-size:0.75rem;color:#9ca3af}
+.rule-tier{display:inline-block;font-size:0.7rem;padding:1px 6px;border-radius:6px;margin-right:4px}
+.tier-1{background:#dcfce7;color:#15803d}
+.tier-2{background:#dbeafe;color:#1d4ed8}
+.tier-3{background:#fef3c7;color:#a16207}
+.tier-4{background:#fce7f3;color:#be185d}
+.tier-5{background:#ede9fe;color:#6d28d9}
+
+/* ═══════════ Semantic Features ═══════════ */
+.semantic-hint{font-size:0.82rem;color:#6b7280;margin-bottom:8px;padding:8px 12px;background:#f9fafb;border-radius:8px}
+.semantic-tag{display:inline-block;padding:2px 8px;background:#ede9fe;color:#6d28d9;border-radius:6px;font-size:0.78rem;margin:2px}
+
+/* ═══════════ Related Kanji Links ═══════════ */
+.related-row{display:flex;flex-wrap:wrap;gap:4px;margin:8px 0}
+.related-kanji{width:36px;height:36px;border-radius:50%;border:1px solid #e5e7eb;background:#fff;cursor:pointer;font-size:0.9rem;display:flex;align-items:center;justify-content:center;transition:all .12s;font-family:"Noto Serif JP",serif}
+.related-kanji:hover{background:#eff6ff;border-color:#93c5fd;color:#2563eb;transform:scale(1.08)}
+.section-label{font-size:0.72rem;color:#9ca3af;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px}
+
+/* ═══════════ Words Table ═══════════ */
+.words-mini{font-size:0.85rem}
+.words-mini .w-row{display:flex;align-items:center;padding:6px 0;border-bottom:1px solid #f9fafb;gap:8px}
+.words-mini .w-word{font-weight:500}
+.words-mini .w-kana{color:#6366f1;font-size:0.82rem}
+.words-mini .w-tag{font-size:0.65rem;padding:1px 6px;border-radius:5px;margin-left:auto;white-space:nowrap}
+.tag-on{background:#dbeafe;color:#1d4ed8}
+.tag-kun{background:#dcfce7;color:#15803d}
+
+/* ═══════════ Navigation ═══════════ */
+.nav-bar{display:flex;justify-content:space-between;align-items:center;padding:12px 0;gap:8px}
+.nav-btn{padding:8px 16px;border:1px solid #e5e7eb;border-radius:10px;background:#fff;cursor:pointer;font-size:0.85rem;color:#374151;transition:all .12s}
+.nav-btn:hover{background:#f3f4f6;border-color:#d1d5db}
+.nav-btn:disabled{opacity:0.35;cursor:default}
+.nav-pos{font-size:0.8rem;color:#9ca3af}
+
+/* ═══════════ Search Overlay ═══════════ */
+.search-overlay{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.3);z-index:20;justify-content:center;padding-top:10vh}
+.search-overlay.open{display:flex}
+.search-box{background:#fff;border-radius:16px;width:90%;max-width:500px;max-height:70vh;overflow-y:auto;box-shadow:0 20px 60px rgba(0,0,0,0.15)}
+.search-box input{width:100%;padding:16px 20px;font-size:1.1rem;border:none;border-bottom:1px solid #e5e7eb;border-radius:16px 16px 0 0;outline:none}
+.search-results{padding:8px 0}
+.search-hit{padding:12px 20px;cursor:pointer;display:flex;align-items:center;gap:12px;transition:background .1s}
+.search-hit:hover{background:#f3f4f6}
+.search-hit .s-char{font-size:1.5rem;font-family:"Noto Serif JP",serif;width:40px;text-align:center}
+.search-hit .s-info{flex:1}
+.search-hit .s-readings{font-size:0.85rem;color:#374151}
+.search-hit .s-pinyin{font-size:0.75rem;color:#9ca3af}
+
+/* ═══════════ Rules Browser (hidden by default) ═══════════ */
+.rules-browser{display:none;max-width:600px;margin:0 auto;padding:16px 20px}
+.rules-browser.open{display:block}
+.rules-filter{display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap}
+.rules-filter button{padding:4px 12px;border-radius:12px;border:1px solid #e5e7eb;background:#fff;cursor:pointer;font-size:0.78rem}
+.rules-filter button.active{background:#2563eb;color:#fff;border-color:#2563eb}
+
+/* ═══════════ Footer ═══════════ */
+.footer{text-align:center;padding:24px;color:#d1d5db;font-size:0.75rem}
+
+/* ═══════════ Mobile ═══════════ */
+@media(max-width:480px){
+  .kanji-char{font-size:3.5rem}
+  .header-title{font-size:0.85rem}
+  .level-dot{width:24px;height:24px;font-size:0.6rem}
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════════ Header ═══════════ -->
+<div class="header">
+  <div class="header-left">
+    <span class="header-title">Kanji Learn</span>
+    <div class="level-dots" id="levelDots"></div>
+  </div>
+  <div class="header-right">
+    <label class="mc-label" title="显示需要古汉语/方言知识的规律">
+      <input type="checkbox" id="mcToggle"> 古
+    </label>
+    <button class="btn-icon" id="btnRules" title="规律列表">📋</button>
+    <button class="btn-icon" id="btnSearch" title="搜索汉字">🔍</button>
+  </div>
+</div>
+
+<!-- ═══════════ Main: Kanji Detail ═══════════ -->
+<div id="mainView" class="main-view"></div>
+
+<!-- ═══════════ Rules Browser ═══════════ -->
+<div id="rulesBrowser" class="rules-browser">
+  <div class="rules-filter" id="rulesFilter"></div>
+  <div id="rulesList"></div>
+</div>
+
+<!-- ═══════════ Search Overlay ═══════════ -->
+<div class="search-overlay" id="searchOverlay">
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="输入汉字搜索..." autofocus>
+    <div class="search-results" id="searchResults"></div>
+  </div>
+</div>
+
+<div class="footer">数据: K'sBookshelf 漢字林 · 紅宝書 · 廣韻</div>
+
+<script>
+/* ═══════════ State ═══════════ */
+let L = null;       // current level data
+let level = 'N5';
+let mcOn = false;
+let curIdx = 0;     // index in kanji_order
+let showRules = false;
+let expandedSections = {};  // kanji+reading → bool
+
+/* ═══════════ Init ═══════════ */
+async function init() {
+  document.getElementById('btnSearch').addEventListener('click', openSearch);
+  document.getElementById('btnRules').addEventListener('click', toggleRules);
+  document.getElementById('mcToggle').addEventListener('change', function() {
+    mcOn = this.checked;
+    if (L) renderKanji();
+  });
+  document.getElementById('searchOverlay').addEventListener('click', function(e) {
+    if (e.target === this) closeSearch();
+  });
+  document.getElementById('searchInput').addEventListener('input', function() {
+    doSearch(this.value);
+  });
+  renderLevels();
+  await loadLevel('N5');
+  renderKanji();
+}
+
+/* ═══════════ Data Loading ═══════════ */
+async function loadLevel(lv) {
+  level = lv;
+  try {
+    const resp = await fetch(`data/${lv.toLowerCase()}.json`);
+    L = await resp.json();
+    curIdx = 0;
+    expandedSections = {};
+    renderLevels();
+    renderKanji();
+  } catch(e) {
+    document.getElementById('mainView').innerHTML =
+      '<div style="text-align:center;padding:60px;color:#9ca3af"><p>加载失败</p></div>';
+  }
+}
+
+/* ═══════════ Level Dots ═══════════ */
+function renderLevels() {
+  document.getElementById('levelDots').innerHTML =
+    ['N5','N4','N3','N2','N1'].map(lv =>
+      `<button class="level-dot${lv===level?' active':''}" onclick="loadLevel('${lv}')">${lv.slice(1)}</button>`
+    ).join('');
+}
+
+/* ═══════════ Kanji Detail View ═══════════ */
+function renderKanji() {
+  if (!L) return;
+  const entry = L.kanji[L.kanji_order[curIdx]];
+  if (!entry) return;
+
+  const total = L.kanji_order.length;
+  const idx = curIdx;
+
+  let html = '';
+
+  // Hero: big kanji
+  html += `<div class="kanji-hero">
+    <div class="kanji-char">${entry.kanji}</div>
+    <div class="kanji-pinyin">拼音: ${entry.pinyin || '—'}</div>
+    <div class="kanji-meta">
+      <span>部首: ${entry.radical || '—'}</span>
+      <span>画数: ${entry.total_strokes || '—'}</span>
+      ${entry.non_radical_part ? `<span>声符: ${entry.non_radical_part}</span>` : ''}
+    </div>
+    ${entry.meaning ? `<div style="font-size:0.8rem;color:#9ca3af;margin-top:6px;max-width:400px;margin-left:auto;margin-right:auto">${entry.meaning}</div>` : ''}
+  </div>`;
+
+  // On'yomi section
+  if (entry.onyomi.length > 0) {
+    const sectionKey = `${entry.kanji}_on`;
+    const open = expandedSections[sectionKey];
+    html += `<div class="reading-section">
+      <div class="reading-header" onclick="toggleSection('${sectionKey}')">
+        <span class="reading-badge badge-on">音</span>
+        <div class="reading-values">${entry.onyomi.map(o => `<span class="reading-val">${o}</span>`).join(' · ')}</div>
+        <span class="reading-arrow${open?' open':''}" style="margin-left:auto">▶</span>
+      </div>
+      <div class="reading-body"${open?' style="display:block"':''}>
+        ${renderOnDetail(entry)}
+      </div>
+    </div>`;
+  }
+
+  // Kun'yomi section
+  if (entry.kunyomi.length > 0) {
+    const sectionKey = `${entry.kanji}_kun`;
+    const open = expandedSections[sectionKey];
+    html += `<div class="reading-section">
+      <div class="reading-header" onclick="toggleSection('${sectionKey}')">
+        <span class="reading-badge badge-kun">訓</span>
+        <div class="reading-values">${entry.kunyomi.map(k => `<span class="reading-val">${k}</span>`).join(' · ')}</div>
+        <span class="reading-arrow${open?' open':''}" style="margin-left:auto">▶</span>
+      </div>
+      <div class="reading-body"${open?' style="display:block"':''}>
+        ${renderKunDetail(entry)}
+      </div>
+    </div>`;
+  }
+
+  // Words summary (always visible)
+  if (entry.words.length > 0) {
+    html += `<div class="reading-section">
+      <div class="reading-header" style="cursor:default">
+        <span style="font-weight:700;font-size:0.85rem">📗 红宝书词汇 (${entry.words.length})</span>
+      </div>
+      <div class="words-mini" style="padding:8px 16px 12px">
+        ${entry.words.map(w => `
+          <div class="w-row">
+            <span class="w-word">${w.word}</span>
+            <span class="w-kana">${w.kana}</span>
+            <span class="w-tag ${w.reading_type==='on'?'tag-on':'tag-kun'}">${w.reading_type==='on'?'音':'訓'}</span>
+          </div>
+        `).join('')}
+      </div>
+    </div>`;
+  }
+
+  // Navigation
+  html += `<div class="nav-bar">
+    <button class="nav-btn" ${idx===0?'disabled':''} onclick="navigate(-1)">← 前一个</button>
+    <span class="nav-pos">${idx+1} / ${total}</span>
+    <button class="nav-btn" ${idx>=total-1?'disabled':''} onclick="navigate(1)">后一个 →</button>
+  </div>`;
+
+  document.getElementById('mainView').innerHTML = html;
+  document.getElementById('mainView').style.display = 'block';
+  document.getElementById('rulesBrowser').classList.remove('open');
+
+  // Scroll to top
+  window.scrollTo(0, 0);
+}
+
+function renderOnDetail(entry) {
+  let html = '';
+  const matchedRanks = new Set(entry.matched_rules || []);
+
+  // Show matching rules
+  const myRules = L.rules.filter(r => {
+    if (!mcOn && r.needs_mc) return false;
+    return r.kanji_matches.includes(entry.kanji);
+  });
+
+  if (myRules.length > 0) {
+    html += `<div class="section-label">🧩 匹配的规律</div>`;
+    for (const r of myRules.slice(0, 8)) {
+      const display = r.rule_human || r.rule_text;
+      html += `<div class="rule-item">
+        <span class="rule-tier tier-${r.tier}">T${r.tier}</span>
+        <span class="rule-text">${display.split('→')[0]} → <strong>${r.onyomi}</strong></span>
+        <div class="rule-meta">${Math.round(r.accuracy*100)}% · ${r.confidence} · ${r.source}</div>
+      </div>`;
+    }
+    if (myRules.length > 8) {
+      html += `<div style="font-size:0.8rem;color:#9ca3af">...还有 ${myRules.length - 8} 条</div>`;
+    }
+  } else {
+    html += `<div style="font-size:0.82rem;color:#9ca3af">暂无匹配规律${mcOn ? '' : '（尝试开启"古"开关）'}</div>`;
+  }
+
+  // Same-reading kanji
+  if (entry.same_on && Object.keys(entry.same_on).length > 0) {
+    html += `<div style="margin-top:10px">`;
+    for (const [on, kanjiList] of Object.entries(entry.same_on)) {
+      if (kanjiList.length === 0) continue;
+      html += `<div class="section-label">同音字 · ${on}</div>`;
+      html += `<div class="related-row">${kanjiList.map(k =>
+        `<button class="related-kanji" onclick="jumpTo('${k}')" title="${k}">${k}</button>`
+      ).join('')}</div>`;
+    }
+    html += `</div>`;
+  }
+
+  return html;
+}
+
+function renderKunDetail(entry) {
+  let html = '';
+
+  // Semantic groups
+  for (const ks of (entry.kun_semantic || [])) {
+    html += `<div style="margin-bottom:10px">`;
+    html += `<div style="font-weight:600;font-size:0.9rem;margin-bottom:4px">${ks.reading}</div>`;
+
+    if (ks.semantic_features && ks.semantic_features.length > 0) {
+      html += `<div class="semantic-hint">`;
+      html += `<span style="font-size:0.75rem;color:#9ca3af">语义群: </span>`;
+      html += ks.semantic_features.map(f =>
+        `<span class="semantic-tag">${f}</span>`
+      ).join(' ');
+      html += `</div>`;
+    }
+
+    // Related kanji with same kun reading
+    const related = ks.related_kanji || [];
+    if (related.length > 0) {
+      html += `<div class="section-label">同训字</div>`;
+      html += `<div class="related-row">${related.map(k =>
+        `<button class="related-kanji" onclick="jumpTo('${k}')" title="${k}">${k}</button>`
+      ).join('')}</div>`;
+    }
+
+    // Words using this kun reading
+    const kunWords = entry.words.filter(w => w.reading_used === ks.reading);
+    if (kunWords.length > 0) {
+      html += `<div class="words-mini" style="margin-top:6px">`;
+      html += kunWords.map(w =>
+        `<div class="w-row"><span class="w-word">${w.word}</span><span class="w-kana">${w.kana}</span></div>`
+      ).join('');
+      html += `</div>`;
+    }
+
+    html += `</div>`;
+  }
+
+  return html || '<div style="font-size:0.82rem;color:#9ca3af">暂无训读语义数据</div>';
+}
+
+/* ═══════════ Interactions ═══════════ */
+function toggleSection(key) {
+  expandedSections[key] = !expandedSections[key];
+  renderKanji();
+}
+
+function navigate(dir) {
+  if (!L) return;
+  const max = L.kanji_order.length;
+  curIdx = Math.max(0, Math.min(max - 1, curIdx + dir));
+  renderKanji();
+}
+
+function jumpTo(kanji) {
+  if (!L) return;
+  const idx = L.kanji_order.indexOf(kanji);
+  if (idx >= 0) {
+    curIdx = idx;
+    renderKanji();
+    window.scrollTo(0, 0);
+  }
+}
+
+/* ═══════════ Rules Browser ═══════════ */
+function toggleRules() {
+  showRules = !showRules;
+  const btn = document.getElementById('btnRules');
+  const browser = document.getElementById('rulesBrowser');
+  const main = document.getElementById('mainView');
+
+  if (showRules) {
+    btn.classList.add('active');
+    main.style.display = 'none';
+    browser.classList.add('open');
+    renderRules();
+  } else {
+    btn.classList.remove('active');
+    main.style.display = 'block';
+    browser.classList.remove('open');
+  }
+}
+
+function renderRules() {
+  if (!L) return;
+  // Tier filter buttons
+  const tiers = [1,2,3,4,5];
+  document.getElementById('rulesFilter').innerHTML =
+    `<button class="active" onclick="filterRules(0, this)">全部</button>` +
+    tiers.map(t =>
+      `<button onclick="filterRules(${t}, this)">T${t} ${'★'.repeat(t)}</button>`
+    ).join('');
+
+  renderRulesList(0);
+}
+let _ruleFilter = 0;
+function filterRules(t, btn) {
+  _ruleFilter = t;
+  document.querySelectorAll('#rulesFilter button').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  renderRulesList(t);
+}
+function renderRulesList(tierFilter) {
+  const visible = L.rules.filter(r => {
+    if (!mcOn && r.needs_mc) return false;
+    if (tierFilter > 0 && r.tier !== tierFilter) return false;
+    return true;
+  });
+
+  document.getElementById('rulesList').innerHTML = visible.map(r => {
+    const display = r.rule_human || r.rule_text;
+    return `<div class="rule-item">
+      <span class="rule-tier tier-${r.tier}">T${r.tier}</span>
+      <span class="rule-text">${display.split('→')[0]} → <strong>${r.onyomi}</strong></span>
+      <div class="rule-meta">${Math.round(r.accuracy*100)}% · ${r.confidence} · ${r.source} · 匹配${r.kanji_matches.length}字</div>
+      <div class="related-row">${r.kanji_matches.slice(0,10).map(k =>
+        `<button class="related-kanji" onclick="showRules=false;jumpTo('${k}');toggleRules()" title="${k}">${k}</button>`
+      ).join('')}</div>
+    </div>`;
+  }).join('');
+}
+
+/* ═══════════ Search ═══════════ */
+function openSearch() {
+  document.getElementById('searchOverlay').classList.add('open');
+  document.getElementById('searchInput').value = '';
+  document.getElementById('searchResults').innerHTML = '';
+  setTimeout(() => document.getElementById('searchInput').focus(), 100);
+}
+function closeSearch() {
+  document.getElementById('searchOverlay').classList.remove('open');
+}
+function doSearch(q) {
+  if (!L || !q.trim()) {
+    document.getElementById('searchResults').innerHTML = '';
+    return;
+  }
+  const chars = [...q.trim()];
+  const hits = [];
+  for (const c of chars) {
+    if (L.kanji[c]) hits.push(L.kanji[c]);
+  }
+  if (hits.length === 0) {
+    document.getElementById('searchResults').innerHTML =
+      '<div style="padding:20px;text-align:center;color:#9ca3af">未找到</div>';
+    return;
+  }
+  document.getElementById('searchResults').innerHTML = hits.map(h => `
+    <div class="search-hit" onclick="jumpTo('${h.kanji}');closeSearch()">
+      <span class="s-char">${h.kanji}</span>
+      <div class="s-info">
+        <div class="s-readings">音 ${h.onyomi.join('·')} 訓 ${h.kunyomi.join('·')}</div>
+        <div class="s-pinyin">${h.pinyin} · ${h.radical}部 · ${h.total_strokes}画</div>
+      </div>
+    </div>
+  `).join('');
+}
+
+init();
+</script>
+</body>
+</html>

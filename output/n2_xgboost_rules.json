@@ -1,0 +1,1066 @@
+{
+  "level": "N2",
+  "method": "binary_ovr_decision_trees",
+  "n_onyomi_classes": 40,
+  "xgb_distilled_rules": [
+    {
+      "rule": "韵母=ai4 AND 声母=d",
+      "onyomi": "タイ",
+      "coverage": 8,
+      "accuracy": 1.0,
+      "examples": "代 帯 待 怠 戴 殆"
+    },
+    {
+      "rule": "声符=交",
+      "onyomi": "コウ",
+      "coverage": 7,
+      "accuracy": 1.0,
+      "examples": "効 校 狡 絞 較 郊"
+    },
+    {
+      "rule": "声符=方",
+      "onyomi": "ホウ",
+      "coverage": 7,
+      "accuracy": 1.0,
+      "examples": "坊 妨 房 放 肪 訪"
+    },
+    {
+      "rule": "声符=包",
+      "onyomi": "ホウ",
+      "coverage": 7,
+      "accuracy": 1.0,
+      "examples": "抱 泡 皰 砲 鞄 飽"
+    },
+    {
+      "rule": "韵母=i4 AND 总画数≤6.5 AND 部首画数>2.5",
+      "onyomi": "シ",
+      "coverage": 18,
+      "accuracy": 0.611,
+      "examples": "四 士 字 寺 市 次"
+    },
+    {
+      "rule": "声母=d AND 韵母=an4",
+      "onyomi": "タン",
+      "coverage": 6,
+      "accuracy": 1.0,
+      "examples": "但 弾 憚 旦 淡 誕"
+    },
+    {
+      "rule": "声符=丁",
+      "onyomi": "テイ",
+      "coverage": 7,
+      "accuracy": 0.857,
+      "examples": "庁 打 灯 町 釘 頂"
+    },
+    {
+      "rule": "声符=反",
+      "onyomi": "ハン",
+      "coverage": 7,
+      "accuracy": 0.857,
+      "examples": "坂 板 版 販 返 飯"
+    },
+    {
+      "rule": "声符=司",
+      "onyomi": "シ",
+      "coverage": 5,
+      "accuracy": 1.0,
+      "examples": "伺 笥 覗 詞 飼"
+    },
+    {
+      "rule": "声母=d AND 韵母=ao4",
+      "onyomi": "トウ",
+      "coverage": 5,
+      "accuracy": 1.0,
+      "examples": "倒 到 盗 稲 道"
+    },
+    {
+      "rule": "韵母=ian4 AND 声母=j AND 总画数≤12",
+      "onyomi": "ケン",
+      "coverage": 5,
+      "accuracy": 1.0,
+      "examples": "件 健 剣 建 見"
+    },
+    {
+      "rule": "韵母=en1 AND 声母=sh",
+      "onyomi": "シン",
+      "coverage": 5,
+      "accuracy": 1.0,
+      "examples": "伸 呻 深 申 身"
+    },
+    {
+      "rule": "韵母=ou2 AND 声母=y",
+      "onyomi": "ユウ",
+      "coverage": 5,
+      "accuracy": 1.0,
+      "examples": "尤 油 由 遊 郵"
+    },
+    {
+      "rule": "韵母=i3 AND 声母=zh",
+      "onyomi": "シ",
+      "coverage": 6,
+      "accuracy": 0.833,
+      "examples": "只 指 旨 止 紙"
+    },
+    {
+      "rule": "声母=t AND 9.5<总画数≤16.5 AND 部首画数>4.5 AND 声符画数>6.5",
+      "onyomi": "トウ",
+      "coverage": 6,
+      "accuracy": 0.833,
+      "examples": "痛 童 糖 踏 頭"
+    },
+    {
+      "rule": "声符=工 AND 总画数>8.5",
+      "onyomi": "コウ",
+      "coverage": 4,
+      "accuracy": 1.0,
+      "examples": "紅 虹 貢 項"
+    },
+    {
+      "rule": "韵母=i3 AND 声母=sh",
+      "onyomi": "シ",
+      "coverage": 4,
+      "accuracy": 1.0,
+      "examples": "使 史 始 矢"
+    },
+    {
+      "rule": "韵母=uan1 AND 声母=g",
+      "onyomi": "カン",
+      "coverage": 4,
+      "accuracy": 1.0,
+      "examples": "冠 官 観 関"
+    },
+    {
+      "rule": "韵母=in1 AND 声母=x",
+      "onyomi": "シン",
+      "coverage": 4,
+      "accuracy": 1.0,
+      "examples": "心 新 芯 辛"
+    },
+    {
+      "rule": "声母=y AND 韵母=ang2",
+      "onyomi": "ヨウ",
+      "coverage": 4,
+      "accuracy": 1.0,
+      "examples": "揚 洋 羊 陽"
+    },
+    {
+      "rule": "声符=亡",
+      "onyomi": "ボウ",
+      "coverage": 4,
+      "accuracy": 1.0,
+      "examples": "妄 忘 忙 芒"
+    },
+    {
+      "rule": "声母=c AND 韵母=ai2",
+      "onyomi": "サイ",
+      "coverage": 4,
+      "accuracy": 1.0,
+      "examples": "才 材 裁 財"
+    },
+    {
+      "rule": "声母=f AND 韵母=u1",
+      "onyomi": "フ",
+      "coverage": 4,
+      "accuracy": 1.0,
+      "examples": "夫 敷 膚 麩"
+    },
+    {
+      "rule": "声母=f AND 韵母=u3",
+      "onyomi": "フ",
+      "coverage": 4,
+      "accuracy": 1.0,
+      "examples": "府 撫 腐 釜"
+    },
+    {
+      "rule": "声母=q AND 韵母=i2",
+      "onyomi": "キ",
+      "coverage": 7,
+      "accuracy": 0.714,
+      "examples": "其 奇 旗 棋 祈"
+    },
+    {
+      "rule": "声母=w AND 韵母=ei4",
+      "onyomi": "イ",
+      "coverage": 7,
+      "accuracy": 0.714,
+      "examples": "位 慰 為 胃 謂"
+    },
+    {
+      "rule": "韵母=ei1",
+      "onyomi": "ヒ",
+      "coverage": 7,
+      "accuracy": 0.714,
+      "examples": "卑 悲 扉 非 飛"
+    },
+    {
+      "rule": "声符=古",
+      "onyomi": "コ",
+      "coverage": 7,
+      "accuracy": 0.714,
+      "examples": "固 故 枯 胡 苦"
+    },
+    {
+      "rule": "声符=干",
+      "onyomi": "カン",
+      "coverage": 5,
+      "accuracy": 0.8,
+      "examples": "刊 旱 汗 鼾"
+    },
+    {
+      "rule": "声符=青",
+      "onyomi": "セイ",
+      "coverage": 5,
+      "accuracy": 0.8,
+      "examples": "情 晴 精 請"
+    },
+    {
+      "rule": "韵母=ing4 AND 声符画数>7.5",
+      "onyomi": "ケイ",
+      "coverage": 5,
+      "accuracy": 0.8,
+      "examples": "境 敬 競 鏡"
+    },
+    {
+      "rule": "韵母=ie4 AND 声母=j",
+      "onyomi": "カイ",
+      "coverage": 5,
+      "accuracy": 0.8,
+      "examples": "介 届 界 芥"
+    },
+    {
+      "rule": "声母=d AND 韵母=i4",
+      "onyomi": "テイ",
+      "coverage": 5,
+      "accuracy": 0.8,
+      "examples": "弟 第 締 諦"
+    },
+    {
+      "rule": "声母=g AND 总画数≤7.5 AND 声符画数>1",
+      "onyomi": "コウ",
+      "coverage": 9,
+      "accuracy": 0.556,
+      "examples": "光 公 告 広 更"
+    },
+    {
+      "rule": "声母=z AND 声符画数>11.5",
+      "onyomi": "ソウ",
+      "coverage": 6,
+      "accuracy": 0.667,
+      "examples": "燥 繰 臓 蔵"
+    },
+    {
+      "rule": "韵母=uan2 AND 声母=y AND 声符画数>7.5",
+      "onyomi": "エン",
+      "coverage": 6,
+      "accuracy": 0.667,
+      "examples": "園 援 猿 縁"
+    },
+    {
+      "rule": "声母=s AND 韵母=u4",
+      "onyomi": "ソ",
+      "coverage": 6,
+      "accuracy": 0.667,
+      "examples": "溯 素 訴 遡"
+    },
+    {
+      "rule": "韵母=eng4 AND 声符画数≤7.5",
+      "onyomi": "セイ",
+      "coverage": 7,
+      "accuracy": 0.571,
+      "examples": "政 正 盛 証"
+    },
+    {
+      "rule": "声符=己",
+      "onyomi": "キ",
+      "coverage": 7,
+      "accuracy": 0.571,
+      "examples": "忌 紀 記 起"
+    },
+    {
+      "rule": "声符=且",
+      "onyomi": "ソ",
+      "coverage": 7,
+      "accuracy": 0.571,
+      "examples": "助 祖 粗 組"
+    },
+    {
+      "rule": "声符=工 AND 总画数≤8.5",
+      "onyomi": "コウ",
+      "coverage": 4,
+      "accuracy": 0.75,
+      "examples": "功 攻 空"
+    },
+    {
+      "rule": "声符=曽",
+      "onyomi": "ソウ",
+      "coverage": 4,
+      "accuracy": 0.75,
+      "examples": "層 憎 贈"
+    },
+    {
+      "rule": "声符=几",
+      "onyomi": "キ",
+      "coverage": 4,
+      "accuracy": 0.75,
+      "examples": "机 肌 飢"
+    },
+    {
+      "rule": "声母=d AND 韵母=ong4",
+      "onyomi": "トウ",
+      "coverage": 4,
+      "accuracy": 0.75,
+      "examples": "凍 動 棟"
+    },
+    {
+      "rule": "声母=h AND 部首=艸",
+      "onyomi": "カ",
+      "coverage": 4,
+      "accuracy": 0.75,
+      "examples": "花 荷 華"
+    },
+    {
+      "rule": "声符=可",
+      "onyomi": "カ",
+      "coverage": 4,
+      "accuracy": 0.75,
+      "examples": "何 河 苛"
+    },
+    {
+      "rule": "声符=㦮",
+      "onyomi": "セン",
+      "coverage": 4,
+      "accuracy": 0.75,
+      "examples": "浅 践 銭"
+    },
+    {
+      "rule": "韵母=uan1 AND 声符画数≤6.5 AND 部首画数≤3.5",
+      "onyomi": "セン",
+      "coverage": 4,
+      "accuracy": 0.75,
+      "examples": "宣 専 川"
+    },
+    {
+      "rule": "韵母=ian1 AND 总画数>16",
+      "onyomi": "セン",
+      "coverage": 4,
+      "accuracy": 0.75,
+      "examples": "籤 繊 鮮"
+    },
+    {
+      "rule": "韵母=ian3 AND 声符=㑒 AND 声符画数>7",
+      "onyomi": "ケン",
+      "coverage": 4,
+      "accuracy": 0.75,
+      "examples": "倹 検 険"
+    },
+    {
+      "rule": "声符=辰",
+      "onyomi": "シン",
+      "coverage": 4,
+      "accuracy": 0.75,
+      "examples": "振 賑 震"
+    },
+    {
+      "rule": "韵母=ing2 AND 声母=x",
+      "onyomi": "ケイ",
+      "coverage": 4,
+      "accuracy": 0.75,
+      "examples": "刑 型 形"
+    },
+    {
+      "rule": "声符=圣",
+      "onyomi": "ケイ",
+      "coverage": 4,
+      "accuracy": 0.75,
+      "examples": "径 経 軽"
+    },
+    {
+      "rule": "声母=sh AND 韵母=ou4",
+      "onyomi": "シュウ",
+      "coverage": 4,
+      "accuracy": 0.75,
+      "examples": "受 寿 授"
+    },
+    {
+      "rule": "韵母=ou1 AND 声母=zh",
+      "onyomi": "シュウ",
+      "coverage": 4,
+      "accuracy": 0.75,
+      "examples": "周 州 週"
+    },
+    {
+      "rule": "声母=y AND 韵母=i1",
+      "onyomi": "イ",
+      "coverage": 4,
+      "accuracy": 0.75,
+      "examples": "依 医 衣"
+    },
+    {
+      "rule": "声母=y AND 韵母=i3",
+      "onyomi": "イ",
+      "coverage": 4,
+      "accuracy": 0.75,
+      "examples": "以 已 椅"
+    },
+    {
+      "rule": "声符=韋",
+      "onyomi": "イ",
+      "coverage": 4,
+      "accuracy": 0.75,
+      "examples": "偉 緯 違"
+    },
+    {
+      "rule": "声母=x AND 部首=月(肉)",
+      "onyomi": "キョウ",
+      "coverage": 4,
+      "accuracy": 0.75,
+      "examples": "胸 脅 脇"
+    },
+    {
+      "rule": "声符=兆",
+      "onyomi": "チョウ",
+      "coverage": 4,
+      "accuracy": 0.75,
+      "examples": "眺 跳 逃"
+    },
+    {
+      "rule": "声母=j AND 部首画数≤1.5",
+      "onyomi": "キュウ",
+      "coverage": 4,
+      "accuracy": 0.75,
+      "examples": "久 九 及"
+    },
+    {
+      "rule": "声符=及",
+      "onyomi": "キュウ",
+      "coverage": 4,
+      "accuracy": 0.75,
+      "examples": "吸 汲 級"
+    },
+    {
+      "rule": "声母=z AND 声符画数≤8.5 AND 声调>3.5 AND 总画数>11.5",
+      "onyomi": "サイ",
+      "coverage": 4,
+      "accuracy": 0.75,
+      "examples": "最 罪 載"
+    },
+    {
+      "rule": "声符=也",
+      "onyomi": "チ",
+      "coverage": 4,
+      "accuracy": 0.75,
+      "examples": "地 池 馳"
+    },
+    {
+      "rule": "声母=sh AND 韵母=e4",
+      "onyomi": "シャ",
+      "coverage": 4,
+      "accuracy": 0.75,
+      "examples": "射 社 舎"
+    },
+    {
+      "rule": "声符=咅",
+      "onyomi": "ハイ",
+      "coverage": 4,
+      "accuracy": 0.75,
+      "examples": "倍 培 賠"
+    },
+    {
+      "rule": "韵母=ing2 AND 声母=p",
+      "onyomi": "ヘイ",
+      "coverage": 4,
+      "accuracy": 0.75,
+      "examples": "平 瓶 評"
+    },
+    {
+      "rule": "韵母=ian1 AND 总画数≤7",
+      "onyomi": "セン",
+      "coverage": 5,
+      "accuracy": 0.6,
+      "examples": "先 千 尖"
+    },
+    {
+      "rule": "声符=每",
+      "onyomi": "カイ",
+      "coverage": 5,
+      "accuracy": 0.6,
+      "examples": "悔 晦 海"
+    },
+    {
+      "rule": "声母=y AND 韵母=ong3",
+      "onyomi": "ヨウ",
+      "coverage": 5,
+      "accuracy": 0.6,
+      "examples": "勇 湧 踊"
+    },
+    {
+      "rule": "韵母=an2 AND 声母=y AND 部首画数≤3.5",
+      "onyomi": "エン",
+      "coverage": 5,
+      "accuracy": 0.6,
+      "examples": "塩 延 沿"
+    },
+    {
+      "rule": "声符=𠂇",
+      "onyomi": "ユウ",
+      "coverage": 5,
+      "accuracy": 0.6,
+      "examples": "友 右 有"
+    }
+  ],
+  "direct_rules": [
+    {
+      "rule": "韵母=ai4 AND 声母=d",
+      "onyomi": "タイ",
+      "coverage": 8,
+      "accuracy": 1.0,
+      "examples": "代 帯 待 怠 戴 殆"
+    },
+    {
+      "rule": "声符=交",
+      "onyomi": "コウ",
+      "coverage": 7,
+      "accuracy": 1.0,
+      "examples": "効 校 狡 絞 較 郊"
+    },
+    {
+      "rule": "声符=方",
+      "onyomi": "ホウ",
+      "coverage": 7,
+      "accuracy": 1.0,
+      "examples": "坊 妨 房 放 肪 訪"
+    },
+    {
+      "rule": "声符=包",
+      "onyomi": "ホウ",
+      "coverage": 7,
+      "accuracy": 1.0,
+      "examples": "抱 泡 皰 砲 鞄 飽"
+    },
+    {
+      "rule": "声母=d AND 韵母=an4",
+      "onyomi": "タン",
+      "coverage": 6,
+      "accuracy": 1.0,
+      "examples": "但 弾 憚 旦 淡 誕"
+    },
+    {
+      "rule": "声符=丁",
+      "onyomi": "テイ",
+      "coverage": 7,
+      "accuracy": 0.857,
+      "examples": "庁 打 灯 町 釘 頂"
+    },
+    {
+      "rule": "声符=反",
+      "onyomi": "ハン",
+      "coverage": 7,
+      "accuracy": 0.857,
+      "examples": "坂 板 版 販 返 飯"
+    },
+    {
+      "rule": "声符=司",
+      "onyomi": "シ",
+      "coverage": 5,
+      "accuracy": 1.0,
+      "examples": "伺 笥 覗 詞 飼"
+    },
+    {
+      "rule": "声母=d AND 韵母=ao4",
+      "onyomi": "トウ",
+      "coverage": 5,
+      "accuracy": 1.0,
+      "examples": "倒 到 盗 稲 道"
+    },
+    {
+      "rule": "韵母=ian4 AND 声母=j AND 总画数≤12",
+      "onyomi": "ケン",
+      "coverage": 5,
+      "accuracy": 1.0,
+      "examples": "件 健 剣 建 見"
+    },
+    {
+      "rule": "韵母=en1 AND 声母=sh",
+      "onyomi": "シン",
+      "coverage": 5,
+      "accuracy": 1.0,
+      "examples": "伸 呻 深 申 身"
+    },
+    {
+      "rule": "韵母=ou2 AND 声母=y",
+      "onyomi": "ユウ",
+      "coverage": 5,
+      "accuracy": 1.0,
+      "examples": "尤 油 由 遊 郵"
+    },
+    {
+      "rule": "韵母=i3 AND 声母=zh",
+      "onyomi": "シ",
+      "coverage": 6,
+      "accuracy": 0.833,
+      "examples": "只 指 旨 止 紙"
+    },
+    {
+      "rule": "声符=工 AND 总画数>8.5",
+      "onyomi": "コウ",
+      "coverage": 4,
+      "accuracy": 1.0,
+      "examples": "紅 虹 貢 項"
+    },
+    {
+      "rule": "韵母=i4 AND 声母=sh AND 声符画数≤2.5",
+      "onyomi": "シ",
+      "coverage": 4,
+      "accuracy": 1.0,
+      "examples": "士 市 氏 示"
+    },
+    {
+      "rule": "韵母=i3 AND 声母=sh",
+      "onyomi": "シ",
+      "coverage": 4,
+      "accuracy": 1.0,
+      "examples": "使 史 始 矢"
+    },
+    {
+      "rule": "声母=z AND 总画数>16.5",
+      "onyomi": "ソウ",
+      "coverage": 4,
+      "accuracy": 1.0,
+      "examples": "燥 繰 臓 贈"
+    },
+    {
+      "rule": "韵母=uan1 AND 声母=g",
+      "onyomi": "カン",
+      "coverage": 4,
+      "accuracy": 1.0,
+      "examples": "冠 官 観 関"
+    },
+    {
+      "rule": "韵母=in1 AND 声母=x",
+      "onyomi": "シン",
+      "coverage": 4,
+      "accuracy": 1.0,
+      "examples": "心 新 芯 辛"
+    },
+    {
+      "rule": "声母=w AND 韵母=ei2",
+      "onyomi": "イ",
+      "coverage": 4,
+      "accuracy": 1.0,
+      "examples": "唯 惟 維 違"
+    },
+    {
+      "rule": "声母=y AND 韵母=ang2",
+      "onyomi": "ヨウ",
+      "coverage": 4,
+      "accuracy": 1.0,
+      "examples": "揚 洋 羊 陽"
+    },
+    {
+      "rule": "声符=亡",
+      "onyomi": "ボウ",
+      "coverage": 4,
+      "accuracy": 1.0,
+      "examples": "妄 忘 忙 芒"
+    },
+    {
+      "rule": "声母=c AND 韵母=ai2",
+      "onyomi": "サイ",
+      "coverage": 4,
+      "accuracy": 1.0,
+      "examples": "才 材 裁 財"
+    },
+    {
+      "rule": "声母=f AND 韵母=u1",
+      "onyomi": "フ",
+      "coverage": 4,
+      "accuracy": 1.0,
+      "examples": "夫 敷 膚 麩"
+    },
+    {
+      "rule": "声母=f AND 韵母=u3",
+      "onyomi": "フ",
+      "coverage": 4,
+      "accuracy": 1.0,
+      "examples": "府 撫 腐 釜"
+    },
+    {
+      "rule": "声母=q AND 韵母=i2",
+      "onyomi": "キ",
+      "coverage": 7,
+      "accuracy": 0.714,
+      "examples": "其 奇 旗 棋 祈"
+    },
+    {
+      "rule": "韵母=ei1",
+      "onyomi": "ヒ",
+      "coverage": 7,
+      "accuracy": 0.714,
+      "examples": "卑 悲 扉 非 飛"
+    },
+    {
+      "rule": "声符=古",
+      "onyomi": "コ",
+      "coverage": 7,
+      "accuracy": 0.714,
+      "examples": "固 故 枯 胡 苦"
+    },
+    {
+      "rule": "声符=干",
+      "onyomi": "カン",
+      "coverage": 5,
+      "accuracy": 0.8,
+      "examples": "刊 旱 汗 鼾"
+    },
+    {
+      "rule": "声符=青",
+      "onyomi": "セイ",
+      "coverage": 5,
+      "accuracy": 0.8,
+      "examples": "情 晴 精 請"
+    },
+    {
+      "rule": "声母=j AND 韵母=ing4",
+      "onyomi": "ケイ",
+      "coverage": 5,
+      "accuracy": 0.8,
+      "examples": "境 敬 競 鏡"
+    },
+    {
+      "rule": "韵母=ie4 AND 声母=j",
+      "onyomi": "カイ",
+      "coverage": 5,
+      "accuracy": 0.8,
+      "examples": "介 届 界 芥"
+    },
+    {
+      "rule": "声母=d AND 韵母=i4",
+      "onyomi": "テイ",
+      "coverage": 5,
+      "accuracy": 0.8,
+      "examples": "弟 第 締 諦"
+    },
+    {
+      "rule": "韵母=uan2 AND 声母=y AND 总画数>11",
+      "onyomi": "エン",
+      "coverage": 5,
+      "accuracy": 0.8,
+      "examples": "園 援 猿 縁"
+    },
+    {
+      "rule": "声母=w AND 韵母=ei4",
+      "onyomi": "イ",
+      "coverage": 8,
+      "accuracy": 0.625,
+      "examples": "位 慰 為 胃 謂"
+    },
+    {
+      "rule": "声母=z AND 13.5<总画数≤16.5 AND 声调≤2.5",
+      "onyomi": "ソウ",
+      "coverage": 6,
+      "accuracy": 0.667,
+      "examples": "憎 蔵 遭 雑"
+    },
+    {
+      "rule": "韵母=ie2 AND 总画数≤10.5",
+      "onyomi": "キョウ",
+      "coverage": 6,
+      "accuracy": 0.667,
+      "examples": "協 挟 脅 脇"
+    },
+    {
+      "rule": "声符=皮",
+      "onyomi": "ヒ",
+      "coverage": 6,
+      "accuracy": 0.667,
+      "examples": "彼 披 疲 被"
+    },
+    {
+      "rule": "声母=s AND 韵母=u4",
+      "onyomi": "ソ",
+      "coverage": 6,
+      "accuracy": 0.667,
+      "examples": "溯 素 訴 遡"
+    },
+    {
+      "rule": "声符=己",
+      "onyomi": "キ",
+      "coverage": 7,
+      "accuracy": 0.571,
+      "examples": "忌 紀 記 起"
+    },
+    {
+      "rule": "声母=zh AND 声符画数>11.5 AND 声调≤3.5",
+      "onyomi": "ショク",
+      "coverage": 7,
+      "accuracy": 0.571,
+      "examples": "嘱 燭 織 職"
+    },
+    {
+      "rule": "声符=且",
+      "onyomi": "ソ",
+      "coverage": 7,
+      "accuracy": 0.571,
+      "examples": "助 祖 粗 組"
+    },
+    {
+      "rule": "声符=工 AND 总画数≤8.5",
+      "onyomi": "コウ",
+      "coverage": 4,
+      "accuracy": 0.75,
+      "examples": "功 攻 空"
+    },
+    {
+      "rule": "声母=c AND 声符画数>8.5 AND 声调≤3 AND 总画数≤14.5",
+      "onyomi": "ソウ",
+      "coverage": 4,
+      "accuracy": 0.75,
+      "examples": "層 漕 葱"
+    },
+    {
+      "rule": "韵母=eng4 AND 声母=zh",
+      "onyomi": "セイ",
+      "coverage": 4,
+      "accuracy": 0.75,
+      "examples": "政 正 証"
+    },
+    {
+      "rule": "声符=几",
+      "onyomi": "キ",
+      "coverage": 4,
+      "accuracy": 0.75,
+      "examples": "机 肌 飢"
+    },
+    {
+      "rule": "声母=d AND 韵母=ong4",
+      "onyomi": "トウ",
+      "coverage": 4,
+      "accuracy": 0.75,
+      "examples": "凍 動 棟"
+    },
+    {
+      "rule": "声母=t AND 总画数>9.5 AND 4.5<部首画数≤6.5 AND 声调≤2.5",
+      "onyomi": "トウ",
+      "coverage": 4,
+      "accuracy": 0.75,
+      "examples": "瞳 童 糖"
+    },
+    {
+      "rule": "声母=t AND 总画数>9.5 AND 4.5<部首画数≤6.5 AND 声调>2.5",
+      "onyomi": "トウ",
+      "coverage": 4,
+      "accuracy": 0.75,
+      "examples": "痛 筒 統"
+    },
+    {
+      "rule": "声母=h AND 部首=艸",
+      "onyomi": "カ",
+      "coverage": 4,
+      "accuracy": 0.75,
+      "examples": "花 荷 華"
+    },
+    {
+      "rule": "声符=可",
+      "onyomi": "カ",
+      "coverage": 4,
+      "accuracy": 0.75,
+      "examples": "何 河 苛"
+    },
+    {
+      "rule": "韵母=uan1 AND 声符画数≤6.5 AND 部首画数≤3.5",
+      "onyomi": "セン",
+      "coverage": 4,
+      "accuracy": 0.75,
+      "examples": "宣 専 川"
+    },
+    {
+      "rule": "声符=㦮",
+      "onyomi": "セン",
+      "coverage": 4,
+      "accuracy": 0.75,
+      "examples": "浅 践 銭"
+    },
+    {
+      "rule": "韵母=ian1 AND 总画数>16",
+      "onyomi": "セン",
+      "coverage": 4,
+      "accuracy": 0.75,
+      "examples": "籤 繊 鮮"
+    },
+    {
+      "rule": "韵母=ian3 AND 总画数>12.5",
+      "onyomi": "ケン",
+      "coverage": 4,
+      "accuracy": 0.75,
+      "examples": "瞼 遣 顕"
+    },
+    {
+      "rule": "韵母=ian3 AND 声符=㑒 AND 总画数>9.5",
+      "onyomi": "ケン",
+      "coverage": 4,
+      "accuracy": 0.75,
+      "examples": "倹 検 険"
+    },
+    {
+      "rule": "声符=辰",
+      "onyomi": "シン",
+      "coverage": 4,
+      "accuracy": 0.75,
+      "examples": "振 賑 震"
+    },
+    {
+      "rule": "声符=圣",
+      "onyomi": "ケイ",
+      "coverage": 4,
+      "accuracy": 0.75,
+      "examples": "径 経 軽"
+    },
+    {
+      "rule": "韵母=ou4 AND 声母=sh",
+      "onyomi": "シュウ",
+      "coverage": 4,
+      "accuracy": 0.75,
+      "examples": "受 寿 授"
+    },
+    {
+      "rule": "韵母=ou1 AND 声母=zh",
+      "onyomi": "シュウ",
+      "coverage": 4,
+      "accuracy": 0.75,
+      "examples": "周 州 週"
+    },
+    {
+      "rule": "声母=y AND 韵母=i1",
+      "onyomi": "イ",
+      "coverage": 4,
+      "accuracy": 0.75,
+      "examples": "依 医 衣"
+    },
+    {
+      "rule": "声母=y AND 韵母=i3",
+      "onyomi": "イ",
+      "coverage": 4,
+      "accuracy": 0.75,
+      "examples": "以 已 椅"
+    },
+    {
+      "rule": "声符=兆",
+      "onyomi": "チョウ",
+      "coverage": 4,
+      "accuracy": 0.75,
+      "examples": "眺 跳 逃"
+    },
+    {
+      "rule": "声母=j AND 部首画数≤1.5",
+      "onyomi": "キュウ",
+      "coverage": 4,
+      "accuracy": 0.75,
+      "examples": "久 九 及"
+    },
+    {
+      "rule": "声符=及",
+      "onyomi": "キュウ",
+      "coverage": 4,
+      "accuracy": 0.75,
+      "examples": "吸 汲 級"
+    },
+    {
+      "rule": "声母=z AND 声调>3.5 AND 声符画数≤8.5 AND 总画数>11.5",
+      "onyomi": "サイ",
+      "coverage": 4,
+      "accuracy": 0.75,
+      "examples": "最 罪 載"
+    },
+    {
+      "rule": "声符=也",
+      "onyomi": "チ",
+      "coverage": 4,
+      "accuracy": 0.75,
+      "examples": "地 池 馳"
+    },
+    {
+      "rule": "韵母=e4 AND 声母=sh",
+      "onyomi": "シャ",
+      "coverage": 4,
+      "accuracy": 0.75,
+      "examples": "射 社 舎"
+    },
+    {
+      "rule": "声符=咅",
+      "onyomi": "ハイ",
+      "coverage": 4,
+      "accuracy": 0.75,
+      "examples": "倍 培 賠"
+    },
+    {
+      "rule": "韵母=ing2 AND 声母=p",
+      "onyomi": "ヘイ",
+      "coverage": 4,
+      "accuracy": 0.75,
+      "examples": "平 瓶 評"
+    },
+    {
+      "rule": "声符=尚",
+      "onyomi": "ショウ",
+      "coverage": 5,
+      "accuracy": 0.6,
+      "examples": "常 掌 賞"
+    },
+    {
+      "rule": "声母=t AND 总画数>9.5 AND 部首画数>6.5 AND 声符画数>6.5",
+      "onyomi": "トウ",
+      "coverage": 5,
+      "accuracy": 0.6,
+      "examples": "踏 頭 騰"
+    },
+    {
+      "rule": "韵母=ian1 AND 总画数≤7",
+      "onyomi": "セン",
+      "coverage": 5,
+      "accuracy": 0.6,
+      "examples": "先 千 尖"
+    },
+    {
+      "rule": "韵母=uan4 AND 总画数≤13.5 AND 声符画数≤6.5",
+      "onyomi": "ケン",
+      "coverage": 5,
+      "accuracy": 0.6,
+      "examples": "券 巻 眩"
+    },
+    {
+      "rule": "韵母=ian4 AND 声母=x AND 部首画数≤4.5",
+      "onyomi": "ケン",
+      "coverage": 5,
+      "accuracy": 0.6,
+      "examples": "憲 献 現"
+    },
+    {
+      "rule": "声符=每",
+      "onyomi": "カイ",
+      "coverage": 5,
+      "accuracy": 0.6,
+      "examples": "悔 晦 海"
+    },
+    {
+      "rule": "声母=y AND 韵母=ong3",
+      "onyomi": "ヨウ",
+      "coverage": 5,
+      "accuracy": 0.6,
+      "examples": "勇 湧 踊"
+    },
+    {
+      "rule": "声母=y AND 韵母=an2 AND 部首画数≤3.5",
+      "onyomi": "エン",
+      "coverage": 5,
+      "accuracy": 0.6,
+      "examples": "塩 延 沿"
+    },
+    {
+      "rule": "声符=𠂇",
+      "onyomi": "ユウ",
+      "coverage": 5,
+      "accuracy": 0.6,
+      "examples": "友 右 有"
+    }
+  ]
+}
