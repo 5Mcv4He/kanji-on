@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { width:900px; height:940px; overflow:hidden; font-family:"PingFang SC","Noto Serif SC",sans-serif; background:#0b0908; color:#c0b0a0; }
+.chart { width:900px; height:940px; position:relative; padding:44px 56px; }
+h2 { font-family:"Noto Serif SC","Songti SC",serif; font-size:34px; font-weight:900; color:#efe4d0; letter-spacing:0.06em; margin-bottom:6px; }
+.subtitle { font-size:20px; color:#8a7a6a; letter-spacing:0.08em; margin-bottom:32px; }
+.cols { display:flex; gap:40px; margin-bottom:28px; }
+.col { flex:1; }
+.col-title { font-size:20px; font-weight:600; color:#a09080; letter-spacing:0.08em; margin-bottom:16px; padding-bottom:10px; border-bottom:1px solid rgba(255,255,255,0.06); }
+.col-title .em { color:#d4954a; }
+.bars { display:flex; flex-direction:column; gap:14px; }
+.bar-label { font-size:18px; color:#a09080; margin-bottom:6px; display:flex; justify-content:space-between; align-items:baseline; }
+.bar-label .name { font-weight:500; letter-spacing:0.04em; }
+.bar-label .pct { font-size:20px; color:#d4954a; font-weight:700; }
+.bar-track { height:34px; background:rgba(255,255,255,0.04); border-radius:3px; overflow:hidden; }
+.bar-fill { height:100%; border-radius:3px; }
+.bar-fill.gray { background:linear-gradient(90deg, #4a3a2a, #6a5a4a); }
+.bar-fill.gold { background:linear-gradient(90deg, #b07030, #d4954a); }
+.bar-fill.amber { background:linear-gradient(90deg, #c5602e, #e08040); }
+.killer-stat { text-align:center; padding:28px 0 24px 0; border-top:1px solid rgba(255,255,255,0.06); border-bottom:1px solid rgba(255,255,255,0.06); margin-bottom:20px; }
+.killer-label { font-size:22px; color:#a09080; letter-spacing:0.06em; margin-bottom:14px; }
+.killer-row { display:flex; justify-content:center; align-items:center; gap:32px; }
+.killer-item { text-align:center; min-width:150px; }
+.killer-num { font-size:68px; font-weight:900; line-height:1; font-family:"PingFang SC","SF Pro Display",system-ui; }
+.killer-num.dim { color:#8a7a6a; }
+.killer-num.hot { color:#d47a3a; }
+.killer-item .kl { font-size:18px; color:#8a7a6a; letter-spacing:0.04em; margin-top:8px; line-height:1.5; }
+.killer-vs { font-size:36px; color:#5a4a3a; font-weight:300; }
+.killer-delta { font-size:22px; color:#c5602e; font-weight:600; letter-spacing:0.04em; margin-top:12px; }
+table { width:100%; border-collapse:collapse; font-size:18px; }
+th { text-align:center; font-weight:500; color:#8a7a6a; padding:10px 0; border-bottom:1px solid rgba(255,255,255,0.06); font-size:16px; letter-spacing:0.1em; }
+td { text-align:center; padding:12px 0; border-bottom:1px solid rgba(255,255,255,0.03); }
+.lvl { font-weight:600; color:#c0a080; letter-spacing:0.08em; font-size:20px; }
+.hj { color:#8a7a6a; font-size:18px; }
+.il { color:#d4954a; font-weight:600; font-size:18px; }
+.dl { color:#c5602e; font-weight:600; font-size:18px; }
+.mono { font-family:"SF Mono","Menlo",monospace; font-size:16px; }
+.note { font-size:18px; color:#8a7a6a; margin-top:18px; letter-spacing:0.04em; line-height:1.6; text-align:center; }
+.note em { color:#a08060; font-style:normal; }
+</style>
+</head>
+<body>
+<div class="chart">
+  <h2>实测对比：沪江 2 条 vs 五条铁律</h2>
+  <div class="subtitle">红宝书 N1 词汇表 2,179 汉字 · 同基准实测</div>
+  <div class="cols">
+    <div class="col">
+      <div class="col-title">沪江方法的覆盖率<span class="em"></span></div>
+      <div class="bars">
+        <div class="bar-label"><span class="name">第一条·声母→行</span><span class="pct">76.6%</span></div>
+        <div class="bar-track"><div class="bar-fill gray" style="width:76.6%"></div></div>
+        <div class="bar-label" style="margin-top:14px"><span class="name">第二条·韵尾→长短</span><span class="pct">36.6%</span></div>
+        <div class="bar-track"><div class="bar-fill gray" style="width:36.6%"></div></div>
+        <div class="bar-label" style="margin-top:14px"><span class="name">两条合计</span><span class="pct">85.3%</span></div>
+        <div class="bar-track"><div class="bar-fill gray" style="width:85.3%"></div></div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="col-title">本系统的覆盖率<span class="em"></span></div>
+      <div class="bars">
+        <div class="bar-label"><span class="name">五条铁律合计</span><span class="pct">91.4%</span></div>
+        <div class="bar-track"><div class="bar-fill gold" style="width:91.4%"></div></div>
+        <div class="bar-label" style="margin-top:14px"><span class="name">精选 164 条高精度规则</span><span class="pct">84.5%</span></div>
+        <div class="bar-track"><div class="bar-fill amber" style="width:84.5%"></div></div>
+        <div class="bar-label" style="margin-top:14px"><span class="name">系统全部 746 条精选规则</span><span class="pct">100%</span></div>
+        <div class="bar-track"><div class="bar-fill amber" style="width:100%"></div></div>
+      </div>
+    </div>
+  </div>
+  <div class="killer-stat">
+    <div class="killer-label">同样覆盖 ~85% 的汉字，精度差多少？</div>
+    <div class="killer-row">
+      <div class="killer-item"><div class="killer-num dim">78%</div><div class="kl">沪江主规则精度<br>五个字错一个</div></div>
+      <div class="killer-vs">→</div>
+      <div class="killer-item"><div class="killer-num hot">98.6%</div><div class="kl">系统 164 条均精度<br>七十个字错一个</div></div>
+    </div>
+    <div class="killer-delta">在同一批汉字上，错误率降低 14 倍</div>
+  </div>
+  <table>
+    <tr><th></th><th>汉字数</th><th>沪江 2 条</th><th>五条铁律</th><th>提升</th></tr>
+    <tr><td class="lvl">N5</td><td class="mono">653</td><td class="hj">85.8%</td><td class="il">96.0%</td><td class="dl">+10.2%</td></tr>
+    <tr><td class="lvl">N4</td><td class="mono">1,074</td><td class="hj">86.1%</td><td class="il">93.7%</td><td class="dl">+7.6%</td></tr>
+    <tr><td class="lvl">N3</td><td class="mono">1,512</td><td class="hj">85.9%</td><td class="il">92.8%</td><td class="dl">+6.9%</td></tr>
+    <tr><td class="lvl">N2</td><td class="mono">1,875</td><td class="hj">85.6%</td><td class="il">92.1%</td><td class="dl">+6.5%</td></tr>
+    <tr><td class="lvl">N1</td><td class="mono">2,179</td><td class="hj">85.3%</td><td class="il">91.4%</td><td class="dl">+6.1%</td></tr>
+  </table>
+  <div class="note">基准：红宝书词汇表，一字一音。<em>关键差距不在覆盖率——在精度。同一覆盖量级，错误率差 14 倍。</em></div>
+</div>
+</body>
+</html>

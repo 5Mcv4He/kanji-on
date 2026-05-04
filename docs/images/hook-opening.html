@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { width:900px; height:560px; overflow:hidden; font-family:"Noto Serif SC","Songti SC","PingFang SC",sans-serif; background:#0b0908; color:#c0b0a0; }
+
+.card { width:900px; height:560px; position:relative; padding:44px 52px; }
+
+.glow { position:absolute; left:50%; top:20%; width:60%; height:60%; transform:translateX(-50%); background:radial-gradient(ellipse at center, rgba(212,149,74,0.08) 0%, transparent 60%); pointer-events:none; }
+
+/* Top line */
+.kicker { font-size:22px; color:#8a7a6a; letter-spacing:0.12em; text-align:center; margin-bottom:16px; font-weight:400; }
+
+/* The big contrast */
+.contrast { display:flex; align-items:center; justify-content:center; gap:48px; margin:32px 0 20px; }
+
+.side { text-align:center; }
+.side-label { font-size:22px; color:#6a5a5a; letter-spacing:0.1em; margin-bottom:12px; }
+.side-num { font-size:120px; font-weight:900; line-height:1; font-family:"PingFang SC","SF Pro Display",system-ui; }
+.side-num.small-side { color:#5a4a3a; font-size:96px; }
+.side-num.big-side { color:#d47a3a; }
+.side-unit { font-size:24px; color:#8a7a6a; letter-spacing:0.08em; margin-top:6px; }
+
+.vs-divider { display:flex; flex-direction:column; align-items:center; gap:8px; }
+.vs-line { width:1px; height:40px; background:rgba(255,255,255,0.08); }
+.vs-text { font-size:24px; color:#5a4a3a; letter-spacing:0.1em; }
+
+/* Bottom line */
+.bottom-line { text-align:center; margin-top:20px; }
+.bottom-text { font-size:28px; color:#c0a080; letter-spacing:0.06em; font-weight:600; }
+.bottom-sub { font-size:20px; color:#6a5a5a; letter-spacing:0.08em; margin-top:8px; }
+
+/* Accent bar */
+.accent { position:absolute; bottom:0; left:0; right:0; height:3px; background:linear-gradient(90deg, transparent, #c5602e 30%, #d4954a 70%, transparent); }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="glow"></div>
+  <div class="accent"></div>
+
+  <div class="kicker">网上能搜到的日语音读规律</div>
+
+  <div class="contrast">
+    <div class="side">
+      <div class="side-label">你知道的</div>
+      <div class="side-num small-side">2</div>
+      <div class="side-unit">条经验法则</div>
+    </div>
+    <div class="vs-divider">
+      <div class="vs-line"></div>
+      <div class="vs-text">vs</div>
+      <div class="vs-line"></div>
+    </div>
+    <div class="side">
+      <div class="side-label">存在的</div>
+      <div class="side-num big-side">79,832</div>
+      <div class="side-unit">条可验证规律</div>
+    </div>
+  </div>
+
+  <div class="bottom-line">
+    <div class="bottom-text">日语音读规律，两条真的够吗？</div>
+    <div class="bottom-sub">这里面的底层逻辑是什么、你能直接拿走什么</div>
+  </div>
+</div>
+</body>
+</html>

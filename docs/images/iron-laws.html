@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { width:900px; height:1000px; overflow:hidden; font-family:"PingFang SC","Noto Serif SC",sans-serif; background:#0b0908; color:#c0b0a0; }
+.card { width:900px; height:1000px; position:relative; padding:48px 56px; }
+h2 { font-family:"Noto Serif SC","Songti SC",serif; font-size:36px; font-weight:900; color:#efe4d0; letter-spacing:0.08em; margin-bottom:6px; }
+.subtitle { font-size:20px; color:#8a7a6a; letter-spacing:0.1em; margin-bottom:22px; }
+.laws-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:12px; }
+.law { padding:18px 24px; background:rgba(255,255,255,0.022); border-radius:4px; position:relative; overflow:hidden; }
+.law::before { content:''; position:absolute; left:0; top:0; bottom:0; width:4px; }
+.law:nth-child(1)::before { background:#d4954a; }
+.law:nth-child(2)::before { background:#c5602e; }
+.law:nth-child(3)::before { background:#b07050; }
+.law:nth-child(4)::before { background:#a06040; }
+.law-head { display:flex; align-items:baseline; gap:12px; margin-bottom:8px; }
+.law-num { font-size:34px; font-weight:900; color:#d4954a; font-family:"Noto Serif SC","Songti SC",serif; line-height:1; }
+.law-title { font-size:24px; font-weight:700; color:#efe4d0; letter-spacing:0.05em; }
+.law-badge { font-size:15px; padding:2px 10px; border-radius:3px; letter-spacing:0.08em; font-weight:600; margin-left:8px; }
+.badge-acc { background:rgba(212,149,74,0.12); color:#d4954a; }
+.badge-dir { background:rgba(160,120,100,0.12); color:#b09080; }
+.badge-exp { background:rgba(140,120,100,0.1); color:#a09080; }
+.law-desc { font-size:19px; color:#a09080; line-height:1.5; letter-spacing:0.03em; margin-bottom:6px; padding-left:46px; }
+.law-example { font-size:17px; color:#8a7a6a; line-height:1.5; letter-spacing:0.03em; padding-left:46px; }
+.law-example span { color:#b09070; font-family:"SF Mono","Menlo",monospace; font-size:17px; }
+.law-full { padding:18px 24px; background:rgba(255,255,255,0.018); border-radius:4px; border-left:4px solid #8a5a3a; }
+.law-full .law-desc { font-size:19px; padding-left:0; }
+.law-full .law-example { font-size:17px; padding-left:0; }
+.footer { margin-top:18px; font-size:16px; color:#5a4a3a; letter-spacing:0.08em; text-align:right; }
+</style>
+</head>
+<body>
+<div class="card">
+  <h2>日语音读 · 五条铁律</h2>
+  <div class="subtitle">N1 2,179 汉字实测 · 覆盖 91.4% · 一张图带走</div>
+  <div class="laws-grid">
+    <div class="law">
+      <div class="law-head"><div class="law-num">一</div><div class="law-title">声母定行</div><div class="law-badge badge-acc">精度 78%</div></div>
+      <div class="law-desc">汉语声母决定日语音读属于哪一行。g/k/h→カ行，d/t→タ行，b/p/m→ハ/バ行，l→ラ行，zh/ch/sh→サ/タ行，j/q/x→カ/サ行。</div>
+      <div class="law-example"><span>g+uan → カン</span> 官管館観貫冠&nbsp;&nbsp;<span>j+ian → ケン</span> 健建見鍵剣</div>
+    </div>
+    <div class="law">
+      <div class="law-head"><div class="law-num">二</div><div class="law-title">韵尾定长短</div><div class="law-badge badge-acc">精度 98.5%</div></div>
+      <div class="law-desc">前鼻音 -n → 撥音ン。后鼻音 -ng → 長音（オウ/エイ/ユウ等）。几乎没有例外。</div>
+      <div class="law-example"><span>安 an → アン</span>&nbsp;&nbsp;<span>天 tian → テン</span>&nbsp;&nbsp;<span>当 dang → トウ</span>&nbsp;&nbsp;<span>生 sheng → セイ</span></div>
+    </div>
+    <div class="law">
+      <div class="law-head"><div class="law-num">三</div><div class="law-title">声符定读音</div><div class="law-badge badge-acc">同声符≈100%</div></div>
+      <div class="law-desc">形声字的声旁决定整个字族的音读。看到不认识的字读半边——日语同样适用，精度极高。</div>
+      <div class="law-example"><span>方→ホウ</span> 坊妨房放肪紡&nbsp;&nbsp;<span>建→ケン</span> 健鍵&nbsp;&nbsp;<span>交→コウ</span> 校餃</div>
+    </div>
+    <div class="law">
+      <div class="law-head"><div class="law-num">四</div><div class="law-title">入声见端</div><div class="law-badge badge-dir">方向感</div></div>
+      <div class="law-desc">古入声字（-p/-t/-k 收尾）在日语里有独特尾部标记：ク/キ/ツ/チ。非入声字几乎不会以这些音节结尾。</div>
+      <div class="law-example"><span>学→ガク</span>（入声 -k）&nbsp;&nbsp;<span>日→ニチ</span>（入声 -t）&nbsp;&nbsp;<span>一→イチ</span>（入声 -t）</div>
+    </div>
+  </div>
+  <div class="law-full">
+    <div class="law-head"><div class="law-num">五</div><div class="law-title">呉漢分層</div><div class="law-badge badge-exp">解释性</div></div>
+    <div class="law-desc">同一汉字有两种音读时，较短较清的是漢音（唐代传入），较长较浊的是呉音（南北朝传入）。这条不帮你猜读音，但让你不再困惑「为什么同一个字有两种读法」。</div>
+    <div class="law-example"><span>行：コウ（漢）vs ギョウ（呉）</span>&nbsp;&nbsp;<span>生：セイ（漢）vs ショウ（呉）</span>&nbsp;&nbsp;<span>上：ショウ（漢）vs ジョウ（呉）</span></div>
+  </div>
+  <div class="footer">kanji-on · github.com/5Mcv4He/kanji-on · MIT</div>
+</div>
+</body>
+</html>

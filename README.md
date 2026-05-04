@@ -164,9 +164,22 @@ python deep_lookup.py 学 --json    # JSON 输出
 
 ---
 
+## 文章 & 视觉资产
+
+公众号文章、HTML 设计稿、截图脚本——全部开源在 `docs/`：
+
+| 文件 | 说明 |
+|:--|:--|
+| [`docs/article.md`](docs/article.md) | 公众号文章原文：「日语音读规律，两条真的够吗？」 |
+| [`docs/rules-reference.md`](docs/rules-reference.md) | 746 条精选规则速查手册 |
+| [`docs/images/`](docs/images/) | 9 张 HTML 设计源文件（Playwright 截图 → PNG） |
+| [`docs/scripts/screenshot.py`](docs/scripts/screenshot.py) | HTML → PNG 批量截图工具 |
+| [`docs/scripts/gen_rule_cards.py`](docs/scripts/gen_rule_cards.py) | 规则 JSON → HTML 卡片生成器 |
+
 <p align="center">
   <a href="docs/PROJECT_REPORT.md">项目报告</a> ·
   <a href="docs/SPEC.md">规格书</a> ·
+  <a href="docs/article.md">公众号文章</a> ·
   <a href="README.en.md">English</a> ·
   <a href="README.ja.md">日本語</a>
 </p>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { width:900px; height:640px; overflow:hidden; font-family:"Noto Serif SC","Songti SC","PingFang SC",sans-serif; background:#f8f4ed; color:#2c2416; }
+.card { width:900px; height:640px; position:relative; padding:40px 48px; }
+.title-block { margin-bottom:24px; padding-left:24px; border-left:4px solid #2c4a5a; }
+.title { font-size:34px; font-weight:900; color:#1a1410; letter-spacing:0.05em; font-family:"Noto Serif SC","Songti SC",serif; }
+.subtitle { font-size:22px; color:#8a7a6a; letter-spacing:0.06em; margin-top:5px; }
+.families { display:flex; gap:24px; }
+.family { flex:1; background:#fff; border-radius:3px; border:1px solid #e0d6c4; padding:24px 18px; text-align:center; }
+.family-root { display:inline-block; padding:14px 28px; background:#fdf4ee; border:2px solid #c5602e; border-radius:3px; margin-bottom:16px; }
+.family-root-char { font-size:44px; font-weight:900; color:#1a1410; font-family:"Noto Serif SC","Songti SC",serif; }
+.family-root-on { font-size:24px; color:#b8472e; font-weight:700; margin-top:4px; font-family:"PingFang SC",sans-serif; }
+.family-arrow-down { margin:0 auto 16px; width:3px; height:20px; background:#d4c8b8; }
+.family-children { display:flex; flex-wrap:wrap; gap:8px; justify-content:center; }
+.child { padding:8px 14px; background:#faf7f2; border:1px solid #e8e0d4; border-radius:2px; text-align:center; min-width:52px; }
+.child-char { font-size:24px; font-weight:700; color:#1a1410; font-family:"Noto Serif SC","Songti SC",serif; }
+.child-on { font-size:16px; color:#8a7a6a; margin-top:2px; font-family:"PingFang SC",sans-serif; }
+.insight { margin-top:24px; padding-top:18px; border-top:1px solid #e0d6c4; text-align:center; font-size:22px; color:#4d3a28; letter-spacing:0.04em; line-height:1.6; }
+.insight em { color:#b8472e; font-style:normal; font-weight:600; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="title-block"><div class="title">声符家族：看偏旁，知读音</div><div class="subtitle">汉字 80% 是形声字 · 声旁决定整个字族的音读 · 精度 ≈ 100%</div></div>
+  <div class="families">
+    <div class="family">
+      <div class="family-root"><div class="family-root-char">方</div><div class="family-root-on">ホウ</div></div>
+      <div class="family-arrow-down"></div>
+      <div class="family-children">
+        <div class="child"><div class="child-char">坊</div><div class="child-on">ホウ</div></div>
+        <div class="child"><div class="child-char">妨</div><div class="child-on">ホウ</div></div>
+        <div class="child"><div class="child-char">房</div><div class="child-on">ホウ</div></div>
+        <div class="child"><div class="child-char">放</div><div class="child-on">ホウ</div></div>
+        <div class="child"><div class="child-char">肪</div><div class="child-on">ホウ</div></div>
+        <div class="child"><div class="child-char">紡</div><div class="child-on">ホウ</div></div>
+        <div class="child"><div class="child-char">訪</div><div class="child-on">ホウ</div></div>
+      </div>
+    </div>
+    <div class="family">
+      <div class="family-root" style="border-color:#2c4a5a; background:#f4f6f8;"><div class="family-root-char">建</div><div class="family-root-on" style="color:#2c4a5a;">ケン</div></div>
+      <div class="family-arrow-down"></div>
+      <div class="family-children">
+        <div class="child"><div class="child-char">健</div><div class="child-on">ケン</div></div>
+        <div class="child"><div class="child-char">鍵</div><div class="child-on">ケン</div></div>
+        <div class="child"><div class="child-char">腱</div><div class="child-on">ケン</div></div>
+        <div class="child"><div class="child-char">鰹</div><div class="child-on">ケン</div></div>
+      </div>
+    </div>
+    <div class="family">
+      <div class="family-root" style="border-color:#889966; background:#f7f9f2;"><div class="family-root-char">交</div><div class="family-root-on" style="color:#667744;">コウ</div></div>
+      <div class="family-arrow-down"></div>
+      <div class="family-children">
+        <div class="child"><div class="child-char">校</div><div class="child-on">コウ</div></div>
+        <div class="child"><div class="child-char">餃</div><div class="child-on">コウ</div></div>
+        <div class="child"><div class="child-char">絞</div><div class="child-on">コウ</div></div>
+        <div class="child"><div class="child-char">較</div><div class="child-on">コウ</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="insight">日语完整保留了汉字形声系统的声旁一致性。<em>看到声符，就读这个音</em>——跟你小学「读半边」的策略一模一样。</div>
+</div>
+</body>
+</html>

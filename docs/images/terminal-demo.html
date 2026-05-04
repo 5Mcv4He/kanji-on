@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { width:900px; height:640px; overflow:hidden; background:#1e1e1e; font-family:"SF Mono","Menlo","Monaco","Courier New",monospace; }
+.terminal { width:900px; height:640px; padding:28px 32px; display:flex; flex-direction:column; }
+
+.titlebar { display:flex; align-items:center; gap:8px; margin-bottom:18px; padding-bottom:14px; border-bottom:1px solid rgba(255,255,255,0.06); }
+.dot { width:12px; height:12px; border-radius:50%; }
+.dot.red { background:#ff5f57; } .dot.yellow { background:#febc2e; } .dot.green { background:#28c840; }
+.titlebar-text { color:#888; font-size:15px; margin-left:12px; letter-spacing:0.04em; }
+
+.line { font-size:17px; line-height:1.65; white-space:pre; opacity:0; animation:revealLine 0.04s forwards; }
+@keyframes revealLine { to { opacity:1; } }
+
+.prompt { color:#28c840; }
+.cmd { color:#e8e0d0; }
+.path { color:#6a9fd8; }
+.border-line { color:#8a7a5a; }
+.header-key { color:#a09070; }
+.header-val { color:#d0c8b0; }
+.header-on { color:#e8c060; }
+.section-line { color:#6a5a4a; }
+.section-title { color:#c0a060; font-weight:600; }
+.rule-label { color:#28c840; }
+.rule-bracket { color:#8a7a5a; }
+.rule-type { color:#a09070; }
+.rule-desc { color:#c0b0a0; }
+.rule-acc { color:#e0a040; }
+.rule-kanji { color:#888; }
+.word-line { color:#b0a090; }
+.word-jp { color:#c0b0a0; }
+.dim { color:#6a5a4a; }
+.highlight { color:#e8c060; }
+.cursor-blink { animation:blink 0.6s infinite; }
+@keyframes blink { 0%,50% { opacity:1; } 51%,100% { opacity:0; } }
+</style>
+</head>
+<body>
+<div class="terminal">
+  <div class="titlebar">
+    <div class="dot red"></div><div class="dot yellow"></div><div class="dot green"></div>
+    <span class="titlebar-text">Terminal — kanji-on</span>
+  </div>
+
+  <div class="line" style="animation-delay:0.2s"><span class="prompt">$</span> <span class="cmd">cd kanji-on</span></div>
+  <div class="line" style="animation-delay:0.6s"><span class="prompt">$</span> <span class="cmd">python3 deep_lookup.py 健</span></div>
+  <div class="line" style="animation-delay:1.0s">&nbsp;</div>
+
+  <div class="line" style="animation-delay:1.2s"><span class="border-line">╔════════════════════════════════════════╗</span></div>
+  <div class="line" style="animation-delay:1.3s"><span class="border-line">║</span>  <span class="highlight">健</span>  <span class="header-key">拼音:</span><span class="header-val">jian</span>  <span class="header-key">部首:</span><span class="header-val">人</span>  <span class="header-key">声符:</span><span class="header-val">建</span>    <span class="border-line">║</span></div>
+  <div class="line" style="animation-delay:1.4s"><span class="border-line">║</span>  <span class="header-key">音読:</span> <span class="header-on">ケン</span><span class="dim"> · </span><span class="header-on">ゴン</span>  <span class="header-key">訓読:</span><span class="header-val">すこやか</span>            <span class="border-line">║</span></div>
+  <div class="line" style="animation-delay:1.5s"><span class="border-line">║</span>  <span class="header-key">N5</span>  <span class="header-key">画数:</span><span class="header-val">11</span>  <span class="header-key">鼻音:</span><span class="header-val">-n</span>                  <span class="border-line">║</span></div>
+  <div class="line" style="animation-delay:1.6s"><span class="border-line">║</span>  <span class="header-key">中古音:</span> <span class="header-val">羣母·元韻·開口·去聲·全濁</span>  <span class="border-line">║</span></div>
+  <div class="line" style="animation-delay:1.7s"><span class="border-line">╚════════════════════════════════════════╝</span></div>
+  <div class="line" style="animation-delay:2.0s">&nbsp;</div>
+
+  <div class="line" style="animation-delay:2.2s">  <span class="section-line">▸</span> <span class="section-title">ケン ★ 主要音读</span></div>
+  <div class="line" style="animation-delay:2.3s">  <span class="section-line">  【为什么读ケン？】—— 匹配到 3 条规则</span></div>
+  <div class="line" style="animation-delay:2.6s">&nbsp;</div>
+  <div class="line" style="animation-delay:2.8s">  <span class="rule-label">✓ 确定</span>  <span class="rule-bracket">[</span><span class="rule-type">拼音·声+韵+调</span><span class="rule-bracket">]</span> <span class="rule-desc">j+ian4 → ケン</span>  <span class="rule-acc">精度 100%</span></div>
+  <div class="line" style="animation-delay:2.9s">         <span class="rule-kanji">同规律: 建 見 鍵 剣 件 検 験</span></div>
+  <div class="line" style="animation-delay:3.1s">&nbsp;</div>
+  <div class="line" style="animation-delay:3.3s">  <span class="rule-label">✓ 确定</span>  <span class="rule-bracket">[</span><span class="rule-type">声符·精确</span><span class="rule-bracket">]</span> <span class="rule-desc">声符「建」→ ケン</span>  <span class="rule-acc">精度 100%</span></div>
+  <div class="line" style="animation-delay:3.4s">         <span class="rule-kanji">同规律: 鍵 腱 鰹</span></div>
+  <div class="line" style="animation-delay:3.6s">&nbsp;</div>
+  <div class="line" style="animation-delay:3.8s">  <span class="rule-label">✓ 确定</span>  <span class="rule-bracket">[</span><span class="rule-type">中古音·開合</span><span class="rule-bracket">]</span> <span class="rule-desc">MC開口 → ケン</span>  <span class="rule-acc">精度 100%</span></div>
+  <div class="line" style="animation-delay:4.0s">&nbsp;</div>
+  <div class="line" style="animation-delay:4.2s">  <span class="section-line">  【含此读音的单词】</span></div>
+  <div class="line" style="animation-delay:4.3s">  <span class="word-line">健康</span> <span class="dim">→</span> <span class="word-jp">けんこう</span> <span class="dim">[N5]</span>   <span class="word-line">健闘</span> <span class="dim">→</span> <span class="word-jp">けんとう</span> <span class="dim">[N2]</span></div>
+  <div class="line" style="animation-delay:4.4s">  <span class="word-line">保健</span> <span class="dim">→</span> <span class="word-jp">ほけん</span> <span class="dim">[N2]</span>   <span class="word-line">健全</span> <span class="dim">→</span> <span class="word-jp">けんぜん</span> <span class="dim">[N1]</span></div>
+  <div class="line" style="animation-delay:4.6s">&nbsp;</div>
+
+  <div class="line" style="animation-delay:4.8s">  <span class="section-line">▸</span> <span class="section-title">ゴン</span></div>
+  <div class="line" style="animation-delay:4.9s">  <span class="rule-label">✓ 确定</span>  <span class="rule-bracket">[</span><span class="rule-type">中古音·開合</span><span class="rule-bracket">]</span> <span class="rule-desc">MC開口 → ゴン</span>  <span class="rule-acc">精度 100%</span></div>
+  <div class="line" style="animation-delay:5.2s">&nbsp;</div>
+  <div class="line" style="animation-delay:5.4s"><span class="section-line">════════════════════════════════════════</span></div>
+  <div class="line" style="animation-delay:5.5s"><span class="dim">3 条规则覆盖 · 精度 100% · 看到 j+ian 就读 ケン</span></div>
+  <div class="line" style="animation-delay:5.8s"><span class="prompt">$</span> <span class="cursor-blink">█</span></div>
+</div>
+</body>
+</html>

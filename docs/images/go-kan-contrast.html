@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { width:900px; height:620px; overflow:hidden; font-family:"Noto Serif SC","Songti SC","PingFang SC",sans-serif; background:#f8f4ed; color:#2c2416; }
+.card { width:900px; height:620px; position:relative; padding:40px 48px; }
+.title-block { margin-bottom:24px; padding-left:24px; border-left:4px solid #b8472e; }
+.title { font-size:34px; font-weight:900; color:#1a1410; letter-spacing:0.05em; font-family:"Noto Serif SC","Songti SC",serif; }
+.subtitle { font-size:22px; color:#8a7a6a; letter-spacing:0.06em; margin-top:5px; }
+.cols { display:flex; gap:24px; margin-bottom:18px; }
+.col { flex:1; padding:24px; border-radius:3px; text-align:center; }
+.col.kanon { background:linear-gradient(180deg, #fdf8f2 0%, #faf4ea 100%); border:1px solid #e0d0b8; }
+.col.goon { background:linear-gradient(180deg, #f4f6f8 0%, #eef2f6 100%); border:1px solid #c8d4e0; }
+.col-label { font-size:18px; letter-spacing:0.15em; font-weight:700; margin-bottom:10px; padding-bottom:10px; border-bottom:2px solid; }
+.col.kanon .col-label { color:#b8472e; border-color:rgba(184,71,46,0.2); }
+.col.goon .col-label { color:#2c4a5a; border-color:rgba(44,74,90,0.15); }
+.col-era { font-size:18px; color:#8a7a6a; margin-bottom:20px; letter-spacing:0.04em; }
+.col-era em { font-weight:600; color:#4d3a28; font-style:normal; }
+.example-row { display:flex; align-items:center; justify-content:center; gap:16px; margin-bottom:14px; padding:10px 0; }
+.example-char { font-size:36px; font-weight:900; color:#1a1410; font-family:"Noto Serif SC","Songti SC",serif; min-width:50px; }
+.example-on { font-size:30px; font-weight:700; font-family:"PingFang SC",sans-serif; }
+.col.kanon .example-on { color:#b8472e; }
+.col.goon .example-on { color:#2c4a5a; }
+.col-trait { font-size:18px; color:#8a7a6a; letter-spacing:0.04em; margin-top:16px; padding-top:14px; border-top:2px dashed; }
+.col.kanon .col-trait { border-color:rgba(184,71,46,0.15); }
+.col.goon .col-trait { border-color:rgba(44,74,90,0.12); }
+.col-trait em { font-weight:600; font-style:normal; }
+.col.kanon .col-trait em { color:#b8472e; }
+.col.goon .col-trait em { color:#2c4a5a; }
+.vs-arrow { display:flex; align-items:center; justify-content:center; font-size:22px; color:#a09080; letter-spacing:0.06em; writing-mode:vertical-lr; padding:0 6px; }
+.note { text-align:center; font-size:20px; color:#6a5a4a; letter-spacing:0.04em; line-height:1.5; padding-top:16px; border-top:1px solid #e0d6c4; }
+.note em { color:#4d3a28; font-style:normal; font-weight:600; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="title-block"><div class="title">一字两读？呉音 vs 漢音</div><div class="subtitle">日本分两波引进汉字 — 两套发音凝固在日语里</div></div>
+  <div class="cols">
+    <div class="col kanon">
+      <div class="col-label">漢 音</div>
+      <div class="col-era">唐代（<em>7-8 世纪</em>）· 长安音</div>
+      <div class="example-row"><div class="example-char">行</div><div class="example-on">コウ</div></div>
+      <div class="example-row"><div class="example-char">生</div><div class="example-on">セイ</div></div>
+      <div class="example-row"><div class="example-char">上</div><div class="example-on">ショウ</div></div>
+      <div class="col-trait">特征：<em>清音</em> · 较短 · 正式/书面语多用</div>
+    </div>
+    <div class="vs-arrow">← 两套系统 →</div>
+    <div class="col goon">
+      <div class="col-label">呉 音</div>
+      <div class="col-era">南北朝（<em>5-6 世纪</em>）· 建康音</div>
+      <div class="example-row"><div class="example-char">行</div><div class="example-on">ギョウ</div></div>
+      <div class="example-row"><div class="example-char">生</div><div class="example-on">ショウ</div></div>
+      <div class="example-row"><div class="example-char">上</div><div class="example-on">ジョウ</div></div>
+      <div class="col-trait">特征：<em>保留浊音</em> · 较长 · 佛教/日常多用</div>
+    </div>
+  </div>
+  <div class="note">MC 声母「匣」→ 呉音保留浊音读ギョウ，漢音清化读コウ。<em>不是乱来的，是两套系统。</em></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { width:900px; height:650px; overflow:hidden; font-family:"Noto Serif SC","Songti SC","PingFang SC",sans-serif; background:#f8f4ed; color:#2c2416; }
+.card { width:900px; height:650px; position:relative; padding:40px 48px; }
+.paper-line { position:absolute; left:72px; top:0; bottom:0; width:1px; background:rgba(184,71,46,0.08); }
+.title-block { margin-bottom:28px; padding-left:24px; border-left:4px solid #b8472e; }
+.title { font-size:34px; font-weight:900; color:#1a1410; letter-spacing:0.05em; font-family:"Noto Serif SC","Songti SC",serif; }
+.subtitle { font-size:22px; color:#8a7a6a; letter-spacing:0.06em; margin-top:6px; }
+.mappings { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+.mapping { display:flex; align-items:center; gap:20px; padding:20px 24px; background:#fff; border-radius:3px; border:1px solid #e8e0d4; }
+.mapping-arrow { font-size:32px; color:#b8472e; font-weight:300; font-family:"PingFang SC",sans-serif; }
+.mapping-left { text-align:right; min-width:110px; }
+.mapping-pinyin { font-size:24px; color:#2c2416; font-weight:700; font-family:"SF Mono","Menlo",monospace; letter-spacing:0.02em; }
+.mapping-label { font-size:16px; color:#a09080; letter-spacing:0.06em; margin-top:3px; }
+.mapping-right { flex:1; }
+.mapping-on { font-size:32px; font-weight:900; color:#1a1410; font-family:"PingFang SC",sans-serif; letter-spacing:0.04em; }
+.mapping-examples { font-size:20px; color:#6a5a4a; margin-top:4px; letter-spacing:0.03em; }
+.mapping-examples span { color:#4d3a28; font-weight:600; }
+.mapping-badge { display:inline-block; font-size:15px; padding:2px 10px; border-radius:2px; background:rgba(184,71,46,0.08); color:#b8472e; letter-spacing:0.06em; font-weight:600; margin-left:6px; }
+.note { margin-top:24px; padding-top:18px; border-top:1px solid #e0d6c4; font-size:20px; color:#6a5a4a; letter-spacing:0.04em; line-height:1.6; text-align:center; }
+.note em { color:#b8472e; font-style:normal; font-weight:600; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="paper-line"></div>
+  <div class="title-block"><div class="title">拼音 → 音読 对照表</div><div class="subtitle">汉语拼音声母＋韵母 → 日语音读 · 精度 100%</div></div>
+  <div class="mappings">
+    <div class="mapping">
+      <div class="mapping-left"><div class="mapping-pinyin">g+uan</div><div class="mapping-label">声母+韵母</div></div>
+      <div class="mapping-arrow">→</div>
+      <div class="mapping-right"><div class="mapping-on">カン <span class="mapping-badge">100%</span></div><div class="mapping-examples"><span>官 管 館 観 貫 冠</span> 等 23 字</div></div>
+    </div>
+    <div class="mapping">
+      <div class="mapping-left"><div class="mapping-pinyin">j+ian</div><div class="mapping-label">声母+韵母</div></div>
+      <div class="mapping-arrow">→</div>
+      <div class="mapping-right"><div class="mapping-on">ケン <span class="mapping-badge">100%</span></div><div class="mapping-examples"><span>健 建 見 鍵 剣</span> 等 14 字</div></div>
+    </div>
+    <div class="mapping">
+      <div class="mapping-left"><div class="mapping-pinyin">x+in</div><div class="mapping-label">声母+韵母</div></div>
+      <div class="mapping-arrow">→</div>
+      <div class="mapping-right"><div class="mapping-on">シン <span class="mapping-badge">100%</span></div><div class="mapping-examples"><span>新 心 信 辛</span> 等 8 字</div></div>
+    </div>
+    <div class="mapping">
+      <div class="mapping-left"><div class="mapping-pinyin">sh+eng</div><div class="mapping-label">声母+韵母</div></div>
+      <div class="mapping-arrow">→</div>
+      <div class="mapping-right"><div class="mapping-on">セイ <span class="mapping-badge">100%</span></div><div class="mapping-examples"><span>声 生</span> 等 4 字</div></div>
+    </div>
+    <div class="mapping">
+      <div class="mapping-left"><div class="mapping-pinyin">b+ian</div><div class="mapping-label">声母+韵母</div></div>
+      <div class="mapping-arrow">→</div>
+      <div class="mapping-right"><div class="mapping-on">ヘン <span class="mapping-badge">100%</span></div><div class="mapping-examples"><span>便 辺 弁 変</span> 等 6 字</div></div>
+    </div>
+    <div class="mapping">
+      <div class="mapping-left"><div class="mapping-pinyin">y+ou</div><div class="mapping-label">声母+韵母</div></div>
+      <div class="mapping-arrow">→</div>
+      <div class="mapping-right"><div class="mapping-on">ユウ <span class="mapping-badge">100%</span></div><div class="mapping-examples"><span>有 由 友 右 油 遊</span> 等 16 字</div></div>
+    </div>
+  </div>
+  <div class="note">汉语拼音的声母和韵母组合，<em>系统性地</em>对应着日语音读——你小学学拼音时就已经掌握了这套规则的入口</div>
+</div>
+</body>
+</html>

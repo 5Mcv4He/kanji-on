@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { width:900px; height:680px; overflow:hidden; font-family:"Noto Serif SC","Songti SC","PingFang SC",sans-serif; background:#f8f4ed; color:#2c2416; }
+.card { width:900px; height:680px; position:relative; padding:44px 52px; }
+.top-accent { position:absolute; top:0; left:0; right:0; height:4px; background:linear-gradient(90deg, #b8472e, #c5602e 20%, #d4954a 60%, transparent); }
+.header { margin-bottom:28px; }
+.project-name { font-size:38px; font-weight:900; color:#1a1410; letter-spacing:0.06em; font-family:"Noto Serif SC","Songti SC",serif; }
+.project-desc { font-size:20px; color:#8a7a6a; letter-spacing:0.04em; margin-top:8px; line-height:1.6; }
+.badges { display:flex; gap:10px; margin-top:12px; flex-wrap:wrap; }
+.badge { font-size:15px; padding:3px 12px; border-radius:3px; font-family:"PingFang SC",sans-serif; letter-spacing:0.04em; border:1px solid #d4c8b8; color:#6b5d4f; background:#f0ece4; }
+.badge.acc { border-color:#c5602e; color:#b8472e; background:#fdf4ee; }
+table { width:100%; border-collapse:collapse; margin-bottom:24px; font-size:20px; }
+thead th { text-align:center; padding:14px 0 10px; font-weight:600; color:#5c4a32; font-size:16px; letter-spacing:0.08em; border-bottom:2px solid #d4c8b8; }
+tbody td { text-align:center; padding:14px 0; border-bottom:1px solid #e8e0d4; font-size:18px; color:#4d3a28; }
+td.label { text-align:left; font-weight:600; color:#3a2a18; letter-spacing:0.04em; padding-left:4px; font-size:20px; }
+td.num { font-family:"SF Mono","Menlo",monospace; font-size:20px; color:#b8472e; font-weight:600; }
+td.pct { font-family:"SF Mono","Menlo",monospace; font-size:20px; font-weight:600; }
+td.pct.good { color:#b8472e; }
+.laws-title { font-size:22px; font-weight:700; color:#3a2a18; letter-spacing:0.08em; margin-bottom:14px; padding-bottom:10px; border-bottom:1px solid #e0d6c4; }
+.laws-grid { display:grid; grid-template-columns:1fr 1fr 1fr 1fr 1fr; gap:14px; margin-bottom:22px; }
+.law-item { padding:16px 12px; background:#fdfaf5; border-radius:3px; border:1px solid #e8e0d4; text-align:center; }
+.law-num { font-size:18px; color:#b8472e; font-weight:700; letter-spacing:0.08em; margin-bottom:6px; }
+.law-name { font-size:20px; font-weight:700; color:#2c1f10; letter-spacing:0.04em; margin-bottom:4px; }
+.law-hint { font-size:16px; color:#8a7a6a; line-height:1.5; }
+.footer { display:flex; justify-content:space-between; align-items:center; padding-top:16px; border-top:1px solid #e0d6c4; }
+.footer-url { font-size:20px; color:#8a7a6a; letter-spacing:0.04em; font-family:"SF Mono","Menlo",monospace; }
+.footer-url span { color:#b8472e; }
+.footer-tag { font-size:16px; color:#a09080; letter-spacing:0.06em; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="top-accent"></div>
+  <div class="header">
+    <div class="project-name">Kanji-On</div>
+    <div class="project-desc">以中国人的母语直觉推导日语音读，而非死记硬背。<br>三重桥接：汉语拼音 · 中古音（廣韻） · 汉字部件 · 覆盖 JLPT N5-N1 全部 2,179 个汉字。</div>
+    <div class="badges">
+      <div class="badge">Python 3.10+</div><div class="badge">N5-N1</div><div class="badge">2,179 汉字</div><div class="badge acc">79,832 规则</div><div class="badge">MIT</div>
+    </div>
+  </div>
+  <table>
+    <thead><tr><th></th><th>规则数</th><th>N5 覆盖</th><th>N1 覆盖</th></tr></thead>
+    <tbody>
+      <tr><td class="label">网上流传的「沪江方法」</td><td class="num">2</td><td class="pct">85.8%</td><td class="pct">85.3%</td></tr>
+      <tr><td class="label">本项目「五条铁律」</td><td class="num">5</td><td class="pct good">96.0%</td><td class="pct good">91.4%</td></tr>
+      <tr><td class="label">系统精选规则（全部）</td><td class="num">334-746</td><td class="pct good">100%</td><td class="pct good">100%</td></tr>
+    </tbody>
+  </table>
+  <div class="laws-title">五条铁律</div>
+  <div class="laws-grid">
+    <div class="law-item"><div class="law-num">一</div><div class="law-name">声母定行</div><div class="law-hint">g/k/h→カ行<br>d/t→タ行</div></div>
+    <div class="law-item"><div class="law-num">二</div><div class="law-name">韵尾定长短</div><div class="law-hint">-n→撥音ン<br>-ng→長音</div></div>
+    <div class="law-item"><div class="law-num">三</div><div class="law-name">声符定读音</div><div class="law-hint">方→ホウ<br>建→ケン</div></div>
+    <div class="law-item"><div class="law-num">四</div><div class="law-name">入声见端</div><div class="law-hint">-p/-t/-k→<br>ク/キ/ツ/チ</div></div>
+    <div class="law-item"><div class="law-num">五</div><div class="law-name">呉漢分層</div><div class="law-hint">漢音清/短<br>呉音濁/長</div></div>
+  </div>
+  <div class="footer"><div class="footer-url"><span>github.com</span>/5Mcv4He/kanji-on</div><div class="footer-tag">开源 · MIT License</div></div>
+</div>
+</body>
+</html>
