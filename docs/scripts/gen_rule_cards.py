@@ -3,8 +3,8 @@ import json
 import os
 from collections import defaultdict
 
-JSON_PATH = "/Volumes/SSD/work/kanji_learn/output/n1_tiered_rules.json"
-OUT_DIR = os.path.dirname(os.path.abspath(__file__))
+JSON_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "output", "n1_tiered_rules.json")
+OUT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "images", "2026-05-04")
 
 with open(JSON_PATH) as f:
     data = json.load(f)

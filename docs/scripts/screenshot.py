@@ -2,7 +2,7 @@
 import os
 from playwright.sync_api import sync_playwright
 
-HTML_DIR = os.path.dirname(os.path.abspath(__file__))
+HTML_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "images")
 
 files = [
     ("hook-opening.html", 900, 560),
